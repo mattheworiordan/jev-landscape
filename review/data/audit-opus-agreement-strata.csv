@@ -1,0 +1,27 @@
+stratum,stratum_label,labels,n,family,tier,evidence,framing,baseline,realtime_infra,production_claim
+measured_production,measured_production,Claude Opus 5.5,15,0.866667,0.733333,0.8,0.866667,0.933333,1.0,0.933333
+measured_production,measured_production,Claude Sonnet 5,15,0.666667,0.4,0.533333,0.8,0.8,0.933333,0.666667
+material,material,Claude Opus 5.5,91,0.835165,0.747253,0.89011,0.846154,0.923077,0.879121,0.989011
+material,material,Claude Sonnet 5,91,0.593407,0.692308,0.791209,0.791209,0.923077,0.681319,0.967033
+realtime_family,realtime families,Claude Opus 5.5,156,0.788462,0.75,0.967949,0.871795,0.967949,0.929487,0.99359
+realtime_family,realtime families,Claude Sonnet 5,156,0.576923,0.576923,0.916667,0.762821,0.967949,0.807692,0.99359
+replacement_baseline,replacement baseline,Claude Opus 5.5,201,0.81592,0.686567,0.950249,0.830846,0.791045,0.965174,0.99005
+replacement_baseline,replacement baseline,Claude Sonnet 5,201,0.716418,0.587065,0.890547,0.701493,0.621891,0.895522,0.975124
+baseline_none,baseline none,Claude Opus 5.5,300,0.816667,0.753333,0.926667,0.92,0.963333,0.96,0.976667
+baseline_none,baseline none,Claude Sonnet 5,300,0.75,0.636667,0.886667,0.793333,0.95,0.886667,0.996667
+demo_no_numbers,demo_no_numbers,Claude Opus 5.5,200,0.825,0.71,0.92,0.91,0.98,0.925,0.975
+demo_no_numbers,demo_no_numbers,Claude Sonnet 5,200,0.75,0.585,0.89,0.805,0.945,0.87,0.98
+measured_demo,measured_demo,Claude Opus 5.5,200,0.845,0.73,0.935,0.875,0.93,0.965,0.995
+measured_demo,measured_demo,Claude Sonnet 5,200,0.73,0.645,0.88,0.74,0.865,0.885,0.975
+not_realtime_family_not_games,"not realtime family, not games",Claude Opus 5.5,200,0.815,0.8,0.91,0.885,0.96,0.97,0.98
+not_realtime_family_not_games,"not realtime family, not games",Claude Sonnet 5,200,0.69,0.645,0.895,0.75,0.905,0.875,0.975
+realtime_infra_false,realtime_infra false,Claude Opus 5.5,200,0.765,0.8,0.95,0.885,0.925,0.98,0.98
+realtime_infra_false,realtime_infra false,Claude Sonnet 5,200,0.63,0.64,0.915,0.725,0.9,0.975,0.965
+realtime_infra_true_nongame,"realtime_infra true, not games",Claude Opus 5.5,100,0.83,0.78,0.95,0.82,0.94,0.9,0.96
+realtime_infra_true_nongame,"realtime_infra true, not games",Claude Sonnet 5,100,0.71,0.62,0.92,0.7,0.92,0.55,0.97
+other_or_meta,other_or_meta,Claude Opus 5.5,150,0.786667,0.833333,0.893333,0.906667,0.946667,0.973333,0.993333
+other_or_meta,other_or_meta,Claude Sonnet 5,150,0.706667,0.8,0.846667,0.806667,0.94,0.966667,0.993333
+tier_under_300ms,tier under 300 ms,Claude Opus 5.5,150,0.933333,0.72,0.966667,0.86,0.966667,0.893333,0.993333
+tier_under_300ms,tier under 300 ms,Claude Sonnet 5,150,0.913333,0.493333,0.973333,0.78,0.94,0.76,0.993333
+all_labelled,all labelled,Claude Opus 5.5,1681,0.815586,0.751933,0.930993,0.881618,0.936347,0.947055,0.984533
+all_labelled,all labelled,Claude Sonnet 5,1681,0.709697,0.619274,0.892326,0.758477,0.894706,0.856038,0.979179

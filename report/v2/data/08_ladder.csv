@@ -1,0 +1,4 @@
+step,label,evidence,posts,views,likes,median_views,median_likes,share_posts,share_views,share_likes
+no_measurement,No measurement,"demo_no_numbers, proposal_or_idea, commentary_or_meme",3766,21869916,160138,133.5,2.0,0.6596601856717463,0.4844968498611602,0.5182090595491583
+measured_demo,Measured demo,measured_demo,1928,23190681,147258,136.0,2.0,0.3377123839551585,0.5137565178867198,0.47652917915229337
+measured_production,Measured production,measured_production,15,78842,1626,61.0,0.0,0.002627430373095113,0.0017466322521199255,0.005261761298548323

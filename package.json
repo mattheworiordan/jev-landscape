@@ -1,0 +1,19 @@
+{
+  "name": "jev-landscape",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "classify:sonnet": "pnpm dlx tsx --env-file=/Users/matthew.oriordan/Workshop/work/projects/jev-pong/.env.local scripts/classify-sonnet.ts",
+    "classify:jev": "pnpm dlx tsx --env-file=/Users/matthew.oriordan/Workshop/work/projects/jev-pong/.env.local scripts/classify-jev.ts",
+    "analyze": "python3 scripts/analyze.py"
+  },
+  "packageManager": "pnpm@10.22.0",
+  "dependencies": {
+    "ai": "7.0.105",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

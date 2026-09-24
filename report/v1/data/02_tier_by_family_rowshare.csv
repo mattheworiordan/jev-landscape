@@ -1,0 +1,15 @@
+family,frame,feel,turn,interaction,task,batch,unclear
+other_or_meta,0.0023,0.007,0.0016,0.1057,0.0513,0.0614,0.7708
+games_control_loops_simulation,0.0251,0.6797,0.0102,0.0633,0.2011,0.0084,0.0121
+classification_routing_triage,0.0,0.0,0.0012,0.4165,0.3245,0.2421,0.0157
+agent_harness_and_tool_gating,0.0,0.0085,0.0064,0.1021,0.8638,0.0021,0.017
+search_rerank_extraction,0.0,0.0,0.0,0.4295,0.3568,0.2009,0.0128
+evals_and_judging,0.0,0.0032,0.0,0.2429,0.3659,0.3533,0.0347
+moderation_and_guardrails,0.0,0.0032,0.0095,0.7697,0.1199,0.082,0.0158
+data_and_telemetry,0.0,0.0,0.0,0.025,0.0393,0.9357,0.0
+trading_and_markets,0.0,0.0114,0.057,0.0494,0.7262,0.1293,0.0266
+browser_and_computer_use,0.0,0.0252,0.0084,0.2059,0.7521,0.0,0.0084
+compaction_and_context,0.0,0.0,0.0,0.0946,0.8243,0.0676,0.0135
+collaboration_and_typing,0.0,0.2419,0.0323,0.6452,0.0806,0.0,0.0
+live_chat_streams_events,0.0,0.0167,0.1667,0.75,0.0667,0.0,0.0
+voice_and_turn_taking,0.0,0.0,0.9348,0.0652,0.0,0.0,0.0

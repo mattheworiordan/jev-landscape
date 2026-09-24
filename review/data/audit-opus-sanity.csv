@@ -1,0 +1,66 @@
+check,key,value
+production,whole_corpus,37
+production,base,37
+production,by_sonnet_evidence,"{""measured_demo"": 26, ""measured_production"": 11}"
+production,sonnet_census,15
+production,census_holds,8
+production,model_mp_on_census,11
+production,model_mp_on_holds,8
+production,holds_model_labels,"{""measured_production"": 8}"
+production,census_not_holding_model_mp,3
+production,census_model_not_mp,"{""2100996125272740219"": {""audit"": ""measured_demo"", ""model"": ""measured_demo""}, ""2101322376159822333"": {""audit"": ""measured_demo"", ""model"": ""measured_demo""}, ""2102243060189147353"": {""audit"": ""measured_demo"", ""model"": ""measured_demo""}, ""2102818524624269524"": {""audit"": ""measured_demo"", ""model"": ""measured_demo""}}"
+production,model_mp_audited,20
+production,model_mp_audited_holds,11
+production,model_mp_outside_census,26
+production,model_mp_outside_census_audited,9
+production,model_mp_outside_census_audited_audit_labels,"{""measured_demo"": 6, ""measured_production"": 3}"
+production,model_mp_outside_census_audited_production_claim,5
+production,model_mp_in_md_sample,2
+production,model_mp_in_md_sample_audit_mp,0
+production,model_mp_sonnet_md_population,26
+production,md_cell_scaled_hi,17.098329
+production,model_mp_unaudited,17
+realtime_families,whole_corpus,206
+realtime_families,base,206
+realtime_families,by_sonnet_family,"{""agent_harness_and_tool_gating"": 7, ""browser_and_computer_use"": 7, ""classification_routing_triage"": 21, ""data_and_telemetry"": 4, ""evals_and_judging"": 4, ""games_control_loops_simulation"": 6, ""moderation_and_guardrails"": 15, ""not_a_jev_build"": 1, ""other_or_meta"": 25, ""realtime family"": 112, ""search_rerank_extraction"": 3, ""trading_and_markets"": 1}"
+realtime_families,census,156
+realtime_families,census_kept,104
+realtime_families,census_dropped,52
+realtime_families,kept_model_rt,100
+realtime_families,dropped_model_rt,12
+realtime_families,dropped_audit_families,"{""browser_and_computer_use"": 2, ""classification_routing_triage"": 13, ""compaction_and_context"": 1, ""data_and_telemetry"": 2, ""evals_and_judging"": 10, ""games_control_loops_simulation"": 5, ""moderation_and_guardrails"": 3, ""not_a_jev_build"": 1, ""other_or_meta"": 8, ""search_rerank_extraction"": 6, ""trading_and_markets"": 1}"
+realtime_families,model_rt_outside_census,94
+realtime_families,model_rt_outside_census_audited,41
+realtime_families,model_rt_outside_census_audit_rt,25
+realtime_families,model_rt_outside_census_audit_families,"{""agent_harness_and_tool_gating"": 1, ""browser_and_computer_use"": 2, ""classification_routing_triage"": 3, ""collaboration_and_typing"": 9, ""evals_and_judging"": 1, ""games_control_loops_simulation"": 1, ""live_chat_streams_events"": 11, ""other_or_meta"": 6, ""search_rerank_extraction"": 2, ""voice_and_turn_taking"": 5}"
+realtime_families,negative_sample,200
+realtime_families,negative_sample_misses,5
+realtime_families,negative_misses_model_rt,3
+realtime_families,negative_sample_model_rt,3
+realtime_families,negative_sample_model_rt_audit_rt,3
+realtime_families,model_rt_audited,153
+realtime_families,model_rt_audited_audit_rt,125
+realtime_families,model_rt_measured_production,1
+realtime_families,model_rt_production_claim,3
+not_a_jev_build,whole_corpus,349
+not_a_jev_build,deduped,347
+not_a_jev_build,both_nj,209
+not_a_jev_build,in_frame,138
+not_a_jev_build,in_frame_by_sonnet_family,"{""agent_harness_and_tool_gating"": 7, ""browser_and_computer_use"": 6, ""classification_routing_triage"": 6, ""compaction_and_context"": 2, ""data_and_telemetry"": 1, ""games_control_loops_simulation"": 27, ""moderation_and_guardrails"": 5, ""other_or_meta"": 71, ""search_rerank_extraction"": 9, ""trading_and_markets"": 2, ""voice_and_turn_taking"": 2}"
+not_a_jev_build,in_frame_audited,36
+not_a_jev_build,in_frame_audited_audit_nj,23
+not_a_jev_build,in_frame_audited_audit_families,"{""browser_and_computer_use"": 2, ""classification_routing_triage"": 2, ""games_control_loops_simulation"": 1, ""other_or_meta"": 7, ""trading_and_markets"": 1}"
+not_a_jev_build,in_frame_audited_audit_noise,"{""benchmark_of_the_model"": 3, ""tooling_or_wrapper"": 2, ""unrelated_or_unclear"": 2}"
+not_a_jev_build,audit_nj,32
+not_a_jev_build,audit_nj_model_nj,23
+not_a_jev_build,audit_nj_model_families,"{""evals_and_judging"": 2, ""games_control_loops_simulation"": 3, ""moderation_and_guardrails"": 1, ""other_or_meta"": 2, ""trading_and_markets"": 1}"
+not_a_jev_build,meta_sample,150
+not_a_jev_build,meta_sample_audit_nj,10
+not_a_jev_build,meta_sample_model_nj,12
+not_a_jev_build,meta_sample_both_nj,10
+not_a_jev_build,meta_sample_model_nj_audit_labels,"{""meta/unrelated_or_unclear"": 2, ""not_a_jev_build"": 10}"
+not_a_jev_build,meta_stratum,1203
+not_a_jev_build,meta_stratum_model_nj,71
+not_a_jev_build,meta_stratum_audit_nj_scaled,80.2
+not_a_jev_build,meta_stratum_audit_nj_wilson,"{""hi"": 0.11836352652481316, ""k"": 10, ""lo"": 0.03661146073480972, ""n"": 150, ""p"": 0.06666666666666667}"
+not_a_jev_build,frame_audit_estimate,"{""census"": 0, ""est"": 75.37, ""hi"": 228.44947270115068, ""lo"": 25.15692756258353, ""note"": ""proposal and commentary posts (not sampled) count as zero: the frame is Sonnet's base, where none is not_a_jev_build"", ""parts"": {""demo_no_numbers"": {""k"": 2, ""n"": 200, ""pop"": 3681}, ""measured_demo"": {""k"": 4, ""n"": 200, ""pop"": 1928}}, ""remainder_n"": 85}"

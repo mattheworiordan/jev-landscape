@@ -1,0 +1,8 @@
+item,calls,noCache,cacheRead,cacheWrite,output,usd,gateway_reported_usd
+"v2 pass: Sonnet 5, full run (rubric v2)",151,1098510,912646,31255,554660,8.0042867,8.0042867
+"v2 pass: Sonnet 5, two 120-card pilots",6,44540,18339,18546,22596,0.3650728,0.3650728
+"v2 pass: Sonnet 5, noise sub-types",31,199330,58145,4010,63403,1.054344,1.054344
+"v2 pass: Sonnet 5, noise sub-type pilot",1,7795,0,1828,2082,0.04098,0.04098
+"v1 pass: Sonnet 5, main run",146,1064857,630895,4351,536941,7.6361805,7.6361805
+"v1 pass: Sonnet 5, discarded pilot",1,9870,0,4218,4432,0.074605,0.074605
+v1 pass: Jev (input only; output free),5950,7837926,0,0,0,0.329192892,

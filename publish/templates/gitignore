@@ -1,0 +1,36 @@
+# The text of the posts never goes in this repository (publish/PUBLISHING.md).
+# scripts/build_cards.py, the labeling tools and the analysis write these files locally.
+feed.json
+data/cards.json
+data/cards.json.tmp
+data/snapshots/
+data/refresh-logs/
+data/*.log
+review/blind/
+review/fxtwitter-150.json
+review/human-sample-150.json
+review/labeller.html
+review/work/material-cards-*.jsonl
+review/work/production-cards.jsonl
+report/landscape.md
+report/v1/landscape.md
+report/v2/landscape.md
+report/human-labels-120.csv
+report/human-labels-README.md
+
+# charts.mjs writes the first edition here and page-v3.mjs the report. The published copies are
+# /technical/ (the first edition) and /index.html with /charts/ (the report).
+report/site/index.html
+report/site/charts/
+report/site/v3/
+report/site/video/
+
+# Secrets and local tools
+.env
+.env.*
+node_modules/
+__pycache__/
+*.pyc
+.ruff_cache/
+.DS_Store
+publish/repo/

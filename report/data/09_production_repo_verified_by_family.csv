@@ -1,0 +1,15 @@
+family,posts,measured_production,measured_demo,production_claims,repo,verified_share
+other_or_meta,1254,7,215,18,183,0.6985645933014354
+games_control_loops_simulation,1071,0,280,6,89,0.6900093370681606
+classification_routing_triage,781,10,304,27,87,0.737516005121639
+search_rerank_extraction,518,8,195,26,68,0.7548262548262549
+evals_and_judging,366,3,106,13,51,0.773224043715847
+data_and_telemetry,271,2,173,6,22,0.8597785977859779
+trading_and_markets,268,1,122,7,24,0.8246268656716418
+agent_harness_and_tool_gating,262,2,77,8,73,0.7251908396946565
+moderation_and_guardrails,257,3,78,10,39,0.6926070038910506
+browser_and_computer_use,254,0,95,0,48,0.7992125984251969
+compaction_and_context,87,0,35,0,35,0.7931034482758621
+voice_and_turn_taking,72,0,21,2,7,0.6805555555555556
+live_chat_streams_events,68,1,11,1,6,0.7352941176470589
+collaboration_and_typing,66,0,11,0,3,0.7878787878787878

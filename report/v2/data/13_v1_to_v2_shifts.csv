@@ -1,0 +1,10 @@
+label,v1 share,v2 share
+family = other_or_meta,22.3%,20.4%
+family = not_a_jev_build,0.0%,3.8%
+evidence = measured_demo,37.0%,33.7%
+evidence = measured_production,1.6%,0.2%
+evidence = demo_no_numbers,59.0%,64.5%
+baseline = none,77.2%,81.7%
+baseline = frontier_llm,14.5%,11.7%
+realtime_infra = True,25.8%,29.8%
+production_claim = True,4.7%,1.8%

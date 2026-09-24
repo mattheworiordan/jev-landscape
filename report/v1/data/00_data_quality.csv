@@ -1,0 +1,2 @@
+cards,unique_ids,duplicate_urls,duplicate_post_texts,empty_text,empty_title,text_exactly_400_chars,text_max_chars,zero_views,repo_by_literal_rule,repo_by_art_field,sonnet_missing,sonnet_stray_ids,sonnet_duplicate_rows,sonnet_batches,sonnet_retry_round_batches,sonnet_ids_missing_from_a_response,sonnet_stray_ids_in_responses,jev_missing,jev_stray_ids,jev_duplicate_rows
+5782,5782,0,5,0,0,927,400,3,0,810,0,0,0,146,1,9,10,0,0,0

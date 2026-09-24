@@ -1,0 +1,29 @@
+labels,group,label,base_count,deduped_count,audited_n,audit_agrees,precision,lo,hi,weighted_precision,audited_negative_n,audit_positive_among_negative,weighted_miss_rate,audit_positive_n,recall,weighted_recall
+Claude Opus 5.5,rt_family,"family is voice, live chat or collaboration",206,206,153,125,0.816993,0.748217,0.870241,0.726939,1528,22,0.009378,147,0.85034,0.750344
+Claude Opus 5.5,games,family is games,1071,1071,287,273,0.95122,0.919796,0.970723,0.945823,1394,17,0.01451,290,0.941379,0.941223
+Claude Opus 5.5,meta,family is other_or_meta,1254,1254,385,296,0.768831,0.724188,0.808163,0.782689,1296,59,0.045713,355,0.833803,0.833498
+Claude Opus 5.5,not_a_jev_build,family is not_a_jev_build,0,347,36,23,0.638889,0.475748,0.775246,0.701855,1645,9,0.006033,32,0.71875,0.713829
+Claude Opus 5.5,measured_production,evidence is measured_production,37,37,20,11,0.55,0.342082,0.741805,0.430563,1661,0,0.0,11,1.0,1.0
+Claude Opus 5.5,measured,evidence is measured (demo or production),1760,1885,569,549,0.964851,0.946333,0.977133,0.975411,1112,30,0.027914,579,0.948187,0.938852
+Claude Opus 5.5,no_measurement,"evidence is demo_no_numbers, proposal or commentary",3835,4057,1112,1082,0.973022,0.961748,0.981038,0.972086,569,20,0.024589,1102,0.981851,0.989008
+Claude Opus 5.5,baseline_none,baseline is none,4498,4810,1296,1265,0.97608,0.966248,0.983098,0.974738,385,56,0.113976,1321,0.957608,0.972934
+Claude Opus 5.5,baseline_replacement,"baseline is classic ML, rules or vendor API",228,240,173,140,0.809249,0.744234,0.860827,0.74052,1508,21,0.011119,161,0.869565,0.737835
+Claude Opus 5.5,tier_under_300ms,"tier is frame, feel or turn",809,859,262,174,0.664122,0.604926,0.718575,0.667947,1419,19,0.010172,193,0.901554,0.916559
+Claude Opus 5.5,live_loop_nongame,"realtime_infra true, not games",376,427,215,192,0.893023,0.844596,0.927652,0.832878,1466,33,0.017418,225,0.853333,0.769639
+Claude Opus 5.5,realtime_infra,realtime_infra true,1152,1203,427,379,0.887588,0.854105,0.914158,0.869716,1254,41,0.027946,420,0.902381,0.891614
+Claude Opus 5.5,candidate,meets the material test (corrected bucket material),72,75,52,34,0.653846,0.518033,0.768492,0.59406,1629,26,0.010864,60,0.566667,0.435532
+Claude Opus 5.5,production_claim,production_claim true,124,126,48,24,0.5,0.363891,0.636109,0.390878,1633,2,0.00157,26,0.923077,0.874249
+Claude Sonnet 5,rt_family,"family is voice, live chat or collaboration",156,156,156,104,0.666667,0.58947,0.735852,0.666667,1525,43,0.018489,147,0.707483,0.502656
+Claude Sonnet 5,games,family is games,1078,1078,278,259,0.931655,0.895729,0.955813,0.921168,1403,31,0.020289,290,0.893103,0.917839
+Claude Sonnet 5,meta,family is other_or_meta,1203,1203,386,265,0.686528,0.638603,0.730778,0.704969,1295,90,0.079907,355,0.746479,0.703613
+Claude Sonnet 5,not_a_jev_build,family is not_a_jev_build,0,234,0,0,,,,,1681,32,0.020639,32,0.0,0.0
+Claude Sonnet 5,measured_production,evidence is measured_production,15,15,15,8,0.533333,0.301166,0.751908,0.533333,1666,3,0.001082,11,0.727273,0.564293
+Claude Sonnet 5,measured,evidence is measured (demo or production),1943,2027,622,545,0.876206,0.84799,0.899803,0.888115,1059,34,0.032288,579,0.941278,0.932077
+Claude Sonnet 5,no_measurement,"evidence is demo_no_numbers, proposal or commentary",3766,3916,1059,1025,0.967894,0.955471,0.976935,0.967712,622,77,0.111885,1102,0.930127,0.945464
+Claude Sonnet 5,baseline_none,baseline is none,4647,4852,1289,1237,0.959659,0.947481,0.969105,0.954276,392,84,0.16737,1321,0.936412,0.961901
+Claude Sonnet 5,baseline_replacement,"baseline is classic ML, rules or vendor API",201,211,201,137,0.681592,0.614298,0.742074,0.681592,1480,24,0.017358,161,0.850932,0.588434
+Claude Sonnet 5,tier_under_300ms,"tier is frame, feel or turn",1064,1089,337,157,0.465875,0.4133,0.51922,0.472499,1344,36,0.01956,193,0.813472,0.847811
+Claude Sonnet 5,live_loop_nongame,"realtime_infra true, not games",720,754,369,210,0.569106,0.518122,0.618665,0.46491,1312,15,0.012686,225,0.933333,0.843509
+Claude Sonnet 5,realtime_infra,realtime_infra true,1738,1772,634,406,0.640379,0.602281,0.676785,0.618708,1047,14,0.013305,420,0.966667,0.955299
+Claude Sonnet 5,candidate,meets the material test (corrected bucket material),91,93,91,38,0.417582,0.321611,0.52023,0.417582,1590,22,0.012536,60,0.633333,0.349965
+Claude Sonnet 5,production_claim,production_claim true,109,111,49,20,0.408163,0.28215,0.547529,0.335813,1632,6,0.004547,26,0.769231,0.634101

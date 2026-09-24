@@ -1,0 +1,11 @@
+{"id":"2102641737545949210","status":null,"error":"Failed after 2 attempts. Last error: GatewayInternalServerError: Service temporarily unavailable. Please try again shortly.","latency_ms":2708,"at":"2026-09-23T12:37:02.888Z"}
+{"id":"2102549919684841675","status":null,"error":"Failed after 2 attempts. Last error: GatewayInternalServerError: Service temporarily unavailable. Please try again shortly.","latency_ms":2651,"at":"2026-09-23T12:37:04.903Z"}
+{"id":"2102366732421861433","status":null,"error":"Question \"family\" did not select a highest-probability option.","latency_ms":375,"at":"2026-09-23T12:37:28.510Z"}
+{"id":"2102082638861479942","status":null,"error":"Question \"family\" did not select a highest-probability option.","latency_ms":357,"at":"2026-09-23T12:37:54.313Z"}
+{"id":"2102065669302829438","status":null,"error":"Failed after 2 attempts. Last error: GatewayRateLimitError: The upstream provider is currently experiencing high demand. Please retry shortly.","latency_ms":2499,"at":"2026-09-23T12:37:57.925Z"}
+{"id":"2102044163093188716","status":null,"error":"Failed after 2 attempts. Last error: GatewayInternalServerError: Service temporarily unavailable. Please try again shortly.","latency_ms":2623,"at":"2026-09-23T12:38:22.375Z"}
+{"id":"2101658946096570685","status":null,"error":"Question \"family\" did not select a highest-probability option.","latency_ms":373,"at":"2026-09-23T12:38:59.767Z"}
+{"id":"2101600825168773550","status":null,"error":"Question \"family\" did not select a highest-probability option.","latency_ms":428,"at":"2026-09-23T12:39:42.870Z"}
+{"id":"2100762277846921611","status":null,"error":"Question \"family\" did not select a highest-probability option.","latency_ms":449,"at":"2026-09-23T12:41:25.685Z"}
+{"id":"2100997199102677033","status":null,"error":"Question \"family\" did not select a highest-probability option.","latency_ms":474,"at":"2026-09-23T12:41:38.515Z"}
+{"id":"2100414679579599335","status":null,"error":"Question \"family\" did not select a highest-probability option.","latency_ms":620,"at":"2026-09-23T12:42:35.800Z"}

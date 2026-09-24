@@ -1,0 +1,11 @@
+cat,evals_and_judging,classification_routing_triage,moderation_and_guardrails,agent_harness_and_tool_gating,compaction_and_context,search_rerank_extraction,browser_and_computer_use,voice_and_turn_taking,live_chat_streams_events,collaboration_and_typing,games_control_loops_simulation,data_and_telemetry,trading_and_markets,other_or_meta
+Agents & browsers,1,17,7,38,4,30,173,17,1,1,12,0,0,24
+Content & growth,94,82,34,4,0,91,1,0,11,7,1,67,2,78
+Dev tools,95,122,10,126,50,82,31,3,0,11,5,14,0,348
+Games & real time,3,2,2,1,0,5,4,6,8,2,877,1,1,43
+Research & data,70,113,2,25,14,144,15,1,4,3,55,142,11,354
+Robotics & devices,1,0,0,2,0,0,0,1,1,0,88,0,0,3
+Safety & moderation,47,27,156,45,3,4,2,4,20,2,5,15,1,36
+Tools & apps,42,98,36,11,10,136,28,38,17,37,25,14,4,336
+Trading & markets,1,0,1,1,0,2,0,0,1,0,3,2,243,5
+Triage & routing,12,320,9,9,6,24,0,2,5,3,0,16,6,27

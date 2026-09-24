@@ -1,0 +1,310 @@
+{
+  "title": "A week of Jev, sorted",
+  "author": "Matthew O'Riordan",
+  "disclosure": "The author is CEO of Ably, a realtime infrastructure company.",
+  "repository": "https://github.com/mattheworiordan/jev-landscape",
+  "report": "https://mattheworiordan.github.io/jev-landscape/",
+  "staged": "2026-09-24 20:21 UTC",
+  "feed": {
+    "url": "https://jev.openchamber.dev/data/cards.json",
+    "snapshot_updated": "2026-09-23 18:47 UTC",
+    "cards": 5950,
+    "authors": 4593,
+    "posted_through_utc": "2026-09-23",
+    "window_utc": [
+      "2026-09-16 00:28:26.330000+00:00",
+      "2026-09-23 18:44:13.601000+00:00"
+    ],
+    "cards_in_latest_pull": 5944,
+    "kept_from_earlier_pulls": 6,
+    "built": "2026-09-24 08:12 UTC",
+    "raw_pulls": [
+      {
+        "file": "cards-20260923-1042.json",
+        "feed_updated": "2026-09-23 10:42 UTC",
+        "cards": 5782,
+        "sha256": "15dfcece1a08747033387d6e3e38f2eee847c0d289fa3c2a17fb603d1d0b09cc"
+      },
+      {
+        "file": "cards-20260923-1847.json",
+        "feed_updated": "2026-09-23 18:47 UTC",
+        "cards": 5944,
+        "sha256": "7937bc1cb0a340024974ba62f758016a84973e07fb8904020aac5b1e69307ae6"
+      }
+    ],
+    "in_this_repository": "post ids and labels only; no post text, titles, names or media"
+  },
+  "analysis": {
+    "labels": {
+      "file": "data/classified-opus.jsonl",
+      "model": "Claude Opus 5.5",
+      "audited": false
+    },
+    "posts": 5950,
+    "use_case_base": 5595,
+    "not_a_jev_build": 347,
+    "audit": {
+      "auditor": "Grok",
+      "labelled": 1681,
+      "audited_labels": "data/classified-sonnet-v2.jsonl",
+      "snapshot_matches": true
+    }
+  },
+  "text_fields_emptied": {
+    "data/classified-noise.jsonl": {
+      "reason": 1533
+    },
+    "data/classified-opus.jsonl": {
+      "reason": 5949
+    },
+    "data/classified-sonnet-v2.jsonl": {
+      "reason": 5950
+    },
+    "data/classified-sonnet.jsonl": {
+      "reason": 5782
+    },
+    "data/dedupe-groups.jsonl": {
+      "titles": 7
+    },
+    "data/hand-labels-120.jsonl": {
+      "note": 120
+    },
+    "data/hand-labels-disputes.jsonl": {
+      "title": 95
+    },
+    "data/alternatives-posts-2026-09-24.json": {
+      "posts[].t": 267
+    },
+    "data/pilot/classified-noise.pilot1.jsonl": {
+      "reason": 40
+    },
+    "data/pilot/classified-sonnet-v2.pilot1.jsonl": {
+      "reason": 120
+    },
+    "data/pilot/classified-sonnet-v2.pilot2.jsonl": {
+      "reason": 120
+    },
+    "data/pilot/classified-sonnet.pilot1.jsonl": {
+      "reason": 40
+    },
+    "data/labels-after-audit/classified-noise.jsonl": {
+      "reason": 58
+    },
+    "data/labels-after-audit/classified-opus.jsonl": {
+      "reason": 239
+    },
+    "data/labels-after-audit/classified-sonnet-v2.jsonl": {
+      "reason": 239
+    },
+    "review/hand-labels-grok.jsonl": {
+      "note": 1681
+    },
+    "review/labels/batch-00.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-01.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-02.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-03.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-04.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-05.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-06.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-07.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-08.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-09.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-10.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-11.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-12.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-13.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-14.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-15.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-16.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-17.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-18.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-19.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-20.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-21.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-22.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-23.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-24.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-25.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-26.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-27.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-28.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-29.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-30.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-31.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-32.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-33.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-34.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-35.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-36.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-37.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-38.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-39.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-40.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-41.jsonl": {
+      "note": 40
+    },
+    "review/labels/batch-42.jsonl": {
+      "note": 1
+    },
+    "review/work/override-production.jsonl": {
+      "note": 15
+    },
+    "review/data/audit-opus-estimates.csv": {
+      "note": 30
+    },
+    "report/summary.json": {
+      "noise.top_card.title": 1,
+      "snake.title": 1
+    },
+    "report/data/00_dedupe_groups.csv": {
+      "titles": 7
+    },
+    "report/data/00_not_a_jev_build.csv": {
+      "reason": 347,
+      "t": 347
+    },
+    "report/data/06_low_like_rate_cards.csv": {
+      "t": 9
+    },
+    "report/data/06_top20_cards.csv": {
+      "title": 20
+    },
+    "report/data/07_realtime_top15.csv": {
+      "title": 15
+    },
+    "report/data/09_production_reread.csv": {
+      "t": 95
+    },
+    "report/data/12_noise_breakdown.csv": {
+      "top_card_title": 7
+    },
+    "report/data/12b_noise_stance.csv": {
+      "top_card_title": 4
+    },
+    "report/data/13_audit_production.csv": {
+      "note": 15,
+      "title": 15
+    },
+    "report/v1/data/06_top20_cards.csv": {
+      "title": 20
+    },
+    "report/v1/data/07_realtime_top15.csv": {
+      "title": 15
+    },
+    "report/v2/summary.json": {
+      "noise.top_card.title": 1,
+      "snake.title": 1
+    },
+    "report/v2/data/00_dedupe_groups.csv": {
+      "titles": 7
+    },
+    "report/v2/data/00_not_a_jev_build.csv": {
+      "reason": 234,
+      "t": 234
+    },
+    "report/v2/data/06_low_like_rate_cards.csv": {
+      "t": 9
+    },
+    "report/v2/data/06_top20_cards.csv": {
+      "title": 20
+    },
+    "report/v2/data/07_realtime_top15.csv": {
+      "title": 15
+    },
+    "report/v2/data/09_production_reread.csv": {
+      "t": 95
+    },
+    "report/v2/data/12_noise_breakdown.csv": {
+      "top_card_title": 7
+    },
+    "report/v2/data/12b_noise_stance.csv": {
+      "top_card_title": 4
+    },
+    "report/v2/data/13_audit_production.csv": {
+      "note": 15,
+      "title": 15
+    }
+  }
+}

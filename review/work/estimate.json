@@ -1,0 +1,976 @@
+{
+  "labelled": 1681,
+  "expected": 1681,
+  "label_files": 43,
+  "production_overrides": 15,
+  "invalid": [],
+  "use_case_base": 5709,
+  "agreement": {
+    "measured_production": {
+      "family": {
+        "n": 15,
+        "agree": 10,
+        "rate": 0.6666666666666666
+      },
+      "tier": {
+        "n": 15,
+        "agree": 6,
+        "rate": 0.4
+      },
+      "evidence": {
+        "n": 15,
+        "agree": 8,
+        "rate": 0.5333333333333333
+      },
+      "framing": {
+        "n": 15,
+        "agree": 12,
+        "rate": 0.8
+      },
+      "baseline": {
+        "n": 15,
+        "agree": 12,
+        "rate": 0.8
+      },
+      "realtime_infra": {
+        "n": 15,
+        "agree": 14,
+        "rate": 0.9333333333333333
+      },
+      "production_claim": {
+        "n": 15,
+        "agree": 10,
+        "rate": 0.6666666666666666
+      }
+    },
+    "material": {
+      "family": {
+        "n": 91,
+        "agree": 54,
+        "rate": 0.5934065934065934
+      },
+      "tier": {
+        "n": 91,
+        "agree": 63,
+        "rate": 0.6923076923076923
+      },
+      "evidence": {
+        "n": 91,
+        "agree": 72,
+        "rate": 0.7912087912087912
+      },
+      "framing": {
+        "n": 91,
+        "agree": 72,
+        "rate": 0.7912087912087912
+      },
+      "baseline": {
+        "n": 91,
+        "agree": 84,
+        "rate": 0.9230769230769231
+      },
+      "realtime_infra": {
+        "n": 91,
+        "agree": 62,
+        "rate": 0.6813186813186813
+      },
+      "production_claim": {
+        "n": 91,
+        "agree": 88,
+        "rate": 0.967032967032967
+      }
+    },
+    "realtime_family": {
+      "family": {
+        "n": 156,
+        "agree": 90,
+        "rate": 0.5769230769230769
+      },
+      "tier": {
+        "n": 156,
+        "agree": 90,
+        "rate": 0.5769230769230769
+      },
+      "evidence": {
+        "n": 156,
+        "agree": 143,
+        "rate": 0.9166666666666666
+      },
+      "framing": {
+        "n": 156,
+        "agree": 119,
+        "rate": 0.7628205128205128
+      },
+      "baseline": {
+        "n": 156,
+        "agree": 151,
+        "rate": 0.967948717948718
+      },
+      "realtime_infra": {
+        "n": 156,
+        "agree": 126,
+        "rate": 0.8076923076923077
+      },
+      "production_claim": {
+        "n": 156,
+        "agree": 155,
+        "rate": 0.9935897435897436
+      }
+    },
+    "replacement_baseline": {
+      "family": {
+        "n": 201,
+        "agree": 144,
+        "rate": 0.7164179104477612
+      },
+      "tier": {
+        "n": 201,
+        "agree": 118,
+        "rate": 0.5870646766169154
+      },
+      "evidence": {
+        "n": 201,
+        "agree": 179,
+        "rate": 0.8905472636815921
+      },
+      "framing": {
+        "n": 201,
+        "agree": 141,
+        "rate": 0.7014925373134329
+      },
+      "baseline": {
+        "n": 201,
+        "agree": 125,
+        "rate": 0.6218905472636815
+      },
+      "realtime_infra": {
+        "n": 201,
+        "agree": 180,
+        "rate": 0.8955223880597015
+      },
+      "production_claim": {
+        "n": 201,
+        "agree": 196,
+        "rate": 0.9751243781094527
+      }
+    },
+    "baseline_none": {
+      "family": {
+        "n": 300,
+        "agree": 225,
+        "rate": 0.75
+      },
+      "tier": {
+        "n": 300,
+        "agree": 191,
+        "rate": 0.6366666666666667
+      },
+      "evidence": {
+        "n": 300,
+        "agree": 266,
+        "rate": 0.8866666666666667
+      },
+      "framing": {
+        "n": 300,
+        "agree": 238,
+        "rate": 0.7933333333333333
+      },
+      "baseline": {
+        "n": 300,
+        "agree": 285,
+        "rate": 0.95
+      },
+      "realtime_infra": {
+        "n": 300,
+        "agree": 266,
+        "rate": 0.8866666666666667
+      },
+      "production_claim": {
+        "n": 300,
+        "agree": 299,
+        "rate": 0.9966666666666667
+      }
+    },
+    "demo_no_numbers": {
+      "family": {
+        "n": 200,
+        "agree": 150,
+        "rate": 0.75
+      },
+      "tier": {
+        "n": 200,
+        "agree": 117,
+        "rate": 0.585
+      },
+      "evidence": {
+        "n": 200,
+        "agree": 178,
+        "rate": 0.89
+      },
+      "framing": {
+        "n": 200,
+        "agree": 161,
+        "rate": 0.805
+      },
+      "baseline": {
+        "n": 200,
+        "agree": 189,
+        "rate": 0.945
+      },
+      "realtime_infra": {
+        "n": 200,
+        "agree": 174,
+        "rate": 0.87
+      },
+      "production_claim": {
+        "n": 200,
+        "agree": 196,
+        "rate": 0.98
+      }
+    },
+    "measured_demo": {
+      "family": {
+        "n": 200,
+        "agree": 146,
+        "rate": 0.73
+      },
+      "tier": {
+        "n": 200,
+        "agree": 129,
+        "rate": 0.645
+      },
+      "evidence": {
+        "n": 200,
+        "agree": 176,
+        "rate": 0.88
+      },
+      "framing": {
+        "n": 200,
+        "agree": 148,
+        "rate": 0.74
+      },
+      "baseline": {
+        "n": 200,
+        "agree": 173,
+        "rate": 0.865
+      },
+      "realtime_infra": {
+        "n": 200,
+        "agree": 177,
+        "rate": 0.885
+      },
+      "production_claim": {
+        "n": 200,
+        "agree": 195,
+        "rate": 0.975
+      }
+    },
+    "not_realtime_family_not_games": {
+      "family": {
+        "n": 200,
+        "agree": 138,
+        "rate": 0.69
+      },
+      "tier": {
+        "n": 200,
+        "agree": 129,
+        "rate": 0.645
+      },
+      "evidence": {
+        "n": 200,
+        "agree": 179,
+        "rate": 0.895
+      },
+      "framing": {
+        "n": 200,
+        "agree": 150,
+        "rate": 0.75
+      },
+      "baseline": {
+        "n": 200,
+        "agree": 181,
+        "rate": 0.905
+      },
+      "realtime_infra": {
+        "n": 200,
+        "agree": 175,
+        "rate": 0.875
+      },
+      "production_claim": {
+        "n": 200,
+        "agree": 195,
+        "rate": 0.975
+      }
+    },
+    "realtime_infra_false": {
+      "family": {
+        "n": 200,
+        "agree": 126,
+        "rate": 0.63
+      },
+      "tier": {
+        "n": 200,
+        "agree": 128,
+        "rate": 0.64
+      },
+      "evidence": {
+        "n": 200,
+        "agree": 183,
+        "rate": 0.915
+      },
+      "framing": {
+        "n": 200,
+        "agree": 145,
+        "rate": 0.725
+      },
+      "baseline": {
+        "n": 200,
+        "agree": 180,
+        "rate": 0.9
+      },
+      "realtime_infra": {
+        "n": 200,
+        "agree": 195,
+        "rate": 0.975
+      },
+      "production_claim": {
+        "n": 200,
+        "agree": 193,
+        "rate": 0.965
+      }
+    },
+    "realtime_infra_true_nongame": {
+      "family": {
+        "n": 100,
+        "agree": 71,
+        "rate": 0.71
+      },
+      "tier": {
+        "n": 100,
+        "agree": 62,
+        "rate": 0.62
+      },
+      "evidence": {
+        "n": 100,
+        "agree": 92,
+        "rate": 0.92
+      },
+      "framing": {
+        "n": 100,
+        "agree": 70,
+        "rate": 0.7
+      },
+      "baseline": {
+        "n": 100,
+        "agree": 92,
+        "rate": 0.92
+      },
+      "realtime_infra": {
+        "n": 100,
+        "agree": 55,
+        "rate": 0.55
+      },
+      "production_claim": {
+        "n": 100,
+        "agree": 97,
+        "rate": 0.97
+      }
+    },
+    "other_or_meta": {
+      "family": {
+        "n": 150,
+        "agree": 106,
+        "rate": 0.7066666666666667
+      },
+      "tier": {
+        "n": 150,
+        "agree": 120,
+        "rate": 0.8
+      },
+      "evidence": {
+        "n": 150,
+        "agree": 127,
+        "rate": 0.8466666666666667
+      },
+      "framing": {
+        "n": 150,
+        "agree": 121,
+        "rate": 0.8066666666666666
+      },
+      "baseline": {
+        "n": 150,
+        "agree": 141,
+        "rate": 0.94
+      },
+      "realtime_infra": {
+        "n": 150,
+        "agree": 145,
+        "rate": 0.9666666666666667
+      },
+      "production_claim": {
+        "n": 150,
+        "agree": 149,
+        "rate": 0.9933333333333333
+      }
+    },
+    "tier_under_300ms": {
+      "family": {
+        "n": 150,
+        "agree": 137,
+        "rate": 0.9133333333333333
+      },
+      "tier": {
+        "n": 150,
+        "agree": 74,
+        "rate": 0.49333333333333335
+      },
+      "evidence": {
+        "n": 150,
+        "agree": 146,
+        "rate": 0.9733333333333334
+      },
+      "framing": {
+        "n": 150,
+        "agree": 117,
+        "rate": 0.78
+      },
+      "baseline": {
+        "n": 150,
+        "agree": 141,
+        "rate": 0.94
+      },
+      "realtime_infra": {
+        "n": 150,
+        "agree": 114,
+        "rate": 0.76
+      },
+      "production_claim": {
+        "n": 150,
+        "agree": 149,
+        "rate": 0.9933333333333333
+      }
+    },
+    "all_labelled": {
+      "family": {
+        "n": 1681,
+        "agree": 1193,
+        "rate": 0.7096966091612136
+      },
+      "tier": {
+        "n": 1681,
+        "agree": 1041,
+        "rate": 0.619274241522903
+      },
+      "evidence": {
+        "n": 1681,
+        "agree": 1500,
+        "rate": 0.892325996430696
+      },
+      "framing": {
+        "n": 1681,
+        "agree": 1275,
+        "rate": 0.7584770969660916
+      },
+      "baseline": {
+        "n": 1681,
+        "agree": 1504,
+        "rate": 0.8947055324211779
+      },
+      "realtime_infra": {
+        "n": 1681,
+        "agree": 1439,
+        "rate": 0.8560380725758477
+      },
+      "production_claim": {
+        "n": 1681,
+        "agree": 1646,
+        "rate": 0.9791790600832838
+      }
+    }
+  },
+  "claim1": {
+    "denominator": 5709,
+    "model": {
+      "none_pct": 81.3977929584866,
+      "frontier_pct": 12.08617971623752,
+      "small_pct": 2.9952706253284287,
+      "replacement_n": 201,
+      "replacement_pct": 3.5207566999474516
+    },
+    "none_sample_baseline": {
+      "none": 285,
+      "classic_classifier_or_ml": 2,
+      "small_llm": 6,
+      "rules_or_regex": 2,
+      "frontier_llm": 5
+    },
+    "replacement_stratum_baseline": {
+      "none": 50,
+      "vendor_api": 17,
+      "rules_or_regex": 82,
+      "small_llm": 9,
+      "classic_classifier_or_ml": 38,
+      "frontier_llm": 5
+    },
+    "corrected": {
+      "none": {
+        "census_in_replacement_stratum": 50,
+        "in_none_sample": 285,
+        "scaled_from_none": {
+          "est": 4464.65,
+          "lo": 4321.300646521062,
+          "hi": 4555.1207361994075,
+          "wilson": {
+            "k": 285,
+            "n": 300,
+            "p": 0.95,
+            "lo": 0.9191522802928904,
+            "hi": 0.9694686327091473
+          },
+          "stratum_n": 4647
+        },
+        "assumed_from_unsampled_frontier_and_small": 0,
+        "est_count": 4464.65,
+        "lo": 4321.300646521062,
+        "hi": 4555.1207361994075,
+        "est_pct": 78.2037134349273,
+        "lo_pct": 75.69277713296658,
+        "hi_pct": 79.7884171693713
+      },
+      "frontier_llm": {
+        "census_in_replacement_stratum": 5,
+        "in_none_sample": 5,
+        "scaled_from_none": {
+          "est": 82.45,
+          "lo": 38.17666188276238,
+          "hi": 183.51889001006595,
+          "wilson": {
+            "k": 5,
+            "n": 300,
+            "p": 0.016666666666666666,
+            "lo": 0.0071393720427721935,
+            "hi": 0.038415943621705605
+          },
+          "stratum_n": 4647
+        },
+        "assumed_from_unsampled_frontier_and_small": 690,
+        "est_count": 772.45,
+        "lo": 728.1766618827623,
+        "hi": 873.5188900100659,
+        "est_pct": 13.530390611315466,
+        "lo_pct": 12.7548898560652,
+        "hi_pct": 15.30073375389851
+      },
+      "small_llm": {
+        "census_in_replacement_stratum": 9,
+        "in_none_sample": 6,
+        "scaled_from_none": {
+          "est": 101.94,
+          "lo": 51.74081069693223,
+          "hi": 208.54304773456627,
+          "wilson": {
+            "k": 6,
+            "n": 300,
+            "p": 0.02,
+            "lo": 0.009197506067771085,
+            "hi": 0.042940186730055147
+          },
+          "stratum_n": 4647
+        },
+        "assumed_from_unsampled_frontier_and_small": 171,
+        "est_count": 272.94,
+        "lo": 222.74081069693221,
+        "hi": 379.54304773456624,
+        "est_pct": 4.780872306883867,
+        "lo_pct": 3.9015731423529902,
+        "hi_pct": 6.648152876765917
+      },
+      "replacement": {
+        "census_in_replacement_stratum": 137,
+        "in_none_sample": 4,
+        "scaled_from_none": {
+          "est": 198.96,
+          "lo": 161.14989060070548,
+          "hi": 293.9573547534527,
+          "wilson": {
+            "k": 4,
+            "n": 300,
+            "p": 0.013333333333333334,
+            "lo": 0.005196877684679467,
+            "hi": 0.03377606084644991
+          },
+          "stratum_n": 4647
+        },
+        "assumed_from_unsampled_frontier_and_small": 0,
+        "est_count": 198.96,
+        "lo": 161.14989060070548,
+        "hi": 293.9573547534527,
+        "est_pct": 3.485023646873358,
+        "lo_pct": 2.8227341145683216,
+        "hi_pct": 5.149016548492778
+      }
+    },
+    "gap": "Frontier and small strata were not sampled. Their model counts are added unchanged. False baselines inside those 861 cards are not corrected."
+  },
+  "claim2": {
+    "model_strict_n": 15,
+    "model_strict_pct": 0.2627430373095113,
+    "hold_on_reread": 8,
+    "misses_in_demo_no_numbers_sample": 0,
+    "misses_in_measured_demo_sample": 0,
+    "est_count": 8.0,
+    "lo": 8.0,
+    "hi": 113.7072471958619,
+    "est_pct": 0.14012961989840603,
+    "lo_pct": 0.14012961989840603,
+    "hi_pct": 1.9917191661562776,
+    "interval": "sum of per-stratum Wilson bounds, conservative",
+    "v1_rows": null
+  },
+  "claim3": {
+    "model_pct": {
+      "demo": 37.72990015764582,
+      "hype": 11.473112629181994,
+      "cost_only": 23.279033105622702,
+      "material_plus": 1.5939744263443685
+    },
+    "buckets": {
+      "noise": {
+        "est_count": 1189.675,
+        "lo": 916.4344470064455,
+        "hi": 1526.5707648835714,
+        "est_pct": 20.838588194079524,
+        "lo_pct": 16.05245134010239,
+        "hi_pct": 26.739722628894228,
+        "from_demo_no_numbers_sample": 47,
+        "from_measured_demo_sample": 26,
+        "from_production_census": 4,
+        "from_unsampled_proposal_and_commentary_model": 70
+      },
+      "hype": {
+        "est_count": 885.05,
+        "lo": 652.0609300256939,
+        "hi": 1190.613154165168,
+        "est_pct": 15.502715011385531,
+        "lo_pct": 11.421631284387702,
+        "hi_pct": 20.85502109240091,
+        "from_demo_no_numbers_sample": 42,
+        "from_measured_demo_sample": 11,
+        "from_production_census": 0,
+        "from_unsampled_proposal_and_commentary_model": 6
+      },
+      "demo": {
+        "est_count": 1981.96,
+        "lo": 1696.9109292562896,
+        "hi": 2298.3891782781884,
+        "est_pct": 34.7164126817306,
+        "lo_pct": 29.723435439766853,
+        "hi_pct": 40.259050241341534,
+        "from_demo_no_numbers_sample": 104,
+        "from_measured_demo_sample": 6,
+        "from_production_census": 1,
+        "from_unsampled_proposal_and_commentary_model": 9
+      },
+      "cost_only": {
+        "est_count": 1421.8300000000002,
+        "lo": 1231.782083116892,
+        "hi": 1664.3704510076443,
+        "est_pct": 24.905062182518837,
+        "lo_pct": 21.576144388104606,
+        "hi_pct": 29.153449833729976,
+        "from_demo_no_numbers_sample": 6,
+        "from_measured_demo_sample": 135,
+        "from_production_census": 10,
+        "from_unsampled_proposal_and_commentary_model": 0
+      },
+      "fast_loop": {
+        "est_count": 125.32000000000001,
+        "lo": 73.98890418873681,
+        "hi": 277.63478008375716,
+        "est_pct": 2.1951304957085305,
+        "lo_pct": 1.296004627583409,
+        "hi_pct": 4.863107025464305,
+        "from_demo_no_numbers_sample": 0,
+        "from_measured_demo_sample": 13,
+        "from_production_census": 0,
+        "from_unsampled_proposal_and_commentary_model": 0
+      },
+      "material_vs_frontier": {
+        "est_count": 19.28,
+        "lo": 5.295445964078074,
+        "hi": 138.24509924357335,
+        "est_pct": 0.3377123839551585,
+        "lo_pct": 0.09275610376735109,
+        "hi_pct": 2.421529151227419,
+        "from_demo_no_numbers_sample": 0,
+        "from_measured_demo_sample": 2,
+        "from_production_census": 0,
+        "from_unsampled_proposal_and_commentary_model": 0
+      },
+      "material": {
+        "est_count": 85.885,
+        "lo": 36.1335262876815,
+        "hi": 238.10654247159042,
+        "est_pct": 1.504379050621825,
+        "lo_pct": 0.6329221630352339,
+        "hi_pct": 4.170722411483454,
+        "from_demo_no_numbers_sample": 1,
+        "from_measured_demo_sample": 7,
+        "from_production_census": 0,
+        "from_unsampled_proposal_and_commentary_model": 0
+      }
+    },
+    "material_census_n": 91,
+    "material_census_still_material": 38,
+    "material_census_still_material_and_games": 2,
+    "material_census_still_material_nongames": 36,
+    "unsampled_remainder_n": 85
+  },
+  "claim4": {
+    "model_n": 156,
+    "model_pct": 2.7325275880189177,
+    "census_still_in_family": 104,
+    "misses_in_negative_sample": 5,
+    "est_count": 215.875,
+    "lo": 151.992412581775,
+    "hi": 359.87667007848677,
+    "est_pct": 3.78131021194605,
+    "lo_pct": 2.66232987531573,
+    "hi_pct": 6.303672623550303,
+    "census_measured_production": 0,
+    "census_production_claim": 0,
+    "negative_sample_productionish": 1,
+    "gap": "The negative sample excludes games, so a game that is really voice or live chat is not in the miss rate."
+  },
+  "claim5": {
+    "model_pct": 30.443159922928707,
+    "model_nongame_pct": 12.611665790856541,
+    "true_nongame_sample_still_true_and_nongame": 51,
+    "true_nongame_sample_n": 100,
+    "false_sample_flipped_nongame": 4,
+    "false_sample_flipped_any": 5,
+    "false_sample_n": 200,
+    "nongame_est_count": 446.62,
+    "nongame_lo": 328.6953274379872,
+    "nongame_hi": 635.8559372559446,
+    "nongame_est_pct": 7.823086354878263,
+    "nongame_lo_pct": 5.757493912033407,
+    "nongame_hi_pct": 11.137781349727529,
+    "any_realtime_est_count": 1484.475,
+    "any_realtime_note": "Adds the model count of realtime games unchanged.",
+    "games_in_fast_tier_sample": 136,
+    "games_in_fast_tier_sample_i_call_realtime": 100,
+    "model_realtime_games": 1018,
+    "any_realtime_est_pct": 26.002364687335785
+  },
+  "claim6": {
+    "model_fast_n": 1064,
+    "model_fast_games": 966,
+    "sample_n": 150,
+    "sample_i_still_call_fast": 76,
+    "sample_i_call_fast_and_game": 69,
+    "conditional_games_share": {
+      "k": 69,
+      "n": 76,
+      "p": 0.9078947368421053,
+      "lo": 0.8218709721189175,
+      "hi": 0.9546665722188714
+    },
+    "conditional_pct": 90.78947368421053,
+    "conditional_lo_pct": 82.18709721189174,
+    "conditional_hi_pct": 95.46665722188715
+  },
+  "claim7": {
+    "model_meta_n": 1203,
+    "model_meta_pct": 21.071991592222805,
+    "sample_n": 150,
+    "sample_still_meta": 106,
+    "sample_moved": {
+      "not_a_jev_build": 10,
+      "classification_routing_triage": 14,
+      "collaboration_and_typing": 5,
+      "search_rerank_extraction": 4,
+      "agent_harness_and_tool_gating": 2,
+      "games_control_loops_simulation": 5,
+      "evals_and_judging": 3,
+      "live_chat_streams_events": 1
+    },
+    "subtype_among_still": {
+      "benchmark_of_the_model": 28,
+      "unrelated_or_unclear": 41,
+      "tooling_or_wrapper": 19,
+      "explainer_or_tutorial": 9,
+      "hot_take_or_commentary": 3,
+      "meme_or_joke": 2,
+      "news_or_repost": 4
+    },
+    "est_meta_count": 850.12,
+    "est_meta_pct": 14.890874058504115,
+    "est_meta_lo_pct": 13.262185222056742,
+    "est_meta_hi_pct": 16.30207035284574,
+    "vague_or_benchmark_or_wrapper_in_sample": 88,
+    "vague_est_count": 705.76,
+    "vague_est_pct": 12.36223506743738,
+    "meme": {
+      "k": 2,
+      "n": 150,
+      "p": 0.013333333333333334,
+      "lo": 0.0036640523882232115,
+      "hi": 0.047307856380276334
+    },
+    "hot": {
+      "k": 3,
+      "n": 150,
+      "p": 0.02,
+      "lo": 0.006824627715648315,
+      "hi": 0.05714766586424165
+    },
+    "meme_est_pct_of_posts": 0.2809598878963041,
+    "hot_est_pct_of_posts": 0.4214398318444561,
+    "model_meme_n": 14,
+    "model_hot_n": 12
+  },
+  "claim8": {
+    "cards": 5709,
+    "top1_cards": 58,
+    "top1_share": 0.5336907044857159,
+    "cards_holding_half": 49,
+    "half_pct_of_posts": 0.8582939218777369,
+    "suspect_n": 9,
+    "suspect_share": 0.12275316492081348,
+    "top1_excl_suspect": 0.4958764779310695,
+    "top1_likes_share": 0.474856159108413
+  },
+  "claim9": {
+    "n": 5943,
+    "agree_sonnet": 4561,
+    "agree_pct": 76.74575130405519,
+    "p_ge_099": 1653,
+    "p_ge_099_agree_sonnet": 1611,
+    "p_ge_099_agree_sonnet_pct": 97.45916515426497,
+    "p_ge_099_in_my_labels": 464,
+    "p_ge_099_matches_my_family": 455,
+    "p_ge_099_match_my_family_pct": 98.0603448275862
+  },
+  "claim10": {
+    "cost_chips": 126,
+    "cost_median": 28.0,
+    "cost_median_without_1x": 34.0,
+    "cost_1x": 8,
+    "speed_chips": 299,
+    "speed_median": 6.0,
+    "speed_median_without_1x": 8.5,
+    "speed_1x": 52
+  },
+  "material_combined": {
+    "census_survivors": 38,
+    "census_survivors_nongame": 36,
+    "census_pct": 0.6656156945174286,
+    "measured_demo_outside_n": 1838,
+    "measured_demo_outside_sample_n": 192,
+    "measured_demo_outside_misses": 6,
+    "demo_no_numbers_misses": 1,
+    "est_count": 113.8425,
+    "lo": 67.71638016378132,
+    "hi": 262.44761251979617,
+    "est_pct": 1.994088281660536,
+    "lo_pct": 1.18613382665583,
+    "hi_pct": 4.597085523205398
+  },
+  "prose_buckets": {
+    "hype_cost_speed_accuracy": {
+      "est_pct": 16.075232089682956,
+      "lo_pct": 11.86958466382047,
+      "hi_pct": 21.527221444513707,
+      "est_count": 917.735,
+      "sample_demo_no_numbers": 43,
+      "sample_measured_demo": 13,
+      "production_census": 1
+    },
+    "demo_other_unmeasured": {
+      "est_pct": 35.694780171658785,
+      "lo_pct": 30.63115265332158,
+      "hi_pct": 41.26524938042887,
+      "est_count": 2037.815,
+      "sample_demo_no_numbers": 107,
+      "sample_measured_demo": 7,
+      "production_census": 1
+    },
+    "cost_only_as_described": {
+      "est_pct": 12.501926782273605,
+      "lo_pct": 9.767807262506198,
+      "hi_pct": 16.61839373877505,
+      "est_count": 713.7350000000001,
+      "sample_demo_no_numbers": 3,
+      "sample_measured_demo": 68,
+      "production_census": 3
+    }
+  },
+  "baseline_sensitivity": {
+    "frontier_llm": {
+      "n": 151,
+      "mine": {
+        "frontier_llm": 115,
+        "none": 29,
+        "small_llm": 6,
+        "vendor_api": 1
+      }
+    },
+    "small_llm": {
+      "n": 40,
+      "mine": {
+        "small_llm": 27,
+        "none": 5,
+        "classic_classifier_or_ml": 1,
+        "rules_or_regex": 1,
+        "frontier_llm": 6
+      }
+    },
+    "note": "These cards were labelled because they fell into other strata. Not a random sample of the frontier or small stratum."
+  },
+  "prior_agreement": {
+    "overlap": 32,
+    "prior_n": 120,
+    "fields": {
+      "family": {
+        "n": 32,
+        "agree": 27,
+        "rate": 0.84375
+      },
+      "tier": {
+        "n": 32,
+        "agree": 23,
+        "rate": 0.71875
+      },
+      "evidence": {
+        "n": 32,
+        "agree": 30,
+        "rate": 0.9375
+      },
+      "framing": {
+        "n": 32,
+        "agree": 20,
+        "rate": 0.625
+      },
+      "baseline": {
+        "n": 32,
+        "agree": 25,
+        "rate": 0.78125
+      },
+      "realtime_infra": {
+        "n": 32,
+        "agree": 30,
+        "rate": 0.9375
+      },
+      "production_claim": {
+        "n": 32,
+        "agree": 32,
+        "rate": 1.0
+      }
+    },
+    "jev_p99_in_prior": 28,
+    "jev_matches_prior_family": 27,
+    "jev_p99_also_in_my_labels": 9,
+    "jev_matches_me_on_that_overlap": 9
+  }
+}

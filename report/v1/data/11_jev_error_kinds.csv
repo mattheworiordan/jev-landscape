@@ -1,0 +1,4 @@
+error,calls
+Gateway 5xx: service temporarily unavailable,3
+argmax check failed (no single highest-probability option),7
+Gateway rate limit: upstream provider busy,1

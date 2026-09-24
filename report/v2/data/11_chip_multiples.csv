@@ -1,0 +1,3 @@
+claim,chips,cards,median,p25,p75,chips_reading_1x,median_without_1x
+cost multiple (N× cheaper),126,120,28.0,5.25,100.0,8,34.0
+speed multiple (N× faster),299,284,6.0,2.0,16.5,52,8.5

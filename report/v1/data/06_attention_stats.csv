@@ -1,0 +1,2 @@
+total_views,median_views,mean_views,p90_views,gini,cards_holding_half_of_views,cards_under_100_views,cards_10k_plus,cards_100k_plus,top_card_id,top_card_views,top_card_share,top_card_like_rate,median_like_rate,excl_top_card_top1pct_share,excl_top_card_top10pct_share
+46975809,137.0,8124.491352473193,7674.900000000028,0.939,53,2559,511,95,2101206603240477030,3491422,0.07432382910105922,0.0005622351007698296,0.008,0.48208344296080335,0.9247718497216024

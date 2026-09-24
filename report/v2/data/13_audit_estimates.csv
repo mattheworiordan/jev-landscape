@@ -1,0 +1,75 @@
+key,label,unit,value,lo,hi,model,k,n,frame_value,frame_lo,frame_hi,audit_only,audit_only_lo,audit_only_hi,plug,frame_model,frame_audit_only,frame_audit_only_lo,frame_audit_only_hi,source
+snapshot_matches,The Sonnet v2 labels still give the audited strata (1 = yes),flag,1,,,,,,,,,,,,,,,,,scripts/audit.py
+use_case_base,Use-case base the audit sampled (Sonnet v2 labels),posts,5709,,,,,,,,,,,,,,,,,estimate.json use_case_base
+labels_base,Use-case base on the labels under test,posts,5709,,,,,,,,,,,,,,,,,data/classified-sonnet-v2.jsonl
+estimate_base,The base the audited shares are shares of,posts,5709,,,,,,,,,,,,,,,,,estimate.json use_case_base
+labels_refused,Posts the labelling model refused (left out),posts,0,,,,,,,,,,,,,,,,,data/classified-sonnet-v2.errors.jsonl
+labelled,Cards the audit labelled,posts,1681,,,,,,,,,,,,,,,,,estimate.json labelled
+census_unique,Cards in the census strata,posts,422,,,,,,,,,,,,,,,,,strata.json meta
+batches,Label batches,count,43,,,,,,,,,,,,,,,,,strata.json meta
+seed,Sampling seed,count,20260924,,,,,,,,,,,,,,,,,strata.json meta
+agreement_family,"Agreement of the labels under test with the audit on family, all audited cards",rate,0.709697,,,,1193,1681,,,,,,,,,,,,scripts/audit.py agreement_by_stratum
+agreement_frame_family,"Agreement of the Sonnet v2 labels with the audit on family, all audited cards",rate,0.709697,,,,1193,1681,,,,,,,,,,,,estimate.json agreement.all_labelled
+agreement_tier,"Agreement of the labels under test with the audit on tier, all audited cards",rate,0.619274,,,,1041,1681,,,,,,,,,,,,scripts/audit.py agreement_by_stratum
+agreement_frame_tier,"Agreement of the Sonnet v2 labels with the audit on tier, all audited cards",rate,0.619274,,,,1041,1681,,,,,,,,,,,,estimate.json agreement.all_labelled
+agreement_evidence,"Agreement of the labels under test with the audit on evidence, all audited cards",rate,0.892326,,,,1500,1681,,,,,,,,,,,,scripts/audit.py agreement_by_stratum
+agreement_frame_evidence,"Agreement of the Sonnet v2 labels with the audit on evidence, all audited cards",rate,0.892326,,,,1500,1681,,,,,,,,,,,,estimate.json agreement.all_labelled
+agreement_baseline,"Agreement of the labels under test with the audit on baseline, all audited cards",rate,0.894706,,,,1504,1681,,,,,,,,,,,,scripts/audit.py agreement_by_stratum
+agreement_frame_baseline,"Agreement of the Sonnet v2 labels with the audit on baseline, all audited cards",rate,0.894706,,,,1504,1681,,,,,,,,,,,,estimate.json agreement.all_labelled
+agreement_realtime_infra,"Agreement of the labels under test with the audit on realtime_infra, all audited cards",rate,0.856038,,,,1439,1681,,,,,,,,,,,,scripts/audit.py agreement_by_stratum
+agreement_frame_realtime_infra,"Agreement of the Sonnet v2 labels with the audit on realtime_infra, all audited cards",rate,0.856038,,,,1439,1681,,,,,,,,,,,,estimate.json agreement.all_labelled
+agreement_production_claim,"Agreement of the labels under test with the audit on production_claim, all audited cards",rate,0.979179,,,,1646,1681,,,,,,,,,,,,scripts/audit.py agreement_by_stratum
+agreement_frame_production_claim,"Agreement of the Sonnet v2 labels with the audit on production_claim, all audited cards",rate,0.979179,,,,1646,1681,,,,,,,,,,,,estimate.json agreement.all_labelled
+ladder_demo_no_numbers,"Demos with no numbers (evidence demo_no_numbers, no cost, speed or accuracy chip, not meta)",share,0.464695,0.416297,0.514094,0.479944,,,0.464695,0.416297,0.514094,,,,0,,,,,"reestimate(): evidence strata, remainder from the labels"
+ladder_claim_no_number,"A cost, speed or accuracy claim with no measurement (demo_no_numbers with such a chip)",share,0.023662,0.012447,0.052507,0.012086,,,0.023662,0.012447,0.052507,,,,0,,,,,"reestimate(): evidence strata, remainder from the labels"
+ladder_no_measurement,"No measurement (a demo or claim with no numbers, a proposal or commentary)",share,0.671521,0.633988,0.702834,0.65966,,,0.671521,0.633988,0.702834,,,,85,,,,,"reestimate(): evidence strata, remainder from the labels"
+ladder_measured_demo,Measured demo (a number from the author's own run),share,0.327077,0.295765,0.364611,0.337712,,,0.327077,0.295765,0.364611,,,,0,,,,,"reestimate(): evidence strata, remainder from the labels"
+ladder_measured_demo_model,"Measured demos, as the labels count them",posts,1928,,,0.337712,,,,,,,,,,,,,,data/classified-sonnet-v2.jsonl
+production_model,"Measured production, as the labels count them",posts,15,,,0.002627,,,,,,,,,,,,,,data/classified-sonnet-v2.jsonl
+production_strict,Measured production that holds on the audit's re-read,share,0.001401,0.001401,0.019917,0.002627,8,15,0.001401,0.001401,0.019917,,,,0,,,,,estimate.json claim2 logic; remainder from the labels
+production_first_pass,Measured production in the first labelling pass (v1),share,0.01643,,,,95,5782,0.01643,,,,,,,,,,,data/classified-sonnet.jsonl
+baseline_none,Compared with nothing,share,0.782037,0.756928,0.797884,0.813978,,,0.782037,0.756928,0.797884,,,,0,,,,,estimate.json claim1 logic; frontier and small-LLM strata from the labels
+baseline_frontier_llm,Compared with a frontier LLM,share,0.135304,0.127549,0.153007,0.120862,,,0.135304,0.127549,0.153007,,,,690,,,,,estimate.json claim1 logic; frontier and small-LLM strata from the labels
+baseline_small_llm,Compared with a small LLM,share,0.047809,0.039016,0.066482,0.029953,,,0.047809,0.039016,0.066482,,,,171,,,,,estimate.json claim1 logic; frontier and small-LLM strata from the labels
+baseline_replacement,Compared with the tools Jev would replace,share,0.03485,0.028227,0.05149,0.035208,,,0.03485,0.028227,0.05149,,,,0,,,,,estimate.json claim1 logic; frontier and small-LLM strata from the labels
+meta_still,Posts that stay meta on a blind re-read,share,0.148909,0.132622,0.163021,0.21072,106,150,0.148909,0.132622,0.163021,,,,,,,,,estimate.json claim7
+meta_all_samples,"Posts the audit calls meta, over every post (the evidence samples)",share,0.199765,0.161074,0.252893,0.21072,,,0.199765,0.161074,0.252893,,,,0,,,,,"reestimate(): evidence strata, remainder from the labels"
+meta_vague,"Posts that never say what Jev decides, or benchmark or wrap the model",share,0.123622,,,,88,150,0.123622,,,,,,,,,,,estimate.json claim7
+meta_meme,Memes,share,0.00281,,,0.002452,2,150,0.00281,,,,,,,,,,,estimate.json claim7
+meta_hot,Hot takes,share,0.004214,,,0.002102,3,150,0.004214,,,,,,,,,,,estimate.json claim7
+sub300_set,Posts that need a decision in under 300 ms,share,0.094429,0.079673,0.109122,0.186372,76,150,0.094429,0.079673,0.109122,,,,,,,,,"estimate.json claim6, Wilson"
+sub300_games,Share of the under-300 ms posts that are games,share,0.907895,0.821871,0.954667,0.907895,69,76,0.907895,0.821871,0.954667,,,,,,,,,estimate.json claim6
+rt_families,"Voice, live chat or collaboration",share,0.037813,0.026623,0.063037,0.027325,104,156,0.037813,0.026623,0.063037,,,,0,,,,,estimate.json claim4 logic; games from the labels
+rt_families_production,"Voice, live chat or collaboration in measured production",posts,0,,,,,,,,,,,,,,,,,estimate.json claim4 census; games from the labels
+rt_families_production_claims,"Voice, live chat or collaboration claiming production",posts,0,,,,,,,,,,,,,,,,,estimate.json claim4 census; games from the labels
+live_loop_nongame,A live loop outside games,share,0.078231,0.057575,0.111378,0.126117,51,100,0.078231,0.057575,0.111378,,,,0,,,,,estimate.json claim5 logic; flagged games from the labels
+live_loop_all,"A live loop, games included",share,0.217073,,,0.304432,100,136,0.217073,,,,,,,,,,,estimate.json claim5: the games' live-loop rate times the games
+attention_top1_views,Share of views on the top 1% of posts (audit base),share,0.533691,,,,58,5709,0.533691,,,,,,,,,,,estimate.json claim8
+attention_top1_views_excl_suspect,The same without the suspect posts,share,0.495876,,,,9,,0.495876,,,,,,,,,,,estimate.json claim8
+attention_top1_likes,Share of likes on the top 1% of posts,share,0.474856,,,,,,0.474856,,,,,,,,,,,estimate.json claim8
+attention_suspect_share,Views on the suspect posts,share,0.122753,,,,9,,0.122753,,,,,,,,,,,estimate.json claim8
+attention_top_card,Views on the single most-viewed post,share,0.077347,,,,3491422,,0.077347,,,,,,,,,,,review/estimate.py load_model()
+attention_half_cards,Posts that hold half of all views,posts,49,,,,,,,,,,,,,,,,,estimate.json claim8
+jev_agree,"Jev picks the Sonnet v2 family (5,943 deduplicated cards)",share,0.767458,,,,4561,5943,0.767458,,,,,,,,,,,estimate.json claim9
+jev_audit_p99,Jev matches the audit's family at 0.99 or more,share,0.980603,,,,455,464,0.980603,,,,,,,,,,,estimate.json claim9
+jev_prior_p99,Jev matches the earlier 120-card labels at 0.99 or more,share,0.964286,,,,27,28,0.964286,,,,,,,,,,,estimate.json prior_agreement
+chips_cost_median,Median cost multiple on the claim chips,multiple,28.0,,,,,126,,,,,,,,,,,,estimate.json claim10
+chips_cost_median_without_1x,Median cost multiple without the 1x chips,multiple,34.0,,,,8,,,,,,,,,,,,,estimate.json claim10
+chips_speed_median,Median speed multiple on the claim chips,multiple,6.0,,,,,299,,,,,,,,,,,,estimate.json claim10
+chips_speed_median_without_1x,Median speed multiple without the 1x chips,multiple,8.5,,,,52,,,,,,,,,,,,,estimate.json claim10
+candidates,"Candidate builds (measured, realtime, turn or interaction tier, Sonnet labels)",posts,91,,,,,,,,,,,,,,,,,estimate.json claim3.material_census_n
+candidates_still_meeting,Candidates that still meet that test on the audit's labels,posts,38,,,0.006656,36,,,,,,,,,,,,,estimate.json claim3
+candidates_combined,"Posts that meet that test, misses included",share,0.019941,0.011861,0.045971,0.01594,,,0.019941,0.011861,0.045971,,,,,,,,,estimate.json material_combined
+cost_only_as_described,"Measured, and a batch or an incumbent already did the job",share,0.125019,0.097678,0.166184,0.23279,,,0.125019,0.097678,0.166184,,,,,,,,,estimate.json prose_buckets.cost_only_as_described
+cost_only_bin_baseline_none,Posts in the published cost-only bin with no comparison,posts,831,,,,,1329,,,,,,,,,,,,review/arithmetic.py rules
+limits_frontier_stratum,Posts with a frontier-LLM baseline (not sampled),posts,690,,,,115,151,,,,,,,,,,,,"the Sonnet v2 frame; baseline_sensitivity (k of n: labelled elsewhere, still frontier)"
+limits_small_stratum,Posts with a small-LLM baseline (not sampled),posts,171,,,,27,40,,,,,,,,,,,,"the Sonnet v2 frame; baseline_sensitivity (k of n: labelled elsewhere, still small)"
+limits_unsampled_remainder,Proposal and commentary posts left on the model's label,posts,85,,,,,,,,,,,,,,,,,estimate.json claim3.unsampled_remainder_n
+limits_numeric_chip,Audited demos with no numbers that still carry a numeric chip,posts,48,,,,48,1023,,,,,,,,,,,,review/hand-labels-grok.jsonl and data/cards.json chips
+limits_prior_overlap,Overlap with the earlier 120 hand labels (k: family agrees),posts,32,,,,27,32,,,,,,,,,,,,estimate.json prior_agreement
+substance_n,Candidate builds read for substance,posts,91,,,,,,,,,,,,,,,,,review/work/substance.py
+substance_distinct,Distinct builds among them,posts,85,,,,,,,,,,,,,,,,,review/work/substance.py
+substance_unavailable,Unavailable at any price before Jev,posts,0,,,,,,,,,,,,,,,,,review/work/substance.py
+production_primary_other,Production posts on the labels under test outside the audit's re-read (n: the audit labelled them in its samples; k: it calls them measured production),posts,0,,,,0,0,,,,,,,,,,,,data/classified-sonnet-v2.jsonl
+production_primary_in_census,Production posts on the labels under test that the audit re-read (k: hold),posts,15,,,,8,15,,,,,,,,,,,,data/classified-sonnet-v2.jsonl
+production_audit_unconfirmed,Posts the audit's first-pass labels call measured production outside its re-read (k: the labels under test agree),posts,3,,,,0,3,,,,,,,,,,,,review/hand-labels-grok.jsonl

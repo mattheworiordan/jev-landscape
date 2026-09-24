@@ -1,0 +1,1387 @@
+{
+ "posts": 5950,
+ "authors": 4593,
+ "window_utc": [
+  "2026-09-16 00:28:26.330000+00:00",
+  "2026-09-23 18:44:13.601000+00:00"
+ ],
+ "classified_sonnet_v2": 5950,
+ "duplicates_merged": 7,
+ "duplicate_groups": 7,
+ "after_dedupe": 5943,
+ "not_a_jev_build": 234,
+ "use_case_base": 5709,
+ "window_days": [
+  "2026-09-16",
+  "2026-09-23"
+ ],
+ "window_text": "16 to 23 September",
+ "last_day_partial": true,
+ "feed": {
+  "updated": "2026-09-23 18:47 UTC",
+  "analysed": 115907,
+  "through": "2026-09-23",
+  "feed_cards": 5944,
+  "kept_from_earlier": 6,
+  "cut_after_through": 0,
+  "snapshots": [
+   "cards-20260923-1042.json",
+   "cards-20260923-1847.json"
+  ]
+ },
+ "v1_set": {
+  "cards": 5782,
+  "authors": 4469
+ },
+ "labels": {
+  "file": "data/classified-sonnet-v2.jsonl",
+  "model": "Claude Sonnet 5",
+  "short": "Sonnet",
+  "tag": "Sonnet v2",
+  "audited": true,
+  "audited_model": "Claude Sonnet 5"
+ },
+ "not_a_jev_build_stats": {
+  "cards": 234,
+  "share_of_deduped": 0.03937405350832913,
+  "views": 2139400,
+  "share_views": 0.04525068815670368,
+  "likes": 18566,
+  "share_likes": 0.05667484767451799,
+  "median_views": 119.0
+ },
+ "family": {
+  "other_or_meta": {
+   "posts": 1203,
+   "share_posts": 0.2107,
+   "share_views": 0.1351,
+   "share_likes": 0.1493,
+   "views_index": 0.641,
+   "likes_index": 0.709,
+   "median_views": 120.0
+  },
+  "games_control_loops_simulation": {
+   "posts": 1078,
+   "share_posts": 0.1888,
+   "share_views": 0.1238,
+   "share_likes": 0.1275,
+   "views_index": 0.656,
+   "likes_index": 0.675,
+   "median_views": 176.0
+  },
+  "classification_routing_triage": {
+   "posts": 886,
+   "share_posts": 0.1552,
+   "share_views": 0.1834,
+   "share_likes": 0.134,
+   "views_index": 1.182,
+   "likes_index": 0.864,
+   "median_views": 108.5
+  },
+  "agent_harness_and_tool_gating": {
+   "posts": 472,
+   "share_posts": 0.0827,
+   "share_views": 0.0817,
+   "share_likes": 0.0957,
+   "views_index": 0.988,
+   "likes_index": 1.157,
+   "median_views": 118.0
+  },
+  "search_rerank_extraction": {
+   "posts": 437,
+   "share_posts": 0.0765,
+   "share_views": 0.0684,
+   "share_likes": 0.0716,
+   "views_index": 0.894,
+   "likes_index": 0.936,
+   "median_views": 112.0
+  },
+  "evals_and_judging": {
+   "posts": 372,
+   "share_posts": 0.0652,
+   "share_views": 0.0352,
+   "share_likes": 0.033,
+   "views_index": 0.541,
+   "likes_index": 0.507,
+   "median_views": 100.0
+  },
+  "moderation_and_guardrails": {
+   "posts": 306,
+   "share_posts": 0.0536,
+   "share_views": 0.0336,
+   "share_likes": 0.0475,
+   "views_index": 0.628,
+   "likes_index": 0.887,
+   "median_views": 102.5
+  },
+  "trading_and_markets": {
+   "posts": 267,
+   "share_posts": 0.0468,
+   "share_views": 0.0734,
+   "share_likes": 0.0827,
+   "views_index": 1.57,
+   "likes_index": 1.769,
+   "median_views": 180.0
+  },
+  "data_and_telemetry": {
+   "posts": 237,
+   "share_posts": 0.0415,
+   "share_views": 0.0396,
+   "share_likes": 0.0439,
+   "views_index": 0.953,
+   "likes_index": 1.059,
+   "median_views": 211.0
+  },
+  "browser_and_computer_use": {
+   "posts": 224,
+   "share_posts": 0.0392,
+   "share_views": 0.1284,
+   "share_likes": 0.121,
+   "views_index": 3.272,
+   "likes_index": 3.085,
+   "median_views": 270.5
+  },
+  "compaction_and_context": {
+   "posts": 71,
+   "share_posts": 0.0124,
+   "share_views": 0.0349,
+   "share_likes": 0.0403,
+   "views_index": 2.807,
+   "likes_index": 3.238,
+   "median_views": 133.0
+  },
+  "live_chat_streams_events": {
+   "posts": 58,
+   "share_posts": 0.0102,
+   "share_views": 0.0356,
+   "share_likes": 0.0289,
+   "views_index": 3.499,
+   "likes_index": 2.844,
+   "median_views": 296.0
+  },
+  "collaboration_and_typing": {
+   "posts": 50,
+   "share_posts": 0.0088,
+   "share_views": 0.0237,
+   "share_likes": 0.0194,
+   "views_index": 2.711,
+   "likes_index": 2.22,
+   "median_views": 520.5
+  },
+  "voice_and_turn_taking": {
+   "posts": 48,
+   "share_posts": 0.0084,
+   "share_views": 0.0032,
+   "share_likes": 0.005,
+   "views_index": 0.376,
+   "likes_index": 0.597,
+   "median_views": 289.0
+  }
+ },
+ "snake": {
+  "id": "2101675124747338229",
+  "title": "",
+  "url": "https://x.com/NFT_Chen/status/2101675124747338229",
+  "views": 766872,
+  "likes": 4089,
+  "family_v1": "other_or_meta",
+  "family_v2_sonnet": "games_control_loops_simulation",
+  "family_used": "games_control_loops_simulation",
+  "override_applied": false,
+  "effect": {
+   "games_control_loops_simulation": {
+    "share_views_meta": 0.10681501823715621,
+    "share_views_rule3": 0.12380397549911952,
+    "views_index_meta": 0.5662088571178503,
+    "views_index_rule3": 0.6556557477963575,
+    "share_likes_meta": 0.1142378212554446,
+    "share_likes_rule3": 0.1274698888752257
+   },
+   "other_or_meta": {
+    "share_views_meta": 0.15209194336686374,
+    "share_views_rule3": 0.13510298610490043,
+    "views_index_meta": 0.7211735088716155,
+    "views_index_rule3": 0.6411495824379689,
+    "share_likes_meta": 0.162541825501097,
+    "share_likes_rule3": 0.1493097578813159
+   }
+  }
+ },
+ "sub300": {
+  "cards": 1064,
+  "share": 0.18637239446488002,
+  "games": 966,
+  "games_share": 0.9078947368421053
+ },
+ "evidence": {
+  "measured_production": 15,
+  "measured_demo": 1928,
+  "demo_no_numbers": 3681,
+  "proposal_or_idea": 26,
+  "commentary_or_meme": 59
+ },
+ "baseline": {
+  "frontier_llm": 690,
+  "small_llm": 171,
+  "classic_classifier_or_ml": 77,
+  "vendor_api": 30,
+  "rules_or_regex": 94,
+  "none": 4647
+ },
+ "baseline_shares": {
+  "none": 0.813977929584866,
+  "frontier_llm": 0.1208617971623752,
+  "small_llm": 0.02995270625328429,
+  "incumbent_classic_rules_vendor": 0.03520756699947451
+ },
+ "concentration": {
+  "total_views": 45139439,
+  "total_likes": 309022,
+  "median_views": 134.0,
+  "median_likes": 2.0,
+  "mean_views": 7906.715536871607,
+  "gini_views": 0.941,
+  "gini_likes": 0.93,
+  "cards_holding_half_of_views": 49,
+  "cards_under_100_views": 2556,
+  "top1pct_views": 0.5336907044857159,
+  "top1pct_likes": 0.474856159108413,
+  "top10pct_views": 0.9324402768940039,
+  "top_card_id": "2101206603240477030",
+  "top_card_views": 3491422,
+  "top_card_likes": 1963,
+  "top_card_share": 0.0773474832064262,
+  "top_card_like_rate": 0.0005622351007698296,
+  "median_like_rate_1k_plus": 0.0076448049947374485,
+  "top1pct_views_excl_top_card": 0.4980128825821407,
+  "suspect_cards": 9,
+  "suspect_share_views": 0.12275316492081348,
+  "top1pct_views_excl_suspect": 0.4958764779310695,
+  "raw_all_cards_top1pct_views": 0.5230077152965704
+ },
+ "by_day": {
+  "2026-09-16": {
+   "posts": 93,
+   "median_views": 793.0,
+   "median_likes": 8.0
+  },
+  "2026-09-17": {
+   "posts": 725,
+   "median_views": 253.0,
+   "median_likes": 3.0
+  },
+  "2026-09-18": {
+   "posts": 963,
+   "median_views": 171.0,
+   "median_likes": 2.0
+  },
+  "2026-09-19": {
+   "posts": 1047,
+   "median_views": 163.0,
+   "median_likes": 2.0
+  },
+  "2026-09-20": {
+   "posts": 957,
+   "median_views": 107.0,
+   "median_likes": 2.0
+  },
+  "2026-09-21": {
+   "posts": 931,
+   "median_views": 140.0,
+   "median_likes": 2.0
+  },
+  "2026-09-22": {
+   "posts": 644,
+   "median_views": 93.0,
+   "median_likes": 1.0
+  },
+  "2026-09-23": {
+   "posts": 349,
+   "median_views": 40.0,
+   "median_likes": 1.0
+  }
+ },
+ "realtime": {
+  "cards": 1738,
+  "share_posts": 0.3044315992292871,
+  "share_views": 0.3958953278085711,
+  "share_likes": 0.41387020988796913,
+  "games_share_of_realtime": 0.5857307249712314,
+  "non_game_cards": 720,
+  "non_game_share_of_all_posts": 0.1261166579085654,
+  "non_game_share_of_non_game_posts": 0.1554739797020082,
+  "non_game_share_views": 0.2787725385776283,
+  "measured_production": 2,
+  "measured_production_non_game": 2,
+  "production_claims": 22,
+  "v1_share_all_cards": 0.25821515046696647,
+  "hand_sample": {
+   "n": 120,
+   "hand": 0.21666666666666667,
+   "v1": 0.26666666666666666,
+   "v2": 0.3,
+   "hand_non_game": 0.058333333333333334,
+   "v1_non_game": 0.125,
+   "v2_non_game": 0.14166666666666666,
+   "calibrated_all": {
+    "label_share": 0.3044315992292871,
+    "ppv_on_sample": 0.7222222222222222,
+    "hand_pos_among_label_neg": 0.0,
+    "estimate": 0.21986726611004068,
+    "hand_share": 0.21666666666666667,
+    "hand_ci": [
+     0.15236622842757383,
+     0.2985452585041196
+    ]
+   },
+   "calibrated_non_game": {
+    "label_share": 0.1261166579085654,
+    "ppv_on_sample": 0.35294117647058826,
+    "hand_pos_among_label_neg": 0.009708737864077669,
+    "estimate": 0.052996065906937645,
+    "hand_share": 0.058333333333333334,
+    "hand_ci": [
+     0.02854064663137293,
+     0.1155272594680315
+    ]
+   }
+  }
+ },
+ "realtime_families": {
+  "cards": 156,
+  "share_posts": 0.027325275880189175,
+  "share_views": 0.06245104198127052,
+  "share_likes": 0.053355424532881154,
+  "measured_production": 0,
+  "measured_demo": 39,
+  "by_family": {
+   "live_chat_streams_events": 58,
+   "collaboration_and_typing": 50,
+   "voice_and_turn_taking": 48
+  },
+  "v1_cards_all": 168
+ },
+ "audit": {
+  "document": "review/critical-review-grok.md",
+  "labels_file": "review/hand-labels-grok.jsonl",
+  "auditor": "Grok",
+  "audited_labels": "data/classified-sonnet-v2.jsonl",
+  "audited_model": "Claude Sonnet 5",
+  "labels_under_test": "data/classified-sonnet-v2.jsonl",
+  "labels_are_frame": true,
+  "labels_refused": [],
+  "snapshot_matches": true,
+  "use_case_base": 5709,
+  "labelled": 1681,
+  "verdicts": {
+   "Fails": 3,
+   "Holds with correction": 3,
+   "Holds": 4
+  },
+  "labels_verdicts": {},
+  "model_audit": null,
+  "estimates": {
+   "snapshot_matches": {
+    "value": 1
+   },
+   "use_case_base": {
+    "value": 5709
+   },
+   "labels_base": {
+    "value": 5709
+   },
+   "estimate_base": {
+    "value": 5709
+   },
+   "labels_refused": {
+    "value": 0
+   },
+   "labelled": {
+    "value": 1681
+   },
+   "census_unique": {
+    "value": 422
+   },
+   "batches": {
+    "value": 43
+   },
+   "seed": {
+    "value": 20260924
+   },
+   "agreement_family": {
+    "value": 0.7096966091612136,
+    "k": 1193,
+    "n": 1681
+   },
+   "agreement_frame_family": {
+    "value": 0.7096966091612136,
+    "k": 1193,
+    "n": 1681
+   },
+   "agreement_tier": {
+    "value": 0.619274241522903,
+    "k": 1041,
+    "n": 1681
+   },
+   "agreement_frame_tier": {
+    "value": 0.619274241522903,
+    "k": 1041,
+    "n": 1681
+   },
+   "agreement_evidence": {
+    "value": 0.892325996430696,
+    "k": 1500,
+    "n": 1681
+   },
+   "agreement_frame_evidence": {
+    "value": 0.892325996430696,
+    "k": 1500,
+    "n": 1681
+   },
+   "agreement_baseline": {
+    "value": 0.8947055324211779,
+    "k": 1504,
+    "n": 1681
+   },
+   "agreement_frame_baseline": {
+    "value": 0.8947055324211779,
+    "k": 1504,
+    "n": 1681
+   },
+   "agreement_realtime_infra": {
+    "value": 0.8560380725758477,
+    "k": 1439,
+    "n": 1681
+   },
+   "agreement_frame_realtime_infra": {
+    "value": 0.8560380725758477,
+    "k": 1439,
+    "n": 1681
+   },
+   "agreement_production_claim": {
+    "value": 0.9791790600832838,
+    "k": 1646,
+    "n": 1681
+   },
+   "agreement_frame_production_claim": {
+    "value": 0.9791790600832838,
+    "k": 1646,
+    "n": 1681
+   },
+   "ladder_demo_no_numbers": {
+    "value": 0.464695218076721,
+    "lo": 0.41629676469756466,
+    "hi": 0.5140942692582774,
+    "model": 0.4799439481520406,
+    "frame_value": 0.464695218076721,
+    "frame_lo": 0.41629676469756466,
+    "frame_hi": 0.5140942692582774,
+    "plug": 0
+   },
+   "ladder_claim_no_number": {
+    "value": 0.023661762129970218,
+    "lo": 0.012446948151429051,
+    "hi": 0.05250721436192631,
+    "model": 0.01208617971623752,
+    "frame_value": 0.023661762129970218,
+    "frame_lo": 0.012446948151429051,
+    "frame_hi": 0.05250721436192631,
+    "plug": 0
+   },
+   "ladder_no_measurement": {
+    "value": 0.6715212821860221,
+    "lo": 0.633988044315034,
+    "hi": 0.7028338195958678,
+    "model": 0.6596601856717463,
+    "frame_value": 0.6715212821860221,
+    "frame_lo": 0.633988044315034,
+    "frame_hi": 0.7028338195958678,
+    "plug": 85
+   },
+   "ladder_measured_demo": {
+    "value": 0.32707742161499387,
+    "lo": 0.2957648842051481,
+    "hi": 0.3646106594859819,
+    "model": 0.3377123839551585,
+    "frame_value": 0.32707742161499387,
+    "frame_lo": 0.2957648842051481,
+    "frame_hi": 0.3646106594859819,
+    "plug": 0
+   },
+   "ladder_measured_demo_model": {
+    "value": 1928,
+    "model": 0.3377123839551585
+   },
+   "production_model": {
+    "value": 15,
+    "model": 0.002627430373095113
+   },
+   "production_strict": {
+    "value": 0.0014012961989840604,
+    "lo": 0.0014012961989840604,
+    "hi": 0.019917191661562778,
+    "model": 0.002627430373095113,
+    "k": 8,
+    "n": 15,
+    "frame_value": 0.0014012961989840604,
+    "frame_lo": 0.0014012961989840604,
+    "frame_hi": 0.019917191661562778,
+    "plug": 0
+   },
+   "production_first_pass": {
+    "value": 0.016430300933932895,
+    "k": 95,
+    "n": 5782,
+    "frame_value": 0.016430300933932895
+   },
+   "baseline_none": {
+    "value": 0.782037134349273,
+    "lo": 0.7569277713296658,
+    "hi": 0.797884171693713,
+    "model": 0.813977929584866,
+    "frame_value": 0.782037134349273,
+    "frame_lo": 0.7569277713296658,
+    "frame_hi": 0.797884171693713,
+    "plug": 0
+   },
+   "baseline_frontier_llm": {
+    "value": 0.13530390611315468,
+    "lo": 0.12754889856065202,
+    "hi": 0.1530073375389851,
+    "model": 0.1208617971623752,
+    "frame_value": 0.13530390611315468,
+    "frame_lo": 0.12754889856065202,
+    "frame_hi": 0.1530073375389851,
+    "plug": 690
+   },
+   "baseline_small_llm": {
+    "value": 0.047808723068838675,
+    "lo": 0.039015731423529904,
+    "hi": 0.06648152876765918,
+    "model": 0.02995270625328429,
+    "frame_value": 0.047808723068838675,
+    "frame_lo": 0.039015731423529904,
+    "frame_hi": 0.06648152876765918,
+    "plug": 171
+   },
+   "baseline_replacement": {
+    "value": 0.03485023646873358,
+    "lo": 0.028227341145683215,
+    "hi": 0.05149016548492778,
+    "model": 0.03520756699947451,
+    "frame_value": 0.03485023646873358,
+    "frame_lo": 0.028227341145683215,
+    "frame_hi": 0.05149016548492778,
+    "plug": 0
+   },
+   "meta_still": {
+    "value": 0.14890874058504117,
+    "lo": 0.1326218522205674,
+    "hi": 0.1630207035284574,
+    "model": 0.21071991592222805,
+    "k": 106,
+    "n": 150,
+    "frame_value": 0.14890874058504117,
+    "frame_lo": 0.1326218522205674,
+    "frame_hi": 0.1630207035284574
+   },
+   "meta_all_samples": {
+    "value": 0.19976528288667017,
+    "lo": 0.16107449285595102,
+    "hi": 0.25289336198273654,
+    "model": 0.21071991592222805,
+    "frame_value": 0.19976528288667017,
+    "frame_lo": 0.16107449285595102,
+    "frame_hi": 0.25289336198273654,
+    "plug": 0
+   },
+   "meta_vague": {
+    "value": 0.12362235067437378,
+    "k": 88,
+    "n": 150,
+    "frame_value": 0.12362235067437378
+   },
+   "meta_meme": {
+    "value": 0.0028095988789630408,
+    "model": 0.0024522683482221053,
+    "k": 2,
+    "n": 150,
+    "frame_value": 0.0028095988789630408
+   },
+   "meta_hot": {
+    "value": 0.004214398318444561,
+    "model": 0.0021019442984760903,
+    "k": 3,
+    "n": 150,
+    "frame_value": 0.004214398318444561
+   },
+   "sub300_set": {
+    "value": 0.09442867986220589,
+    "lo": 0.07967340566422715,
+    "hi": 0.10912190164691657,
+    "model": 0.18637239446488002,
+    "k": 76,
+    "n": 150,
+    "frame_value": 0.09442867986220589,
+    "frame_lo": 0.07967340566422715,
+    "frame_hi": 0.10912190164691657
+   },
+   "sub300_games": {
+    "value": 0.9078947368421053,
+    "lo": 0.8218709721189175,
+    "hi": 0.9546665722188714,
+    "model": 0.9078947368421053,
+    "k": 69,
+    "n": 76,
+    "frame_value": 0.9078947368421053,
+    "frame_lo": 0.8218709721189175,
+    "frame_hi": 0.9546665722188714
+   },
+   "rt_families": {
+    "value": 0.0378131021194605,
+    "lo": 0.026623298753157297,
+    "hi": 0.06303672623550302,
+    "model": 0.027325275880189175,
+    "k": 104,
+    "n": 156,
+    "frame_value": 0.0378131021194605,
+    "frame_lo": 0.026623298753157297,
+    "frame_hi": 0.06303672623550302,
+    "plug": 0
+   },
+   "rt_families_production": {
+    "value": 0
+   },
+   "rt_families_production_claims": {
+    "value": 0
+   },
+   "live_loop_nongame": {
+    "value": 0.07823086354878263,
+    "lo": 0.05757493912033407,
+    "hi": 0.11137781349727528,
+    "model": 0.1261166579085654,
+    "k": 51,
+    "n": 100,
+    "frame_value": 0.07823086354878263,
+    "frame_lo": 0.05757493912033407,
+    "frame_hi": 0.11137781349727528,
+    "plug": 0
+   },
+   "live_loop_all": {
+    "value": 0.217072527381946,
+    "model": 0.3044315992292871,
+    "k": 100,
+    "n": 136,
+    "frame_value": 0.217072527381946
+   },
+   "attention_top1_views": {
+    "value": 0.5336907044857159,
+    "k": 58,
+    "n": 5709,
+    "frame_value": 0.5336907044857159
+   },
+   "attention_top1_views_excl_suspect": {
+    "value": 0.4958764779310695,
+    "k": 9,
+    "frame_value": 0.4958764779310695
+   },
+   "attention_top1_likes": {
+    "value": 0.474856159108413,
+    "frame_value": 0.474856159108413
+   },
+   "attention_suspect_share": {
+    "value": 0.12275316492081348,
+    "k": 9,
+    "frame_value": 0.12275316492081348
+   },
+   "attention_top_card": {
+    "value": 0.0773474832064262,
+    "k": 3491422,
+    "frame_value": 0.0773474832064262
+   },
+   "attention_half_cards": {
+    "value": 49
+   },
+   "jev_agree": {
+    "value": 0.7674575130405519,
+    "k": 4561,
+    "n": 5943,
+    "frame_value": 0.7674575130405519
+   },
+   "jev_audit_p99": {
+    "value": 0.9806034482758621,
+    "k": 455,
+    "n": 464,
+    "frame_value": 0.9806034482758621
+   },
+   "jev_prior_p99": {
+    "value": 0.9642857142857143,
+    "k": 27,
+    "n": 28,
+    "frame_value": 0.9642857142857143
+   },
+   "chips_cost_median": {
+    "value": 28.0,
+    "n": 126
+   },
+   "chips_cost_median_without_1x": {
+    "value": 34.0,
+    "k": 8
+   },
+   "chips_speed_median": {
+    "value": 6.0,
+    "n": 299
+   },
+   "chips_speed_median_without_1x": {
+    "value": 8.5,
+    "k": 52
+   },
+   "candidates": {
+    "value": 91
+   },
+   "candidates_still_meeting": {
+    "value": 38,
+    "model": 0.006656156945174286,
+    "k": 36
+   },
+   "candidates_combined": {
+    "value": 0.01994088281660536,
+    "lo": 0.011861338266558299,
+    "hi": 0.04597085523205398,
+    "model": 0.015939744263443686,
+    "frame_value": 0.01994088281660536,
+    "frame_lo": 0.011861338266558299,
+    "frame_hi": 0.04597085523205398
+   },
+   "cost_only_as_described": {
+    "value": 0.12501926782273606,
+    "lo": 0.09767807262506198,
+    "hi": 0.1661839373877505,
+    "model": 0.232790331056227,
+    "frame_value": 0.12501926782273606,
+    "frame_lo": 0.09767807262506198,
+    "frame_hi": 0.1661839373877505
+   },
+   "cost_only_bin_baseline_none": {
+    "value": 831,
+    "n": 1329
+   },
+   "limits_frontier_stratum": {
+    "value": 690,
+    "k": 115,
+    "n": 151
+   },
+   "limits_small_stratum": {
+    "value": 171,
+    "k": 27,
+    "n": 40
+   },
+   "limits_unsampled_remainder": {
+    "value": 85
+   },
+   "limits_numeric_chip": {
+    "value": 48,
+    "k": 48,
+    "n": 1023
+   },
+   "limits_prior_overlap": {
+    "value": 32,
+    "k": 27,
+    "n": 32
+   },
+   "substance_n": {
+    "value": 91
+   },
+   "substance_distinct": {
+    "value": 85
+   },
+   "substance_unavailable": {
+    "value": 0
+   },
+   "production_primary_other": {
+    "value": 0,
+    "k": 0,
+    "n": 0
+   },
+   "production_primary_in_census": {
+    "value": 15,
+    "k": 8,
+    "n": 15
+   },
+   "production_audit_unconfirmed": {
+    "value": 3,
+    "k": 0,
+    "n": 3
+   }
+  },
+  "substance": {
+   "llm": 64,
+   "rules": 12,
+   "vendor": 11,
+   "classic": 4,
+   "unavailable": 0
+  },
+  "primary_agreement": {
+   "family": 0.7096966091612136,
+   "tier": 0.619274241522903,
+   "evidence": 0.892325996430696,
+   "baseline": 0.8947055324211779,
+   "realtime_infra": 0.8560380725758477,
+   "production_claim": 0.9791790600832838
+  },
+  "frame_agreement": {
+   "family": 0.7096966091612136,
+   "tier": 0.619274241522903,
+   "evidence": 0.892325996430696,
+   "baseline": 0.8947055324211779,
+   "realtime_infra": 0.8560380725758477,
+   "production_claim": 0.9791790600832838
+  }
+ },
+ "ladder": {
+  "no_measurement": {
+   "posts": 3766,
+   "share_posts": 0.6596601856717463,
+   "share_views": 0.4844968498611602,
+   "share_likes": 0.5182090595491583
+  },
+  "measured_demo": {
+   "posts": 1928,
+   "share_posts": 0.3377123839551585,
+   "share_views": 0.5137565178867198,
+   "share_likes": 0.47652917915229337
+  },
+  "measured_production": {
+   "posts": 15,
+   "share_posts": 0.002627430373095113,
+   "share_views": 0.0017466322521199255,
+   "share_likes": 0.005261761298548323,
+   "confirmed_by_audit": 8
+  }
+ },
+ "measured_overgrading_on_120": {
+  "v1": {
+   "measured": 44,
+   "not_measured_by_hand": 13
+  },
+  "v2": {
+   "measured": 35,
+   "not_measured_by_hand": 3
+  }
+ },
+ "human_calibration": {
+  "n": 13,
+  "unsure_left_out": 3,
+  "tier_differs_from_both": 8,
+  "tier_human_turn": 4,
+  "meta_by_both_models": 4,
+  "meta_given_real_use": 4,
+  "meta_real_families": {
+   "classification_routing_triage": 4
+  },
+  "family_agree": {
+   "sonnet": 7,
+   "opus": 6
+  },
+  "file": "review/human-labels.jsonl"
+ },
+ "candidates": {
+  "posts": 91,
+  "in_base": 91,
+  "outside_games": 88,
+  "before": {
+   "llm": 64,
+   "rules": 12,
+   "vendor": 11,
+   "classic": 4,
+   "unavailable": 0
+  },
+  "distinct": 85,
+  "unavailable": 0
+ },
+ "noise": {
+  "posts": 1206,
+  "share_posts": 0.21124540199684708,
+  "views": 6098736,
+  "share_views": 0.13510881249543222,
+  "likes": 46144,
+  "share_likes": 0.14932270194355093,
+  "median_views": 120.0,
+  "not_subtyped": 0,
+  "subtypes": {
+   "unrelated_or_unclear": {
+    "posts": 500,
+    "share_noise": 0.41459369817578773,
+    "share_noise_views": 0.3760503815872666,
+    "median_views": 142.0
+   },
+   "benchmark_of_the_model": {
+    "posts": 340,
+    "share_noise": 0.28192371475953565,
+    "share_noise_views": 0.3012393059807803,
+    "median_views": 72.5
+   },
+   "tooling_or_wrapper": {
+    "posts": 234,
+    "share_noise": 0.19402985074626866,
+    "share_noise_views": 0.1604399665766808,
+    "median_views": 131.5
+   },
+   "explainer_or_tutorial": {
+    "posts": 58,
+    "share_noise": 0.04809286898839138,
+    "share_noise_views": 0.01937745788635547,
+    "median_views": 153.5
+   },
+   "news_or_repost": {
+    "posts": 46,
+    "share_noise": 0.03814262023217247,
+    "share_noise_views": 0.13249515965275427,
+    "median_views": 220.0
+   },
+   "hot_take_or_commentary": {
+    "posts": 14,
+    "share_noise": 0.011608623548922056,
+    "share_noise_views": 0.009217811690815933,
+    "median_views": 75.0
+   },
+   "meme_or_joke": {
+    "posts": 14,
+    "share_noise": 0.011608623548922056,
+    "share_noise_views": 0.0011799166253466291,
+    "median_views": 125.0
+   }
+  },
+  "hot_takes": 14,
+  "stance": {
+   "bullish": 5,
+   "skeptical": 5,
+   "mixed": 3,
+   "neutral": 1
+  },
+  "top_card": {
+   "id": "2100408276949385668",
+   "views": 649221,
+   "subtype": "benchmark_of_the_model",
+   "title": "",
+   "url": "https://x.com/hi_im_isaac_/status/2100408276949385668"
+  }
+ },
+ "production": {
+  "v1_measured_production": 95,
+  "v1_share": 0.016430300933932895,
+  "reread_holds": 51,
+  "reread_share": 0.008820477343479766,
+  "reread_codes": {
+   "production (holds up)": 51,
+   "benchmark, test or one-off job": 28,
+   "trading own money or promo": 9,
+   "personal use": 6,
+   "not Jev": 1
+  },
+  "v2_measured_production": 15,
+  "v2_share": 0.002627430373095113,
+  "v2_production_claims": 109,
+  "v2_production_claim_share": 0.01909266071115782,
+  "v2_mp_among_reread_P": 12,
+  "v2_mp_among_reread_not_P": 2,
+  "v2_mp_outside_reread": 1,
+  "reread_P_by_family_v2": {
+   "classification_routing_triage": 21,
+   "search_rerank_extraction": 8,
+   "agent_harness_and_tool_gating": 7,
+   "other_or_meta": 7,
+   "moderation_and_guardrails": 4,
+   "data_and_telemetry": 4
+  },
+  "reread_P_realtime_v1": 3,
+  "reread_realtime_v1": 16
+ },
+ "language": {
+  "en": 0.6861,
+  "ja": 0.1969,
+  "zh": 0.0648
+ },
+ "chips": {
+  "cost multiple (N\u00d7 cheaper)": {
+   "chips": 126,
+   "cards": 120,
+   "median": 28.0,
+   "p25": 5.25,
+   "p75": 100.0,
+   "chips_reading_1x": 8,
+   "median_without_1x": 34.0
+  },
+  "speed multiple (N\u00d7 faster)": {
+   "chips": 299,
+   "cards": 284,
+   "median": 6.0,
+   "p25": 2.0,
+   "p75": 16.5,
+   "chips_reading_1x": 52,
+   "median_without_1x": 8.5
+  }
+ },
+ "agreement": {
+  "n": 5950,
+  "jev_vs_v2": 0.7676,
+  "kappa_v2": 0.73,
+  "jev_vs_v1": 0.7722,
+  "kappa_v1": 0.737,
+  "jev_vs_v2_excluding_not_jev": 0.7741,
+  "jev_vs_v2_excluding_other": 0.8387,
+  "top_bin_share": 0.2781512605042017,
+  "top_bin_agreement_v2": 0.9746223564954682,
+  "top_bin_games_trading": 0.3794561933534743,
+  "hand": {
+   "n": 120,
+   "jev": 85,
+   "sonnet_v1": 82,
+   "sonnet_v2": 88,
+   "jev_ci": [
+    0.6215559807865156,
+    0.7821855729401805
+   ],
+   "v2_ci": [
+    0.6478739437150142,
+    0.8043165964588853
+   ],
+   "jev_at_099": "27/28"
+  },
+  "deciles": {
+   "D1": {
+    "prob_min": 0.2,
+    "prob_max": 0.52,
+    "agreement_v2": 0.37815126050420167,
+    "agreement_v1": 0.37653239929947463
+   },
+   "D2": {
+    "prob_min": 0.52,
+    "prob_max": 0.64,
+    "agreement_v2": 0.5495798319327732,
+    "agreement_v1": 0.5438898450946644
+   },
+   "D3": {
+    "prob_min": 0.64,
+    "prob_max": 0.75,
+    "agreement_v2": 0.5949579831932773,
+    "agreement_v1": 0.5899653979238755
+   },
+   "D4": {
+    "prob_min": 0.75,
+    "prob_max": 0.84,
+    "agreement_v2": 0.7126050420168067,
+    "agreement_v1": 0.7172413793103448
+   },
+   "D5": {
+    "prob_min": 0.84,
+    "prob_max": 0.91,
+    "agreement_v2": 0.788235294117647,
+    "agreement_v1": 0.8062283737024222
+   },
+   "D6": {
+    "prob_min": 0.91,
+    "prob_max": 0.96,
+    "agreement_v2": 0.8302521008403362,
+    "agreement_v1": 0.846286701208981
+   },
+   "D7": {
+    "prob_min": 0.96,
+    "prob_max": 0.98,
+    "agreement_v2": 0.9025210084033614,
+    "agreement_v1": 0.9178082191780822
+   },
+   "D8": {
+    "prob_min": 0.98,
+    "prob_max": 0.99,
+    "agreement_v2": 0.957983193277311,
+    "agreement_v1": 0.9584055459272097
+   },
+   "D9": {
+    "prob_min": 0.99,
+    "prob_max": 1.0,
+    "agreement_v2": 0.973109243697479,
+    "agreement_v1": 0.9803220035778175
+   },
+   "D10": {
+    "prob_min": 1.0,
+    "prob_max": 1.0,
+    "agreement_v2": 0.9882352941176471,
+    "agreement_v1": 0.9815126050420168
+   }
+  },
+  "jev_latency": {
+   "calls_ok": 5950,
+   "p50_ms": 412.0,
+   "p95_ms": 654.0,
+   "p99_ms": 2813.51,
+   "failed_calls": 11,
+   "error_rate": 0.0018453279651065259
+  }
+ },
+ "hand_check": {
+  "v1 (full run)": {
+   "family": {
+    "rate": 0.6833333333333333,
+    "kappa": 0.6395256916996047
+   },
+   "family_v2": {
+    "rate": 0.6583333333333333,
+    "kappa": 0.6155348909900759
+   },
+   "tier": {
+    "rate": 0.675,
+    "kappa": 0.5894016494121775
+   },
+   "evidence": {
+    "rate": 0.8416666666666667,
+    "kappa": 0.656004828002414
+   },
+   "baseline": {
+    "rate": 0.8166666666666667,
+    "kappa": 0.5757673147999357
+   },
+   "realtime_infra": {
+    "rate": 0.9,
+    "kappa": 0.7280966767371602
+   },
+   "production_claim": {
+    "rate": 0.9416666666666667,
+    "kappa": 0.4354838709677421
+   }
+  },
+  "v2.pilot1 (pilot)": {
+   "family": {
+    "rate": 0.7583333333333333,
+    "kappa": 0.7224216319693706
+   },
+   "family_v2": {
+    "rate": 0.7416666666666667,
+    "kappa": 0.7099189020586401
+   },
+   "tier": {
+    "rate": 0.6083333333333333,
+    "kappa": 0.5069930069930069
+   },
+   "evidence": {
+    "rate": 0.9166666666666666,
+    "kappa": 0.8178506375227685
+   },
+   "baseline": {
+    "rate": 0.85,
+    "kappa": 0.577133907595928
+   },
+   "realtime_infra": {
+    "rate": 0.9333333333333333,
+    "kappa": 0.813953488372093
+   },
+   "production_claim": {
+    "rate": 0.9833333333333333,
+    "kappa": 0.7413793103448266
+   }
+  },
+  "v2.pilot2 (pilot)": {
+   "family": {
+    "rate": 0.7666666666666667,
+    "kappa": 0.7319291527046435
+   },
+   "family_v2": {
+    "rate": 0.75,
+    "kappa": 0.7192106699945402
+   },
+   "tier": {
+    "rate": 0.6833333333333333,
+    "kappa": 0.6046471302236865
+   },
+   "evidence": {
+    "rate": 0.9083333333333333,
+    "kappa": 0.7990867579908676
+   },
+   "baseline": {
+    "rate": 0.875,
+    "kappa": 0.6464348850913376
+   },
+   "realtime_infra": {
+    "rate": 0.8916666666666667,
+    "kappa": 0.7232079488999291
+   },
+   "production_claim": {
+    "rate": 0.9833333333333333,
+    "kappa": 0.7413793103448266
+   }
+  },
+  "v2 (full run)": {
+   "family": {
+    "rate": 0.7333333333333333,
+    "kappa": 0.6952380952380952
+   },
+   "family_v2": {
+    "rate": 0.725,
+    "kappa": 0.6920444824636441
+   },
+   "tier": {
+    "rate": 0.675,
+    "kappa": 0.5927601809954751
+   },
+   "evidence": {
+    "rate": 0.9416666666666667,
+    "kappa": 0.8624078624078624
+   },
+   "baseline": {
+    "rate": 0.8916666666666667,
+    "kappa": 0.7116451016635861
+   },
+   "realtime_infra": {
+    "rate": 0.9166666666666666,
+    "kappa": 0.7844827586206896
+   },
+   "production_claim": {
+    "rate": 0.9666666666666667,
+    "kappa": 0.31818181818181807
+   }
+  }
+ },
+ "v2_stability_on_120": {
+  "family": "102/120",
+  "tier": "98/120",
+  "evidence": "114/120",
+  "baseline": "111/120",
+  "realtime_infra": "109/120",
+  "production_claim": "118/120"
+ },
+ "v1_to_v2": {
+  "unchanged": {
+   "family": 0.8642338291248702,
+   "tier": 0.7874437910757524,
+   "evidence": 0.8919059149083363,
+   "baseline": 0.9173296437218955,
+   "realtime_infra": 0.9287443791075752,
+   "production_claim": 0.9680041508128675
+  },
+  "shifts": [
+   {
+    "label": "family = other_or_meta",
+    "v1 share": "22.3%",
+    "v2 share": "20.4%"
+   },
+   {
+    "label": "family = not_a_jev_build",
+    "v1 share": "0.0%",
+    "v2 share": "3.8%"
+   },
+   {
+    "label": "evidence = measured_demo",
+    "v1 share": "37.0%",
+    "v2 share": "33.7%"
+   },
+   {
+    "label": "evidence = measured_production",
+    "v1 share": "1.6%",
+    "v2 share": "0.2%"
+   },
+   {
+    "label": "evidence = demo_no_numbers",
+    "v1 share": "59.0%",
+    "v2 share": "64.5%"
+   },
+   {
+    "label": "baseline = none",
+    "v1 share": "77.2%",
+    "v2 share": "81.7%"
+   },
+   {
+    "label": "baseline = frontier_llm",
+    "v1 share": "14.5%",
+    "v2 share": "11.7%"
+   },
+   {
+    "label": "realtime_infra = True",
+    "v1 share": "25.8%",
+    "v2 share": "29.8%"
+   },
+   {
+    "label": "production_claim = True",
+    "v1 share": "4.7%",
+    "v2 share": "1.8%"
+   }
+  ]
+ },
+ "cost": {
+  "v2_full": {
+   "input": 2042411,
+   "noCache": 1098510,
+   "cacheRead": 912646,
+   "cacheWrite": 31255,
+   "output": 554660,
+   "usd": 8.0042867,
+   "gateway_reported_usd": 8.0042867,
+   "calls": 151
+  },
+  "v2_pilots": {
+   "input": 81425,
+   "noCache": 44540,
+   "cacheRead": 18339,
+   "cacheWrite": 18546,
+   "output": 22596,
+   "usd": 0.3650728,
+   "gateway_reported_usd": 0.3650728,
+   "calls": 6
+  },
+  "v2_pass_usd": 8.3693595,
+  "v1_pass_usd": 8.039978392,
+  "jev_usd": 0.329192892,
+  "noise": {
+   "input": 261485,
+   "noCache": 199330,
+   "cacheRead": 58145,
+   "cacheWrite": 4010,
+   "output": 63403,
+   "usd": 1.054344,
+   "gateway_reported_usd": 1.054344,
+   "calls": 31
+  },
+  "noise_pilot": {
+   "input": 9623,
+   "noCache": 7795,
+   "cacheRead": 0,
+   "cacheWrite": 1828,
+   "output": 2082,
+   "usd": 0.04098,
+   "gateway_reported_usd": 0.04098,
+   "calls": 1
+  },
+  "noise_usd": 1.095324,
+  "labels_run": {
+   "model": "Claude Sonnet 5",
+   "file": "data/classified-sonnet-v2.jsonl",
+   "usd": 8.0042867,
+   "calls": 151
+  }
+ },
+ "data_quality": {
+  "cards": 5950,
+  "unique_ids": 5950,
+  "duplicate_urls": 0,
+  "text_exactly_400_chars": 983,
+  "zero_views": 3,
+  "sonnet_v2_labelled": 5950,
+  "sonnet_v2_missing": 0,
+  "sonnet_v2_stray_ids": 0,
+  "sonnet_v2_duplicate_rows": 0,
+  "sonnet_v2_batches": 151,
+  "sonnet_v2_retry_round_batches": 1,
+  "sonnet_v2_ids_missing_from_a_response": 12,
+  "sonnet_v2_stray_ids_in_responses": 10,
+  "jev_duplicate_rows": 0,
+  "day_field_matches_id_time": true
+ },
+ "observations": {
+  "written_for": {
+   "posts": 5950,
+   "base": 5709,
+   "feed": "2026-09-23 18:47 UTC",
+   "labels": "data/classified-sonnet-v2.jsonl"
+  },
+  "stale": false
+ }
+}

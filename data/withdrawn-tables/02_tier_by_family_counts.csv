@@ -1,0 +1,15 @@
+family,frame,feel,turn,interaction,task,batch,unclear
+other_or_meta,0,1,0,102,34,31,1035
+games_control_loops_simulation,13,949,4,33,63,8,8
+classification_routing_triage,0,1,0,283,354,231,17
+agent_harness_and_tool_gating,0,5,2,20,434,1,10
+search_rerank_extraction,0,0,0,179,152,90,16
+evals_and_judging,0,0,0,96,151,92,33
+moderation_and_guardrails,0,0,1,237,40,16,12
+trading_and_markets,0,7,8,18,197,25,12
+data_and_telemetry,0,0,0,5,6,225,1
+browser_and_computer_use,0,4,1,41,172,0,6
+compaction_and_context,0,0,0,2,61,0,8
+live_chat_streams_events,0,0,10,42,4,2,0
+collaboration_and_typing,0,12,1,35,2,0,0
+voice_and_turn_taking,0,0,45,1,1,0,1

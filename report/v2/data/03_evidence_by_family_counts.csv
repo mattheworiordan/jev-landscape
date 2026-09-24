@@ -1,0 +1,15 @@
+family,measured_production,measured_demo,demo_no_numbers,proposal_or_idea,commentary_or_meme
+other_or_meta,2,247,887,11,56
+games_control_loops_simulation,0,297,781,0,0
+classification_routing_triage,4,381,497,3,1
+agent_harness_and_tool_gating,5,146,318,3,0
+search_rerank_extraction,4,172,259,2,0
+evals_and_judging,0,154,217,1,0
+moderation_and_guardrails,0,92,213,1,0
+trading_and_markets,0,131,131,3,2
+data_and_telemetry,0,154,82,1,0
+browser_and_computer_use,0,87,137,0,0
+compaction_and_context,0,28,42,1,0
+live_chat_streams_events,0,14,44,0,0
+collaboration_and_typing,0,10,40,0,0
+voice_and_turn_taking,0,15,33,0,0

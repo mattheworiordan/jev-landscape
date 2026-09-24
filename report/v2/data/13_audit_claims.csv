@@ -1,0 +1,11 @@
+claim,topic,published,corrected,interval,verdict,labels_value,labels_audit,labels_verdict
+1,Comparison baselines,"81.5% compare Jev with nothing, 11.9% with a frontier LLM, 3.0% with a small LLM, 3.6% with the thing Jev would replace","78.2% nothing, 13.5% frontier LLM, 4.8% small LLM, 3.5% the tools Jev would replace",75.7–79.8%; 12.8–15.3%; 3.9–6.6%; 2.8–5.1%,Fails,,,
+2,Production with numbers,at most 1.6%; 0.9% on a re-read; 0.3% on the strict label,0.14% (8 of 15 strict cards hold),0.14–2.0%,Holds with correction,,,
+3,The bucket scheme,"about 38% demos with no numbers; about 12% hype; about 23% cost-only; 1.6% (90 posts) materially different, 87 outside games","the demo and hype rules rest on the framing field, since withdrawn; 12.5% of posts fit the cost-only description, not 23.3%; 38 of the 91 still meet the material test (0.67%; 2.0% with misses), and none did something unavailable before",9.8–16.6% cost-only; 1.2–4.6% material,Fails,,,
+4,"Voice, live chat and collaboration","2.8% of posts, none in production",3.8% of posts; 0 in production; 0 claiming production,2.7–6.3%,Holds with correction,,,
+5,A live loop,about a fifth of posts; 5 to 10 percent outside games,7.8% outside games; about a fifth with games (21.7%),5.8–11.1% outside games,Holds,,,
+6,Decisions under 300 ms,"of posts that need a decision in under 300 ms, about 91% are games","90.8% are games; the set is 9.4% of posts, not 19%",82.2–95.5% games; 8.0–10.9% of posts,Holds,,,
+7,Posts that never say what Jev decides,"a fifth never say what Jev decides, or are benchmarks or wrappers; memes and hot takes about 1% each","14.9% stay meta; 12.4% vague, a benchmark or a wrapper; memes 0.28%, hot takes 0.42%",13.3–16.3% still meta,Fails,,,
+8,Attention,half of all views sit on 1% of posts,the top 1% (58 posts) hold 53.4% of views; 49.6% without the 9 suspect posts; 47.5% of likes,"a census, no sampling",Holds with correction,,,
+9,Jev as a classifier,"Jev agreed with the model on 77% of cards, and was right 27 of 28 times at 0.99 or more","76.7% (4,561 of 5,943); 27 of 28; 98.1% on the audit's 464 cards at 0.99 or more",a census of Jev's calls,Holds,,,
+10,The claimed multiples,the median claim is about 28× cheaper and 6× faster,"28× cheaper (126 chips), 6× faster (299 chips); 34× and 8.5× without the 1× chips",a census of the chips,Holds,,,

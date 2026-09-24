@@ -1,0 +1,7 @@
+field,n,agree,rate,frame_rate,kappa,frame_kappa,labels
+family,1681,1193,0.709697,0.709697,,,data/classified-sonnet-v2.jsonl
+tier,1681,1041,0.619274,0.619274,,,data/classified-sonnet-v2.jsonl
+evidence,1681,1500,0.892326,0.892326,,,data/classified-sonnet-v2.jsonl
+baseline,1681,1504,0.894706,0.894706,,,data/classified-sonnet-v2.jsonl
+realtime_infra,1681,1439,0.856038,0.856038,,,data/classified-sonnet-v2.jsonl
+production_claim,1681,1646,0.979179,0.979179,,,data/classified-sonnet-v2.jsonl

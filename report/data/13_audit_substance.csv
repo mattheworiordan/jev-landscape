@@ -1,0 +1,21 @@
+kind,key,label,posts
+before,llm,An LLM,64
+before,rules,Rules or heuristics,12
+before,vendor,A vendor API,11
+before,classic,A classic model,4
+before,unavailable,Unavailable at any price,0
+job,feed_filter,Feed or comment filters,22
+job,typing_or_form,Typing or form fill,13
+job,voice_command,Voice commands,13
+job,triage,Triage,6
+job,voice_turn,Voice turn-taking,6
+job,guard,Guards,5
+job,speech_score,Speech scoring,5
+job,trading,Trading decisions,5
+job,classify,Classification,3
+job,computer_use,Computer use,3
+job,game_or_sim,Games or simulations,3
+job,alerts,Alerts,2
+job,live_control,Live control,2
+job,search,Search,2
+job,personal_tool,Personal tools,1

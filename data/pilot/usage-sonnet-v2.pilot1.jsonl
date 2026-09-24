@@ -1,0 +1,3 @@
+{"at":"2026-09-23T14:37:42.366Z","n":40,"returned":40,"input":12869,"noCache":6825,"cacheRead":0,"cacheWrite":6044,"output":3696,"usd":0.06572,"gatewayCost":"0.06572","round":1,"stray":0,"missing":0}
+{"at":"2026-09-23T14:37:51.763Z","n":40,"returned":40,"input":13477,"noCache":7433,"cacheRead":6044,"cacheWrite":0,"output":3818,"usd":0.054254800000000006,"gatewayCost":"0.0542548","round":1,"stray":0,"missing":0}
+{"at":"2026-09-23T14:37:52.122Z","n":40,"returned":40,"input":14056,"noCache":8012,"cacheRead":6044,"cacheWrite":0,"output":3826,"usd":0.0554928,"gatewayCost":"0.0554928","round":1,"stray":0,"missing":0}

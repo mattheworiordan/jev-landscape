@@ -1,0 +1,23 @@
+u,evals_and_judging,classification_routing_triage,moderation_and_guardrails,agent_harness_and_tool_gating,compaction_and_context,search_rerank_extraction,browser_and_computer_use,voice_and_turn_taking,live_chat_streams_events,collaboration_and_typing,games_control_loops_simulation,data_and_telemetry,trading_and_markets,other_or_meta
+Ads & marketing,6,8,5,0,0,14,0,0,0,0,0,39,2,7
+Benchmarks & evals,128,22,16,31,8,21,24,1,1,1,77,39,19,300
+Browser automation,0,4,4,4,0,6,101,2,1,1,1,0,1,12
+Classification & tagging,40,285,26,13,3,21,0,1,8,5,12,65,11,72
+Coding & dev tools,37,15,1,67,0,8,2,0,1,5,7,5,2,98
+Computer & desktop use,0,1,0,13,0,0,52,0,0,6,9,0,0,8
+Data extraction,0,7,0,0,0,29,4,0,0,1,0,4,1,14
+Documents & files,6,21,1,1,0,18,0,0,0,1,0,3,1,15
+Email triage,0,75,8,1,1,0,0,0,1,0,0,2,0,4
+Game playing,0,0,2,5,0,0,3,1,0,1,680,1,9,16
+Hiring & screening,1,33,0,4,0,13,1,0,0,0,1,5,1,3
+Model & agent routing,5,117,1,127,5,6,5,7,1,0,14,1,1,48
+Moderation & safety,7,16,220,31,1,8,1,0,8,1,4,9,5,9
+Other,68,102,28,116,48,49,22,14,27,35,164,74,24,602
+Recommendations,4,10,1,2,0,45,4,0,2,1,4,6,1,9
+Robotics & devices,1,0,0,2,0,0,4,0,0,0,82,0,0,2
+Sales & lead scoring,2,33,0,0,0,2,0,1,1,0,0,6,2,4
+Search & reranking,5,16,1,4,5,220,4,0,2,0,3,11,4,11
+Support & tickets,3,44,0,5,0,1,0,0,2,0,0,1,0,4
+Tool & function calling,1,7,2,44,2,1,4,0,0,2,2,0,1,16
+Trading & markets,0,3,0,0,0,0,0,1,1,0,1,1,178,1
+Voice & vision,3,7,1,0,1,6,7,18,4,2,13,8,0,32

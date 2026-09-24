@@ -1,0 +1,14 @@
+labels,key,stratum,n,family,tier,evidence,baseline,realtime_infra,production_claim
+data/classified-sonnet-v2.jsonl,measured_production,Measured production (Sonnet label),15,0.666667,0.4,0.533333,0.8,0.933333,0.666667
+data/classified-sonnet-v2.jsonl,material,The 91 candidate builds,91,0.593407,0.692308,0.791209,0.923077,0.681319,0.967033
+data/classified-sonnet-v2.jsonl,realtime_family,"Voice, live chat or collaboration",156,0.576923,0.576923,0.916667,0.967949,0.807692,0.99359
+data/classified-sonnet-v2.jsonl,replacement_baseline,"Classic ML, rules or vendor baseline",201,0.716418,0.587065,0.890547,0.621891,0.895522,0.975124
+data/classified-sonnet-v2.jsonl,baseline_none,No comparison named,300,0.75,0.636667,0.886667,0.95,0.886667,0.996667
+data/classified-sonnet-v2.jsonl,demo_no_numbers,"Demo, no numbers",200,0.75,0.585,0.89,0.945,0.87,0.98
+data/classified-sonnet-v2.jsonl,measured_demo,Measured demo,200,0.73,0.645,0.88,0.865,0.885,0.975
+data/classified-sonnet-v2.jsonl,not_realtime_family_not_games,"Not a realtime family, not games",200,0.69,0.645,0.895,0.905,0.875,0.975
+data/classified-sonnet-v2.jsonl,realtime_infra_false,Realtime flag false,200,0.63,0.64,0.915,0.9,0.975,0.965
+data/classified-sonnet-v2.jsonl,realtime_infra_true_nongame,"Realtime flag true, not games",100,0.71,0.62,0.92,0.92,0.55,0.97
+data/classified-sonnet-v2.jsonl,other_or_meta,Other or meta,150,0.706667,0.8,0.846667,0.94,0.966667,0.993333
+data/classified-sonnet-v2.jsonl,tier_under_300ms,"Under 300 ms (frame, feel or turn)",150,0.913333,0.493333,0.973333,0.94,0.76,0.993333
+data/classified-sonnet-v2.jsonl,all_labelled,All audited cards,1681,0.709697,0.619274,0.892326,0.894706,0.856038,0.979179

@@ -1,0 +1,54 @@
+{
+ "source": "https://vercel.com/api/ai/leaderboard-export?dataset=models&modality=all&format=json",
+ "license": "CC-BY-4.0",
+ "license_url": "https://creativecommons.org/licenses/by/4.0/",
+ "read_utc": "2026-09-24T14:30:00Z",
+ "note": "share of all AI Gateway requests and tokens, per day; Jev is free on the gateway until 2026-09-25; 2026-09-24 is a partial day",
+ "days": [
+  {
+   "date": "2026-09-16",
+   "requests_share_pct": 0,
+   "tokens_share_pct": 0
+  },
+  {
+   "date": "2026-09-17",
+   "requests_share_pct": 5.9454,
+   "tokens_share_pct": 0.3407
+  },
+  {
+   "date": "2026-09-18",
+   "requests_share_pct": 13.5612,
+   "tokens_share_pct": 0.7677
+  },
+  {
+   "date": "2026-09-19",
+   "requests_share_pct": 26.2845,
+   "tokens_share_pct": 1.7871
+  },
+  {
+   "date": "2026-09-20",
+   "requests_share_pct": 20.8073,
+   "tokens_share_pct": 2.0014
+  },
+  {
+   "date": "2026-09-21",
+   "requests_share_pct": 21.2272,
+   "tokens_share_pct": 2.0369
+  },
+  {
+   "date": "2026-09-22",
+   "requests_share_pct": 22.02,
+   "tokens_share_pct": 1.7501
+  },
+  {
+   "date": "2026-09-23",
+   "requests_share_pct": 25.2261,
+   "tokens_share_pct": 1.8097
+  },
+  {
+   "date": "2026-09-24",
+   "requests_share_pct": 26.4876,
+   "tokens_share_pct": 1.915
+  }
+ ]
+}

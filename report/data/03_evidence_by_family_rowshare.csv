@@ -1,0 +1,15 @@
+family,measured_production,measured_demo,demo_no_numbers,proposal_or_idea,commentary_or_meme
+other_or_meta,0.0056,0.1715,0.7153,0.0032,0.1045
+games_control_loops_simulation,0.0,0.2614,0.7367,0.0009,0.0009
+classification_routing_triage,0.0128,0.3892,0.5851,0.0077,0.0051
+search_rerank_extraction,0.0154,0.3764,0.6042,0.0039,0.0
+evals_and_judging,0.0082,0.2896,0.6967,0.0027,0.0027
+data_and_telemetry,0.0074,0.6384,0.3469,0.0,0.0074
+trading_and_markets,0.0037,0.4552,0.5336,0.0037,0.0037
+agent_harness_and_tool_gating,0.0076,0.2939,0.6947,0.0038,0.0
+moderation_and_guardrails,0.0117,0.3035,0.6654,0.0156,0.0039
+browser_and_computer_use,0.0,0.374,0.626,0.0,0.0
+compaction_and_context,0.0,0.4023,0.5747,0.0115,0.0115
+voice_and_turn_taking,0.0,0.2917,0.7083,0.0,0.0
+live_chat_streams_events,0.0147,0.1618,0.8235,0.0,0.0
+collaboration_and_typing,0.0,0.1667,0.8333,0.0,0.0

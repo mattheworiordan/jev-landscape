@@ -1,0 +1,89 @@
+{
+ "source": "~/Brain/work/research/jev-2026-09/landscape/alternatives-2026-09-24.md (Hugging Face search by creation date, read 2026-09-24 15:00 UTC; corpus posts showing a non-Jev model, port or endpoint, data/alternatives-posts-2026-09-24.json)",
+ "hf_new_models_per_day": [
+  {
+   "date": "2026-09-17",
+   "models": 1
+  },
+  {
+   "date": "2026-09-18",
+   "models": 8
+  },
+  {
+   "date": "2026-09-19",
+   "models": 17
+  },
+  {
+   "date": "2026-09-20",
+   "models": 42
+  },
+  {
+   "date": "2026-09-21",
+   "models": 57
+  },
+  {
+   "date": "2026-09-22",
+   "models": 68
+  },
+  {
+   "date": "2026-09-23",
+   "models": 77
+  }
+ ],
+ "hf_note": "models named jev or laya created that day; 24 Sep had 28 by 15:00 UTC and is left out as a partial day",
+ "rival_posts_per_day": [
+  {
+   "date": "2026-09-16",
+   "posts": 6
+  },
+  {
+   "date": "2026-09-17",
+   "posts": 24
+  },
+  {
+   "date": "2026-09-18",
+   "posts": 34
+  },
+  {
+   "date": "2026-09-19",
+   "posts": 30
+  },
+  {
+   "date": "2026-09-20",
+   "posts": 47
+  },
+  {
+   "date": "2026-09-21",
+   "posts": 52
+  },
+  {
+   "date": "2026-09-22",
+   "posts": 43
+  },
+  {
+   "date": "2026-09-23",
+   "posts": 31
+  }
+ ],
+ "rivals_count": 20,
+ "benchmarks_count": 2,
+ "madewithjev_open_alternatives_2026-09-22": 35,
+ "jevbench_v141_2026-09-23": {
+  "ranked_systems": 77,
+  "others_in_top20": 19,
+  "beat_jev_on_cost": 15,
+  "beat_jev_on_speed": 8,
+  "beat_jev_on_calibration": 1,
+  "beat_jev_on_intelligence": 0,
+  "source": "https://benchmarkheaven.com/jev-models"
+ },
+ "competes_on": {
+  "run_yourself": 19,
+  "cost": 13,
+  "latency": 10,
+  "accuracy": 5,
+  "generality": 4,
+  "calibration": 1,
+  "of": 20
+ }
+}

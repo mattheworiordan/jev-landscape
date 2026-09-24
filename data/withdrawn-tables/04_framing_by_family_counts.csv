@@ -1,0 +1,15 @@
+family,cost,latency,accuracy,capability,none
+other_or_meta,95,130,77,82,819
+games_control_loops_simulation,79,182,58,120,639
+classification_routing_triage,215,137,104,79,351
+agent_harness_and_tool_gating,89,88,24,81,190
+search_rerank_extraction,63,100,47,37,190
+evals_and_judging,52,38,89,17,176
+moderation_and_guardrails,42,49,46,27,142
+trading_and_markets,33,35,39,23,137
+data_and_telemetry,86,32,26,19,74
+browser_and_computer_use,27,87,9,33,68
+compaction_and_context,13,8,5,17,28
+live_chat_streams_events,5,15,0,3,35
+collaboration_and_typing,2,15,0,6,27
+voice_and_turn_taking,3,16,2,4,23

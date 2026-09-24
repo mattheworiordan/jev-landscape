@@ -1,0 +1,928 @@
+{
+ "seed": "20260924b",
+ "sample_hash": "360d268570",
+ "base_size": 5709,
+ "counts": {
+  "random": 100,
+  "rare_live": 20,
+  "rare_production": 15,
+  "rare_baseline": 15
+ },
+ "note": "position = the card's place in the labeller (1-100 random, 101-150 rare). stratum = the draw the card came from. also_in = the other rare strata its Sonnet v2 label matches. Keep this file out of the labeller.",
+ "cards": [
+  {
+   "position": 1,
+   "id": "2101830589620056160",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 2,
+   "id": "2101565799731458499",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 3,
+   "id": "2101963414092632260",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 4,
+   "id": "2101174472396955967",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 5,
+   "id": "2102123079912808849",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 6,
+   "id": "2100540129592983686",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 7,
+   "id": "2101470134996959681",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 8,
+   "id": "2102038651425448097",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 9,
+   "id": "2102191154607304849",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 10,
+   "id": "2101588313731977589",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 11,
+   "id": "2100964585595687128",
+   "stratum": "random",
+   "also_in": [
+    "rare_live"
+   ]
+  },
+  {
+   "position": 12,
+   "id": "2101946922370302456",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 13,
+   "id": "2101038240895533266",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 14,
+   "id": "2101233656530641144",
+   "stratum": "random",
+   "also_in": [
+    "rare_baseline"
+   ]
+  },
+  {
+   "position": 15,
+   "id": "2101036327441686718",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 16,
+   "id": "2102794633227198805",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 17,
+   "id": "2100902249497014382",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 18,
+   "id": "2102081157332353131",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 19,
+   "id": "2100961111319429403",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 20,
+   "id": "2102431552785596524",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 21,
+   "id": "2100335103193022592",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 22,
+   "id": "2101558145177055349",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 23,
+   "id": "2101993295056666633",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 24,
+   "id": "2100631889585606959",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 25,
+   "id": "2102641015438152140",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 26,
+   "id": "2101296275190857774",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 27,
+   "id": "2101353890532794667",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 28,
+   "id": "2102172259612000447",
+   "stratum": "random",
+   "also_in": [
+    "rare_baseline"
+   ]
+  },
+  {
+   "position": 29,
+   "id": "2100965455506628834",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 30,
+   "id": "2101514831383961919",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 31,
+   "id": "2101051113659125857",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 32,
+   "id": "2102093822985687435",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 33,
+   "id": "2102041407372566774",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 34,
+   "id": "2101285134259589262",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 35,
+   "id": "2102553449309278598",
+   "stratum": "random",
+   "also_in": [
+    "rare_baseline"
+   ]
+  },
+  {
+   "position": 36,
+   "id": "2102173159738732645",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 37,
+   "id": "2100616631667802426",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 38,
+   "id": "2100999241326047596",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 39,
+   "id": "2101676418040266818",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 40,
+   "id": "2100544757248278933",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 41,
+   "id": "2101249966899654725",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 42,
+   "id": "2101697940733448546",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 43,
+   "id": "2101398453578555898",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 44,
+   "id": "2100558071768416561",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 45,
+   "id": "2101257870989987957",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 46,
+   "id": "2102545792720683482",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 47,
+   "id": "2102250552528961951",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 48,
+   "id": "2101818523106619553",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 49,
+   "id": "2100532811388137719",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 50,
+   "id": "2101344481400508459",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 51,
+   "id": "2102374939571679453",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 52,
+   "id": "2100577481698734255",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 53,
+   "id": "2102294949425545656",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 54,
+   "id": "2100887791219429838",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 55,
+   "id": "2100625153109504483",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 56,
+   "id": "2102703300302791055",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 57,
+   "id": "2102652264519233988",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 58,
+   "id": "2100470174130250127",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 59,
+   "id": "2101470121944338726",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 60,
+   "id": "2100440976640876925",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 61,
+   "id": "2101564318458474928",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 62,
+   "id": "2101015355133227348",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 63,
+   "id": "2101799228951371784",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 64,
+   "id": "2101915424090996896",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 65,
+   "id": "2102082476936147307",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 66,
+   "id": "2101960180510634113",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 67,
+   "id": "2101765898017063005",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 68,
+   "id": "2101650540803604540",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 69,
+   "id": "2101394753208074383",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 70,
+   "id": "2101302017301909810",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 71,
+   "id": "2102367530916487321",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 72,
+   "id": "2102584026666312130",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 73,
+   "id": "2102343847598752216",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 74,
+   "id": "2102077373411733962",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 75,
+   "id": "2102083821143544202",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 76,
+   "id": "2101043821161177381",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 77,
+   "id": "2100867853054280123",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 78,
+   "id": "2100650531492332029",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 79,
+   "id": "2100895666289738036",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 80,
+   "id": "2101627522324877541",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 81,
+   "id": "2101490947645456502",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 82,
+   "id": "2101074194260000982",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 83,
+   "id": "2100735712496644312",
+   "stratum": "random",
+   "also_in": [
+    "rare_baseline"
+   ]
+  },
+  {
+   "position": 84,
+   "id": "2101550815718826043",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 85,
+   "id": "2100979174953611724",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 86,
+   "id": "2102490369275375770",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 87,
+   "id": "2100552300804657436",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 88,
+   "id": "2100735486901796923",
+   "stratum": "random",
+   "also_in": [
+    "rare_baseline"
+   ]
+  },
+  {
+   "position": 89,
+   "id": "2102617962037625120",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 90,
+   "id": "2102691865313317015",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 91,
+   "id": "2101567704276881492",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 92,
+   "id": "2102407060436709687",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 93,
+   "id": "2102181612133966298",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 94,
+   "id": "2101384374646448281",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 95,
+   "id": "2101368392347513268",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 96,
+   "id": "2101295905257443501",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 97,
+   "id": "2101606798323044740",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 98,
+   "id": "2101143198370582764",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 99,
+   "id": "2101668846352650402",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 100,
+   "id": "2100701407825568056",
+   "stratum": "random",
+   "also_in": []
+  },
+  {
+   "position": 101,
+   "id": "2101254577794490830",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 102,
+   "id": "2102202098968666432",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 103,
+   "id": "2100705473402229138",
+   "stratum": "rare_production",
+   "also_in": [
+    "rare_baseline"
+   ]
+  },
+  {
+   "position": 104,
+   "id": "2100632643331149984",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 105,
+   "id": "2102265179543400907",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 106,
+   "id": "2101211342678180236",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 107,
+   "id": "2100655682458640738",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 108,
+   "id": "2100714939145130364",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 109,
+   "id": "2102081664646029722",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 110,
+   "id": "2101663804492787715",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 111,
+   "id": "2100563199439368619",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 112,
+   "id": "2102383372303577259",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 113,
+   "id": "2101942660680368367",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 114,
+   "id": "2101854008851730881",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 115,
+   "id": "2101870472883487045",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 116,
+   "id": "2101259652512043035",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 117,
+   "id": "2101837339387437384",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 118,
+   "id": "2101895709809352848",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 119,
+   "id": "2101090579127951694",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 120,
+   "id": "2102618688276856906",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 121,
+   "id": "2102412336569180506",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 122,
+   "id": "2102459360853041318",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 123,
+   "id": "2101662106865250514",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 124,
+   "id": "2101078024414244886",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 125,
+   "id": "2101371206217634101",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 126,
+   "id": "2101285294649524553",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 127,
+   "id": "2100962406344409190",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 128,
+   "id": "2101740657614393560",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 129,
+   "id": "2101263232199713014",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 130,
+   "id": "2102614388440199299",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 131,
+   "id": "2100740717454954548",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 132,
+   "id": "2102305365459394658",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 133,
+   "id": "2101347270314614963",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 134,
+   "id": "2101734780882891174",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 135,
+   "id": "2102310271842734364",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 136,
+   "id": "2102719975676862555",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 137,
+   "id": "2100543809465577665",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 138,
+   "id": "2100591120468308142",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 139,
+   "id": "2101751414360092885",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 140,
+   "id": "2101325874201325884",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 141,
+   "id": "2100814017954464193",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 142,
+   "id": "2102072816468136242",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 143,
+   "id": "2101608817155080682",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 144,
+   "id": "2101327161042895250",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 145,
+   "id": "2101882375479099486",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 146,
+   "id": "2102532930962850249",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 147,
+   "id": "2100970398611595535",
+   "stratum": "rare_production",
+   "also_in": []
+  },
+  {
+   "position": 148,
+   "id": "2100609472750047263",
+   "stratum": "rare_baseline",
+   "also_in": []
+  },
+  {
+   "position": 149,
+   "id": "2100427285224394867",
+   "stratum": "rare_live",
+   "also_in": []
+  },
+  {
+   "position": 150,
+   "id": "2101218235920314823",
+   "stratum": "rare_baseline",
+   "also_in": []
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+evidence,no repo / no prod claim,no repo / prod claim,repo / no prod claim,repo / prod claim,total
+measured_production,0,14,0,1,15
+measured_demo,1697,38,190,3,1928
+demo_no_numbers,3071,49,557,4,3681
+proposal_or_idea,19,0,7,0,26
+commentary_or_meme,51,0,8,0,59

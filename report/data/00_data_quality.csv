@@ -1,0 +1,2 @@
+cards,unique_ids,duplicate_urls,text_exactly_400_chars,zero_views,sonnet_v2_labelled,sonnet_v2_missing,sonnet_v2_stray_ids,sonnet_v2_duplicate_rows,sonnet_v2_batches,sonnet_v2_retry_round_batches,sonnet_v2_ids_missing_from_a_response,sonnet_v2_stray_ids_in_responses,jev_duplicate_rows,day_field_matches_id_time
+5950,5950,0,983,3,5949,1,0,0,175,8,6,2,0,True

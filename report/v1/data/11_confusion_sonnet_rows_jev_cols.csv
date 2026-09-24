@@ -1,0 +1,15 @@
+family,evals_and_judging,classification_routing_triage,moderation_and_guardrails,agent_harness_and_tool_gating,compaction_and_context,search_rerank_extraction,browser_and_computer_use,voice_and_turn_taking,live_chat_streams_events,collaboration_and_typing,games_control_loops_simulation,data_and_telemetry,trading_and_markets,other_or_meta
+evals_and_judging,206,18,6,3,0,4,3,0,1,2,1,2,1,70
+classification_routing_triage,17,647,1,12,1,29,14,2,18,7,2,17,6,53
+moderation_and_guardrails,19,18,230,6,2,0,4,0,17,0,1,4,0,16
+agent_harness_and_tool_gating,25,67,7,260,3,4,34,2,1,4,6,3,0,54
+compaction_and_context,0,2,0,5,63,0,0,0,0,0,0,0,0,4
+search_rerank_extraction,15,39,0,6,0,322,13,0,1,2,2,11,2,55
+browser_and_computer_use,0,1,1,1,0,1,226,0,0,1,6,0,0,1
+voice_and_turn_taking,0,1,0,3,0,0,5,27,0,3,4,0,0,3
+live_chat_streams_events,6,7,4,1,0,3,1,5,28,1,1,0,2,1
+collaboration_and_typing,0,4,0,0,0,1,6,0,1,41,2,1,0,6
+games_control_loops_simulation,5,4,1,4,0,1,5,1,2,0,983,0,0,68
+data_and_telemetry,16,53,1,0,0,13,0,0,2,0,7,133,3,52
+trading_and_markets,2,4,0,2,0,0,0,0,0,0,6,0,241,8
+other_or_meta,26,42,10,19,2,10,23,5,5,27,52,4,4,1058

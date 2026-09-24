@@ -1,0 +1,6 @@
+# ai 7.0.105 (17 Sep 2026) is the first release with experimental_evaluate for Jev.
+# Same exclusion as ../jev-pong: lets these bypass the global minimumReleaseAge guard for this project only.
+minimumReleaseAgeExclude:
+  - ai
+  - "@ai-sdk/*"
+  - zod

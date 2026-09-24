@@ -1,0 +1,15 @@
+family,en,ja,zh,other
+other_or_meta,802,253,82,66
+games_control_loops_simulation,706,270,62,40
+classification_routing_triage,575,183,58,70
+agent_harness_and_tool_gating,355,63,31,23
+search_rerank_extraction,322,68,21,26
+evals_and_judging,275,69,12,16
+moderation_and_guardrails,217,61,17,11
+trading_and_markets,198,23,37,9
+data_and_telemetry,165,47,13,12
+browser_and_computer_use,168,17,23,16
+compaction_and_context,50,12,6,3
+live_chat_streams_events,31,22,2,3
+collaboration_and_typing,26,18,4,2
+voice_and_turn_taking,27,18,2,1

@@ -1,0 +1,27 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Matthew O'Riordan
+
+These files are licensed under the Creative Commons Attribution 4.0
+International License:
+
+  data/                        the label files, usage logs, hand labels and duplicate groups
+  review/ (except its scripts) the audit's labels, sampling files, instructions and report
+  report/data/, report/v1/data/ the tables
+  report/summary.json, report/v1/summary.json, manifest.json
+  report/*.md, report/v1/*.md, report/site/README.md
+                               the rubrics and the method documents
+
+You can share and adapt them for any purpose, commercial purposes included,
+if you give appropriate credit, give a link to the license, and say if you
+made changes.
+
+Credit: Matthew O'Riordan, "A week of Jev, sorted" (2026),
+https://github.com/mattheworiordan/jev-landscape
+
+License summary: https://creativecommons.org/licenses/by/4.0/
+Legal code:      https://creativecommons.org/licenses/by/4.0/legalcode
+
+This license does not cover the X posts that the labels describe. The posts
+belong to their authors, and they are not in this repository. The report page
+and the charts (index.html, charts/) are not under this license.

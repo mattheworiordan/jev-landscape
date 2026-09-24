@@ -1,0 +1,84 @@
+{
+ "source": "https://openrouter.ai/typesafe/jev-1.13 (model page activity chart, embedded data)",
+ "read_utc": "2026-09-24T13:28:00Z",
+ "model": "typesafe/jev-1.13",
+ "note": "requests are API requests, not decisions; 2026-09-24 is a partial day (to 13:28 UTC); usd is OpenRouter billed usage",
+ "days": [
+  {
+   "date": "2026-09-17",
+   "requests": 458,
+   "prompt_tokens": 2322056,
+   "completion_tokens": 332201,
+   "usd": 0.1
+  },
+  {
+   "date": "2026-09-18",
+   "requests": 28243338,
+   "prompt_tokens": 73446895157,
+   "completion_tokens": 11361067810,
+   "usd": 3069.29
+  },
+  {
+   "date": "2026-09-19",
+   "requests": 52641640,
+   "prompt_tokens": 140173957683,
+   "completion_tokens": 19960865808,
+   "usd": 5852.25
+  },
+  {
+   "date": "2026-09-20",
+   "requests": 64434110,
+   "prompt_tokens": 195534045405,
+   "completion_tokens": 23334305458,
+   "usd": 8168.85
+  },
+  {
+   "date": "2026-09-21",
+   "requests": 82379677,
+   "prompt_tokens": 256458121712,
+   "completion_tokens": 31434098750,
+   "usd": 10722.78
+  },
+  {
+   "date": "2026-09-22",
+   "requests": 83638877,
+   "prompt_tokens": 246479089376,
+   "completion_tokens": 29974621960,
+   "usd": 10295.35
+  },
+  {
+   "date": "2026-09-23",
+   "requests": 125647722,
+   "prompt_tokens": 326900237709,
+   "completion_tokens": 36413523122,
+   "usd": 13654.55
+  },
+  {
+   "date": "2026-09-24",
+   "requests": 71841463,
+   "prompt_tokens": 202150079994,
+   "completion_tokens": 19329793774,
+   "usd": 8443.37
+  }
+ ],
+ "rankings_week_to_2026-09-23": {
+  "source": "https://openrouter.ai/rankings (read 2026-09-24 13:59 UTC by the research pass; the daily series above sums to the weekly requests)",
+  "jev": {
+   "requests": 436985822,
+   "tokens": 1390000000000,
+   "usd": 51763
+  },
+  "gpt-5.6-luna": {
+   "requests": 315452541,
+   "tokens": 8740000000000,
+   "usd": 415706
+  },
+  "deepseek-v4.1-flash": {
+   "requests": 306223700,
+   "tokens": 18400000000000
+  },
+  "deepseek-v4-flash-0731": {
+   "requests": 542225672
+  }
+ }
+}

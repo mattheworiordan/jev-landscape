@@ -1,0 +1,373 @@
+{
+ "cards": 5782,
+ "classified_sonnet": 5782,
+ "classified_jev": 5782,
+ "family": {
+  "other_or_meta": {
+   "posts": 1287,
+   "share_posts": 0.2226,
+   "share_views": 0.1999,
+   "median_views": 121.0
+  },
+  "games_control_loops_simulation": {
+   "posts": 1074,
+   "share_posts": 0.1857,
+   "share_views": 0.1094,
+   "median_views": 184.0
+  },
+  "classification_routing_triage": {
+   "posts": 826,
+   "share_posts": 0.1429,
+   "share_views": 0.1823,
+   "median_views": 114.0
+  },
+  "agent_harness_and_tool_gating": {
+   "posts": 470,
+   "share_posts": 0.0813,
+   "share_views": 0.0546,
+   "median_views": 114.0
+  },
+  "search_rerank_extraction": {
+   "posts": 468,
+   "share_posts": 0.0809,
+   "share_views": 0.0681,
+   "median_views": 110.0
+  },
+  "evals_and_judging": {
+   "posts": 317,
+   "share_posts": 0.0548,
+   "share_views": 0.0184,
+   "median_views": 127.0
+  },
+  "moderation_and_guardrails": {
+   "posts": 317,
+   "share_posts": 0.0548,
+   "share_views": 0.0417,
+   "median_views": 98.0
+  },
+  "data_and_telemetry": {
+   "posts": 280,
+   "share_posts": 0.0484,
+   "share_views": 0.0366,
+   "median_views": 187.5
+  },
+  "trading_and_markets": {
+   "posts": 263,
+   "share_posts": 0.0455,
+   "share_views": 0.072,
+   "median_views": 174.0
+  },
+  "browser_and_computer_use": {
+   "posts": 238,
+   "share_posts": 0.0412,
+   "share_views": 0.1253,
+   "median_views": 316.5
+  },
+  "compaction_and_context": {
+   "posts": 74,
+   "share_posts": 0.0128,
+   "share_views": 0.0336,
+   "median_views": 137.5
+  },
+  "collaboration_and_typing": {
+   "posts": 62,
+   "share_posts": 0.0107,
+   "share_views": 0.0255,
+   "median_views": 527.0
+  },
+  "live_chat_streams_events": {
+   "posts": 60,
+   "share_posts": 0.0104,
+   "share_views": 0.0293,
+   "median_views": 299.0
+  },
+  "voice_and_turn_taking": {
+   "posts": 46,
+   "share_posts": 0.008,
+   "share_views": 0.0033,
+   "median_views": 362.5
+  }
+ },
+ "tier": {
+  "frame": 30,
+  "feel": 770,
+  "turn": 92,
+  "interaction": 1282,
+  "task": 1728,
+  "batch": 822,
+  "unclear": 1058
+ },
+ "evidence": {
+  "measured_production": 95,
+  "measured_demo": 2139,
+  "demo_no_numbers": 3414,
+  "proposal_or_idea": 39,
+  "commentary_or_meme": 95
+ },
+ "framing": {
+  "cost": 848,
+  "latency": 880,
+  "accuracy": 674,
+  "capability": 2266,
+  "none": 1114
+ },
+ "baseline": {
+  "frontier_llm": 840,
+  "small_llm": 240,
+  "classic_classifier_or_ml": 93,
+  "vendor_api": 41,
+  "rules_or_regex": 102,
+  "none": 4466
+ },
+ "concentration": {
+  "total_views": 46975809,
+  "median_views": 137.0,
+  "mean_views": 8124.491352473193,
+  "p90_views": 7674.900000000028,
+  "gini": 0.939,
+  "cards_holding_half_of_views": 53,
+  "cards_under_100_views": 2559,
+  "cards_10k_plus": 511,
+  "cards_100k_plus": 95,
+  "top_card_id": "2101206603240477030",
+  "top_card_views": 3491422,
+  "top_card_share": 0.07432382910105922,
+  "top_card_like_rate": 0.0005622351007698296,
+  "median_like_rate": 0.008,
+  "excl_top_card_top1pct_share": 0.48208344296080335,
+  "excl_top_card_top10pct_share": 0.9247718497216024,
+  "0.1%": 0.1779,
+  "1%": 0.5174,
+  "5%": 0.8378,
+  "10%": 0.9302,
+  "25%": 0.9844,
+  "50%": 0.9969
+ },
+ "realtime": {
+  "cards": 1493,
+  "share_posts": 0.2582,
+  "views": 17071029,
+  "share_views": 0.3634,
+  "median_views_realtime": 223.0,
+  "median_views_other": 119.0,
+  "measured_production": 16,
+  "production_claims": 61,
+  "repo": 158
+ },
+ "longevity": {
+  "measured_production": 95,
+  "production_claims": 272,
+  "repo": 810,
+  "verified_share": 0.7319,
+  "posts_per_day": {
+   "2026-09-16": 98,
+   "2026-09-17": 750,
+   "2026-09-18": 993,
+   "2026-09-19": 1072,
+   "2026-09-20": 1006,
+   "2026-09-21": 976,
+   "2026-09-22": 679,
+   "2026-09-23": 208
+  }
+ },
+ "language": {
+  "ja_share": 0.1998,
+  "en_share": 0.6818,
+  "zh_share": 0.0661
+ },
+ "chips": {
+  "cost multiple (N\u00d7 cheaper)": {
+   "cards": 118,
+   "median": 28.0,
+   "min": 1.0,
+   "max": 6000.0
+  },
+  "speed multiple (N\u00d7 faster)": {
+   "cards": 289,
+   "median": 5.8,
+   "min": 0.35,
+   "max": 1580.0
+  },
+  "accuracy (N% accurate)": {
+   "cards": 310,
+   "median": 82.0,
+   "min": 0.05,
+   "max": 469.0
+  },
+  "latency (N ms or N s), in ms": {
+   "cards": 563,
+   "median": 408.0,
+   "min": 0.1,
+   "max": 339000.0
+  },
+  "dollar amount ($N or N\u00a2)": {
+   "cards": 569,
+   "median": 0.042,
+   "min": 0.0,
+   "max": 300000.0
+  },
+  "throughput (N/s)": {
+   "cards": 205,
+   "median": 255.0,
+   "min": 0.3,
+   "max": 50000000.0
+  },
+  "item count (N items)": {
+   "cards": 196,
+   "median": 754.0,
+   "min": 2.0,
+   "max": 521000000.0
+  },
+  "one_x_faster_chips": 53,
+  "cards_with_chips": 1536
+ },
+ "agreement": {
+  "n": 5782,
+  "rate": 0.7722,
+  "kappa": 0.737,
+  "rate_excluding_other": 0.8302,
+  "rate_on_builds": 0.7712,
+  "per_family": {
+   "evals_and_judging": {
+    "precision": 0.6112759643916914,
+    "recall": 0.6498422712933754,
+    "f1": 0.6299694189602446
+   },
+   "classification_routing_triage": {
+    "precision": 0.7133406835722161,
+    "recall": 0.7832929782082324,
+    "f1": 0.7466820542412003
+   },
+   "moderation_and_guardrails": {
+    "precision": 0.8812260536398467,
+    "recall": 0.7255520504731862,
+    "f1": 0.795847750865052
+   },
+   "agent_harness_and_tool_gating": {
+    "precision": 0.8074534161490683,
+    "recall": 0.5531914893617021,
+    "f1": 0.6565656565656566
+   },
+   "compaction_and_context": {
+    "precision": 0.8873239436619719,
+    "recall": 0.8513513513513513,
+    "f1": 0.8689655172413793
+   },
+   "search_rerank_extraction": {
+    "precision": 0.8298969072164949,
+    "recall": 0.688034188034188,
+    "f1": 0.752336448598131
+   },
+   "browser_and_computer_use": {
+    "precision": 0.6766467065868264,
+    "recall": 0.9495798319327731,
+    "f1": 0.7902097902097901
+   },
+   "voice_and_turn_taking": {
+    "precision": 0.6428571428571429,
+    "recall": 0.5869565217391305,
+    "f1": 0.6136363636363638
+   },
+   "live_chat_streams_events": {
+    "precision": 0.3684210526315789,
+    "recall": 0.4666666666666667,
+    "f1": 0.4117647058823529
+   },
+   "collaboration_and_typing": {
+    "precision": 0.4659090909090909,
+    "recall": 0.6612903225806451,
+    "f1": 0.5466666666666665
+   },
+   "games_control_loops_simulation": {
+    "precision": 0.9161230195712954,
+    "recall": 0.9152700186219739,
+    "f1": 0.9156963204471356
+   },
+   "data_and_telemetry": {
+    "precision": 0.76,
+    "recall": 0.475,
+    "f1": 0.5846153846153846
+   },
+   "trading_and_markets": {
+    "precision": 0.9305019305019305,
+    "recall": 0.9163498098859315,
+    "f1": 0.9233716475095785
+   },
+   "other_or_meta": {
+    "precision": 0.7301587301587301,
+    "recall": 0.822066822066822,
+    "f1": 0.7733918128654971
+   }
+  },
+  "jev_latency": {
+   "calls_ok": 5782,
+   "p50_ms": 412.0,
+   "p95_ms": 611.9499999999998,
+   "p99_ms": 2770.7599999999984,
+   "mean_ms": 513.4825319958492,
+   "failed_calls": 11,
+   "error_rate": 0.0018988434317279475,
+   "ids_never_classified": 0
+  },
+  "jev_error_kinds": {
+   "Gateway 5xx: service temporarily unavailable": 3,
+   "argmax check failed (no single highest-probability option)": 7,
+   "Gateway rate limit: upstream provider busy": 1
+  }
+ },
+ "cost": {
+  "sonnet_main": {
+   "input": 1700103,
+   "noCache": 1064857,
+   "cacheRead": 630895,
+   "cacheWrite": 4351,
+   "output": 536941,
+   "usd": 7.6361805,
+   "gateway_reported_usd": 7.6361805,
+   "calls": 146
+  },
+  "sonnet_pilot": {
+   "input": 14088,
+   "noCache": 9870,
+   "cacheRead": 0,
+   "cacheWrite": 4218,
+   "output": 4432,
+   "usd": 0.074605,
+   "gateway_reported_usd": 0.074605,
+   "calls": 1
+  },
+  "jev_tokens": 7615500,
+  "jev_usd": 0.319851,
+  "total_usd": 8.0306365
+ },
+ "pilot_stability": {
+  "family": "36/40",
+  "evidence": "36/40",
+  "framing": "34/40",
+  "baseline": "34/40",
+  "tier": "27/40"
+ },
+ "data_quality": {
+  "cards": 5782,
+  "unique_ids": 5782,
+  "duplicate_urls": 0,
+  "duplicate_post_texts": 5,
+  "empty_text": 0,
+  "empty_title": 0,
+  "text_exactly_400_chars": 927,
+  "text_max_chars": 400,
+  "zero_views": 3,
+  "repo_by_literal_rule": 0,
+  "repo_by_art_field": 810,
+  "sonnet_missing": 0,
+  "sonnet_stray_ids": 0,
+  "sonnet_duplicate_rows": 0,
+  "sonnet_batches": 146,
+  "sonnet_retry_round_batches": 1,
+  "sonnet_ids_missing_from_a_response": 9,
+  "sonnet_stray_ids_in_responses": 10,
+  "jev_missing": 0,
+  "jev_stray_ids": 0,
+  "jev_duplicate_rows": 0
+ }
+}

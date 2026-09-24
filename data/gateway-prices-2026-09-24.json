@@ -1,0 +1,37 @@
+{
+ "source": "https://openrouter.ai/api/v1/models (read 2026-09-24); Jev from https://docs.typesafe.ai/models",
+ "usd_per_million": {
+  "Jev": {
+   "prompt": 0.042,
+   "completion": 0.0
+  },
+  "DeepSeek V4 Flash 0731": {
+   "prompt": 0.03,
+   "completion": 0.32
+  },
+  "GPT-5 Nano": {
+   "prompt": 0.05,
+   "completion": 0.4
+  },
+  "Ministral 3B": {
+   "prompt": 0.1,
+   "completion": 0.1
+  },
+  "Gemini 3.5 Flash-Lite": {
+   "prompt": 0.3,
+   "completion": 2.5
+  },
+  "Claude Haiku 4.5": {
+   "prompt": 1.0,
+   "completion": 5.0
+  },
+  "GPT-5.6 Sol": {
+   "prompt": 2.0,
+   "completion": 10.0
+  },
+  "Claude Fable 5.1": {
+   "prompt": 10.0,
+   "completion": 50.0
+  }
+ }
+}

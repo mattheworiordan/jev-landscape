@@ -1,0 +1,13 @@
+key,stratum,kind,population,reviewed
+measured_production,Measured production (Sonnet label),census,15,15
+material,The 91 candidate builds,census,91,91
+realtime_family,"Voice, live chat or collaboration",census,156,156
+replacement_baseline,"Classic ML, rules or vendor baseline",census,201,201
+baseline_none,No comparison named,sample,4647,300
+demo_no_numbers,"Demo, no numbers",sample,3681,200
+measured_demo,Measured demo,sample,1928,200
+not_realtime_family_not_games,"Not a realtime family, not games",sample,4475,200
+realtime_infra_false,Realtime flag false,sample,3971,200
+realtime_infra_true_nongame,"Realtime flag true, not games",sample,720,100
+other_or_meta,Other or meta,sample,1203,150
+tier_under_300ms,"Under 300 ms (frame, feel or turn)",sample,1064,150

@@ -1,0 +1,3 @@
+claim,low,high,label
+cost,5,10,"vs small LLMs on the same question (Pong, measured from Vercel)"
+speed,2,4,"vs small LLMs on the same question (Pong, measured from Vercel)"

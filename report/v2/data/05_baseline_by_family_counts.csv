@@ -1,0 +1,15 @@
+family,frontier_llm,small_llm,classic_classifier_or_ml,vendor_api,rules_or_regex,none
+other_or_meta,92,33,13,5,10,1050
+games_control_loops_simulation,76,28,7,0,13,954
+classification_routing_triage,164,55,20,6,14,627
+agent_harness_and_tool_gating,96,10,2,1,13,350
+search_rerank_extraction,42,5,14,8,21,347
+evals_and_judging,67,17,6,1,3,278
+moderation_and_guardrails,31,9,6,3,13,244
+trading_and_markets,27,0,3,0,3,234
+data_and_telemetry,27,3,3,2,1,201
+browser_and_computer_use,48,6,0,2,0,168
+compaction_and_context,9,1,2,0,1,58
+live_chat_streams_events,3,1,1,0,1,52
+collaboration_and_typing,3,0,0,0,1,46
+voice_and_turn_taking,5,3,0,2,0,38
