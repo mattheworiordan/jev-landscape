@@ -44,8 +44,10 @@ if ! run python3 scripts/analyze.py --labels "$LABELS" --labels-model "$MODEL" >
 fi
 grep -E '^(WARNING|wrote)' "$RUN/analyze.log" | sed 's/^/  /' || true
 
+NOT_SHIPPED=(report/data/06_low_like_rate_cards.csv)   # excluded on purpose (publish/PUBLISHING.md); rebuilt but not compared
 compare() {  # compare REL: strip the rebuilt file, then compare it with the tree's copy
-  local rel=$1
+  local rel=$1 x
+  for x in "${NOT_SHIPPED[@]}"; do [[ $rel == "$x" ]] && return 0; done
   mkdir -p "$RUN/.stripped/$(dirname "$rel")"
   python3 "$HERE/strip_text.py" "$RUN/$rel" "$RUN/.stripped/$rel" >/dev/null
   if cmp -s "$RUN/.stripped/$rel" "$TREE/$rel"; then return 0; fi

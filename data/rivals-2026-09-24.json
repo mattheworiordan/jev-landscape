@@ -1,5 +1,5 @@
 {
- "source": "~/Brain/work/research/jev-2026-09/landscape/alternatives-2026-09-24.md (Hugging Face search by creation date, read 2026-09-24 15:00 UTC; corpus posts showing a non-Jev model, port or endpoint, data/alternatives-posts-2026-09-24.json)",
+ "source": "Hugging Face model search by creation date (huggingface.co/models?search=jev&sort=created and the same for laya), read 2026-09-24 15:00 UTC; the feed jev.openchamber.dev through 2026-09-23 18:47 UTC for the posts showing a rival (data/alternatives-posts-2026-09-24.json); JevBench v1.4.1 (benchmarkheaven.com/jev-models), read 2026-09-24",
  "hf_new_models_per_day": [
   {
    "date": "2026-09-17",
@@ -85,5 +85,220 @@
   "generality": 4,
   "calibration": 1,
   "of": 20
- }
+ },
+ "rival_sources": {
+  "Laya": "https://github.com/NandhaKishorM/laya",
+  "SemIf": "https://github.com/TheoLeeCJ/SemIf-OpenJev",
+  "Kev": "https://github.com/jaredpalmer/kev",
+  "Reflex": "https://x.com/kshetrajna/status/2100739853101195744",
+  "JevK5": "https://github.com/allebee/jevk5",
+  "Hopper": "https://huggingface.co/HopitAI/hopper",
+  "AutoJev": "https://x.com/denisyarats/status/2102252088067850507",
+  "djev on DiffusionGemma": "https://x.com/googlegemma/status/2102536894169096357",
+  "localjev": "https://x.com/GitHubNext/status/2101193436816920798",
+  "laya-mlx": "https://github.com/mizorewww/laya-mlx",
+  "JevBench, S1Bench": "https://benchmarkheaven.com/jev-models",
+  "Winnow-12B": "https://huggingface.co/EldanRing/Winnow-12B"
+ },
+ "rivals": [
+  {
+   "name": "SemIf (was OpenJev)",
+   "who": "TheoLeeCJ",
+   "first_seen": "16 Sep",
+   "type": "open-weights model",
+   "competes_on": "run yourself, cost, accuracy",
+   "check": "JevBench #9 (was #2); 4,190 stars",
+   "source": "https://github.com/TheoLeeCJ/SemIf-OpenJev"
+  },
+  {
+   "name": "jevlike",
+   "who": "vinnylarouge",
+   "first_seen": "16 Sep",
+   "type": "open-weights model",
+   "competes_on": "run yourself, cost, latency",
+   "check": "none found",
+   "source": "https://x.com/vinnylarouge/status/2100170846346097083"
+  },
+  {
+   "name": "decider-2b",
+   "who": "Mapika",
+   "first_seen": "16 Sep",
+   "type": "open-weights model, 1.9B",
+   "competes_on": "run yourself, cost, latency",
+   "check": "S1Bench: behind SimpleJev and Reflex among free options",
+   "source": "https://huggingface.co/Mapika/decider-2b"
+  },
+  {
+   "name": "djev (DiffusionGemma as Jev)",
+   "who": "Maisa",
+   "first_seen": "19 Sep",
+   "type": "open-weights model and hosted endpoint",
+   "competes_on": "latency, cost, generality, run yourself",
+   "check": "JevBench #6",
+   "source": "https://github.com/Davipar/djev-dev"
+  },
+  {
+   "name": "openjev-sglang",
+   "who": "Eric Zhang",
+   "first_seen": "17 Sep",
+   "type": "hosted endpoint",
+   "competes_on": "latency, run yourself",
+   "check": "none found",
+   "source": "https://x.com/ekzhang1/status/2100651678110515383"
+  },
+  {
+   "name": "Qwen 3.8 27B on Cerebras",
+   "who": "Shannon (@iamMrDuncan)",
+   "first_seen": "17 Sep",
+   "type": "hosted model",
+   "competes_on": "latency, accuracy",
+   "check": "none found",
+   "source": "https://x.com/iamMrDuncan/status/2100467548298899918"
+  },
+  {
+   "name": "Kev",
+   "who": "Jared Palmer",
+   "first_seen": "17 Sep",
+   "type": "open-weights models, 0.5B to 9B",
+   "competes_on": "run yourself, cost, accuracy",
+   "check": "JevBench #24 (4B), #45 (0.6B); 6,598 stars",
+   "source": "https://github.com/jaredpalmer/kev"
+  },
+  {
+   "name": "Reflex",
+   "who": "Kshetrajna Raghavan (Shopify)",
+   "first_seen": "17 Sep",
+   "type": "open-weights model, in the browser",
+   "competes_on": "run yourself, cost",
+   "check": "JevBench #5; cheaper than Jev",
+   "source": "https://x.com/kshetrajna/status/2100739853101195744"
+  },
+  {
+   "name": "SimpleJev",
+   "who": "Eugene Cheah (Featherless AI)",
+   "first_seen": "18 Sep",
+   "type": "library and hosted endpoint, any model, vision",
+   "competes_on": "generality, cost, run yourself",
+   "check": "best free option on S1Bench (19 Sep)",
+   "source": "https://x.com/picocreator/status/2101006253829046539"
+  },
+  {
+   "name": "Laya",
+   "who": "Convai Innovations",
+   "first_seen": "18 Sep",
+   "type": "open-weights model, 421M",
+   "competes_on": "latency, cost, run yourself",
+   "check": "JevBench #36; near chance zero-shot; a base to specialize",
+   "source": "https://github.com/NandhaKishorM/laya"
+  },
+  {
+   "name": "localjev",
+   "who": "GitHub Next",
+   "first_seen": "18 Sep",
+   "type": "local port of Jev's API",
+   "competes_on": "run yourself",
+   "check": "none found",
+   "source": "https://x.com/GitHubNext/status/2101193436816920798"
+  },
+  {
+   "name": "Verdict 2.0",
+   "who": "Hemant (@heman10x)",
+   "first_seen": "18 Sep",
+   "type": "open-weights model, 151M, in the browser",
+   "competes_on": "accuracy, cost, run yourself",
+   "check": "JevBench #54",
+   "source": "https://github.com/Heman10x-NGU/openJev-verdict-2.0"
+  },
+  {
+   "name": "DeepSeek V4.1 Flash behind a Jev-style endpoint",
+   "who": "Nick Khami",
+   "first_seen": "19 Sep",
+   "type": "hosted endpoint",
+   "competes_on": "generality, run yourself",
+   "check": "none found",
+   "source": "https://x.com/skeptrune/status/2101209390992994570"
+  },
+  {
+   "name": "Distilled 4B",
+   "who": "Taro L. Saito",
+   "first_seen": "19 Sep",
+   "type": "fine-tune recipe",
+   "competes_on": "latency, accuracy, run yourself",
+   "check": "none found",
+   "source": "https://x.com/taroleo/status/2101106887840370919"
+  },
+  {
+   "name": "Jeff",
+   "who": "Logan Markewich",
+   "first_seen": "19 Sep",
+   "type": "self-hosted drop-in",
+   "competes_on": "run yourself, cost",
+   "check": "JevBench #35",
+   "source": "https://github.com/logan-markewich/jeff"
+  },
+  {
+   "name": "laya-mlx",
+   "who": "mizorewww",
+   "first_seen": "19 Sep",
+   "type": "local port, Apple silicon",
+   "competes_on": "latency, run yourself",
+   "check": "7 to 14 ms on an M3 Max; 6,150 stars",
+   "source": "https://github.com/mizorewww/laya-mlx"
+  },
+  {
+   "name": "AutoJev",
+   "who": "Denis Yarats",
+   "first_seen": "19 Sep",
+   "type": "open-weights model, trained by agents",
+   "competes_on": "run yourself, cost",
+   "check": "none found; 20 hours on one H200, $3,100 (the author)",
+   "source": "https://x.com/denisyarats/status/2102252088067850507"
+  },
+  {
+   "name": "Winnow-12B",
+   "who": "Eldan Ring",
+   "first_seen": "20 Sep",
+   "type": "open-weights vision model",
+   "competes_on": "generality, run yourself",
+   "check": "JevBench #4",
+   "source": "https://huggingface.co/EldanRing/Winnow-12B"
+  },
+  {
+   "name": "Hopper",
+   "who": "HopitAI",
+   "first_seen": "21 Sep",
+   "type": "open-weights model",
+   "competes_on": "latency, cost, calibration, run yourself",
+   "check": "JevBench #3; better calibrated than Jev",
+   "source": "https://huggingface.co/HopitAI/hopper"
+  },
+  {
+   "name": "JevK5",
+   "who": "allebee",
+   "first_seen": "22 Sep",
+   "type": "open-weights model, 4.2B",
+   "competes_on": "latency, cost, run yourself",
+   "check": "JevBench #2, 62.0 against Jev 63.3",
+   "source": "https://github.com/allebee/jevk5"
+  },
+  {
+   "name": "JevBench (benchmark)",
+   "who": "Florian S, Benchmark Heaven",
+   "first_seen": "19 Sep",
+   "type": "benchmark",
+   "competes_on": "the scoreboard",
+   "check": "77 systems ranked on 23 Sep",
+   "source": "https://benchmarkheaven.com/jev-models"
+  },
+  {
+   "name": "S1Bench (benchmark)",
+   "who": "Cuth (@ItsCuthulhu)",
+   "first_seen": "19 Sep",
+   "type": "benchmark",
+   "competes_on": "the scoreboard",
+   "check": "40 alternatives on 20 Sep",
+   "source": "https://x.com/ItsCuthulhu/status/2101491913866055821"
+  }
+ ],
+ "note": "rivals: the twenty models and endpoints plus the two benchmarks first seen 16 to 22 September; JevBench ranks are v1.4.1 as scored on 23 September; \"the author\" marks a claim from the builder's own post"
 }

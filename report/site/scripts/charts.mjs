@@ -334,7 +334,7 @@ function frame(T, chart, W, variant, footer = 'file') {
 
 // ---------------------------------------------------------------- figure order
 // Page order. Charts 11 and 12 break down figure 1: chart 11 its Other or meta posts ("Figure 1b"), chart 12
-// the 91 most promising builds among its measured demos ("Figure 1c", the substance test). Every other
+// the 91 builds most likely to show something new among its measured demos ("Figure 1c", the substance test). Every other
 // figure keeps the number of its chart file.
 const ORDER = ['01', '11', '12', '02', '03', '04', '05', '06', '07', '08', '09', '10'];
 const FIG_LABEL = { '11': '1b', '12': '1c' };
@@ -745,7 +745,7 @@ const CLAIMS = [
 // OpenChamber's own survey of user reports, as cited in report/landscape.md section 11
 // (https://openchamber.dev/blog/jev-typesafe-ai/). Not a CSV value: an external cross-check.
 const SURVEY = { cost: 30, speed: 7 };
-// Optional measured small-model reference band. The plan's "5 to 10x cost, 2 to 4x latency
+// Optional measured small-model reference band. The Pong comparison's "5 to 10x cost, 2 to 4x latency
 // from the Pong comparison" is not in the report data, so it is not drawn. To draw it, add
 // data/14_small_model_reference.csv with columns claim,low,high,label (claim = cost|speed).
 const REF_FILE = join(DATA, '14_small_model_reference.csv');
@@ -1344,7 +1344,7 @@ const jobWords = (list) => list.map((j) => `${j.label.toLowerCase()} (${j.posts}
 
 const chart12 = {
   key: '12', file: '12-what-would-have-done-the-job', section: 'What would have done the job before?',
-  title: `Of the ${CAND} most promising builds, ${UNAVAIL === 0 ? 'none' : fmt(UNAVAIL)} did something that was unavailable before`,
+  title: `Of the ${CAND} builds most likely to show something new, ${UNAVAIL === 0 ? 'none' : fmt(UNAVAIL)} did something that was unavailable before`,
   subtitle: `${CAND} builds (${DISTINCT} distinct), by what a team would have used before Jev.`,
   desc: BEFORE.map((r) => `${r.label}: ${r.posts} of ${CAND}.`).join(' '),
   body(T, { x0, x1, y0, narrow }) {
@@ -1454,8 +1454,8 @@ const noiseTop3 = noiseRows.filter((r) => r.key !== 'not_subtyped').sort((m, n) 
 const SECTIONS = {
   '01': `<p>Two thirds of the posts measured nothing, ${aud('ladder_no_measurement', 0)} on the audit, and about a third reported a number from the author's own run, ${aud('ladder_measured_demo', 0)}. Production is only the ${fmt(stepTot.prod_ok)} orange squares, the posts that held when the audit re-read them: ${pct(PROD.value, 2)} of posts, and at most ${pct(PROD.hi, 0)}.</p>`,
   '11': `<p>About a fifth of posts state no use case, benchmark the model itself or wrap it: ${aud('meta_still', 0)} on the audit. Of the ${fmt(noiseN)} noise posts, ${pct(sum(noiseTop3.map((r) => r.share)), 0)} are ${noiseTop3.slice(0, -1).map((r) => nw(r.key)).join(', ')} and ${nw(noiseTop3[noiseTop3.length - 1].key)}, and memes and hot takes are ${underHalf ? 'under half a percent of all posts each' : 'a small share of all posts'}.</p>`,
-  '12': `<p>${UNAVAIL === 0 ? 'None' : `Only ${fmt(UNAVAIL)}`} of the ${CAND} most promising builds, the posts labeled as a measured decision made while a person waits, did something that was unavailable before: a team would have used an LLM for ${byBefore.llm}, rules for ${byBefore.rules}, a vendor API for ${byBefore.vendor} and a classic model for ${byBefore.classic}. The audit judged each one from its post, not by running the build.</p>`,
-  '02': `<p>The top 1% of posts, ${top1.views_cards} of them, hold ${pct(num(top1.views_share))} of the ${(totalViews / 1e6).toFixed(1)} million views and ${pct(num(top1.likes_share))} of the likes, and the median post has ${fmt(num(stats.median_views))} views. The most-viewed post alone is ${pct(num(stats.top_card_share))} of views, with a like rate that looks like promotion, but without the ${stats.suspect_cards} posts like it the top 1% still hold ${pct(num(stats.top1pct_views_excl_suspect))}.</p>`,
+  '12': `<p>${UNAVAIL === 0 ? 'None' : `Only ${fmt(UNAVAIL)}`} of the ${CAND} builds most likely to show something new, the posts labeled as a measured decision made while a person waits, did something that was unavailable before: a team would have used an LLM for ${byBefore.llm}, rules for ${byBefore.rules}, a vendor API for ${byBefore.vendor} and a classic model for ${byBefore.classic}. The audit judged each one from its post, not by running the build.</p>`,
+  '02': `<p>The top 1% of posts, ${top1.views_cards} of them, hold ${pct(num(top1.views_share))} of the ${(totalViews / 1e6).toFixed(1)} million views and ${pct(num(top1.likes_share))} of the likes, and the median post has ${fmt(num(stats.median_views))} views. The most-viewed post alone is ${pct(num(stats.top_card_share))} of views, with a like rate far below the median, but without the ${stats.suspect_cards} posts like it the top 1% still hold ${pct(num(stats.top1pct_views_excl_suspect))}.</p>`,
   '03': `<p>About four in five posts compare Jev with nothing, ${audBase.none} on the audit, and about 1 in 30 with the classifiers, rules and vendor APIs it would replace, ${audBase.repl}. A week of "${fmtX(claimData[0].median)} cheaper", and almost nobody asking "than what I already had?"</p>`,
   '04': `<p>By family, ${FAM[evTop][0].toLowerCase()} measured most often, ${pct(measuredShare(evFam[evTop]), 0)} of its posts, and ${FAM[evBottom][0].toLowerCase()} least, ${pct(measuredShare(evFam[evBottom]), 0)}. Only ${words(PROD.k)} posts measured Jev in production on the audit's re-read: ${prodList.slice(0, -1).join(', ')}, and ${prodList[prodList.length - 1]}.</p>`,
   '05': `<p>The median claim on the cards was ${fmtX(claimData[0].median)} cheaper and ${fmtX(claimData[1].median)} faster, close to ${a(L.survey, "OpenChamber's own survey of user reports")} at about ${SURVEY.cost}× and ${SURVEY.speed}×. These are the authors' numbers, and figure ${figNo('03')} shows what most of them are measured against: nothing named at all, or a frontier model.</p>`,
@@ -1722,7 +1722,7 @@ figure [data-tip]:hover{opacity:.72}
   <div class="short">
     <h2>The short version</h2>
     <ul>
-      <li>${UNAVAIL === 0 ? 'None' : `Only ${fmt(UNAVAIL)}`} of the ${CAND} most promising builds did something that was unavailable before: a team would have used an LLM for ${byBefore.llm} of them (figure ${figNo('12')}).</li>
+      <li>${UNAVAIL === 0 ? 'None' : `Only ${fmt(UNAVAIL)}`} of the ${CAND} builds most likely to show something new did something that was unavailable before: a team would have used an LLM for ${byBefore.llm} of them (figure ${figNo('12')}).</li>
       <li>About four in five posts compare Jev with nothing, ${audBase.none}, and about 1 in 30 with the tools it would replace, ${audBase.repl}.</li>
       <li>${capFirst(words(PROD.k))} of ${fmt(BASE)} posts measured Jev in production, ${pct(PROD.value, 2)} (at most ${pct(PROD.hi, 0)}), and ${heldRealtime === 0 ? 'none of them is a realtime build' : `${words(heldRealtime)} of them ${heldRealtime === 1 ? 'is' : 'are'} realtime`}.</li>
       <li>When Jev was surest it agreed with ${LABELS_SHORT} ${pct(deciles[9].agree)} of the time, and it labeled every post for ${usd(jevCost)} against ${usd(labelsCost)} for ${LABELS_SHORT}.</li>
@@ -1770,7 +1770,7 @@ ${CHARTS.map(figHTML).join('\n')}
     <ul>
       <li><b>Data.</b> ${a(L.feed, "OpenChamber's Jev feed")}, snapshot ${FEED.day} ${FEED.time} UTC: ${fmt(S.posts)} posts from ${fmt(S.authors)} authors, which OpenChamber selected with its own filter for what counts as a build.${S.feed.kept_from_earlier ? ` That includes ${S.feed.kept_from_earlier} posts an earlier snapshot held and the feed later dropped.` : ''}${S.feed.cut_after_through ? ` Posts after ${dnum(S.feed.through)} ${mname(S.feed.through)} (UTC) are left out.` : ''} Post times decoded from the X ids run from ${FIRST.day} ${FIRST.time} to ${LAST.day} ${LAST.time} UTC. Views are X impressions and likes are X likes, both as the feed recorded them.</li>
       <li><b>Open data.</b> The labels from every model and the audit, the tables behind every chart, the rubric and the code are at ${a(L.repo, esc(REPO_SHORT))}. The feed's post text isn't republished there; the repo says how to fetch it.</li>
-      <li><b>Rubric.</b> The v2 rubric has 15 families (the ${FAMILY_WORDS} on the charts, and one for posts that don't use Jev), 7 latency tiers, 5 evidence levels, 5 framings, 6 baselines, and two flags: realtime infrastructure and a production claim. The framings and the seven tiers were labeled but aren't published. "Measured" needs a number from the author's own run; TypeSafe's launch numbers quoted as Jev's general speed or price don't count. "Unclear" is allowed and preferred to a guess.</li>
+      <li><b>Rubric.</b> The v2 rubric has 15 families (the ${FAMILY_WORDS} on the charts, and one for posts that don't use Jev), 7 latency tiers, 5 evidence levels, 5 framings, 6 baselines, and two flags: realtime infrastructure and a production claim. The framings and the seven tiers were labeled but aren't charted; they are in the labels file. "Measured" needs a number from the author's own run; TypeSafe's launch numbers quoted as Jev's general speed or price don't count. "Unclear" is allowed and preferred to a guess.</li>
       <li><b>Models.</b> ${AUDITED ? `Claude Sonnet 5 labeled every post through Vercel AI Gateway, in batches of 40, with the rubric as a cached system prompt. Sonnet 5 ignores temperature, so runs aren't deterministic: on the same 120 cards, two runs matched on family for ${S.v2_stability_on_120.family.replace('/', ' of ')}.` : `${LABELS_MODEL}, with adaptive thinking, labeled every post through Vercel AI Gateway, in batches of 40, with the v2 rubric as a cached system prompt (<code>${esc(LB.file)}</code>). Its safety filter refused ${S.audit.labels_refused.length === 1 ? 'one post' : `${S.audit.labels_refused.length} posts`}, which ${S.audit.labels_refused.length === 1 ? 'is' : 'are'} left out. Claude Sonnet 5 made the first two passes, and its v2 labels are the ones the audit sampled from. The Gateway ignores temperature for both models, so both runs were sampled at its default and aren't deterministic: on the same 120 cards, two Sonnet runs matched on family for ${S.v2_stability_on_120.family.replace('/', ' of ')}.`} Jev classified the family of every post again as a second classifier, one call per post.</li>
       <li><b>Noise sub-types.</b> A separate Claude Sonnet 5 pass sorted the noise posts (Other or meta, or commentary in another family) into sub-types, and the hot takes by stance, against <code>report/rubric-noise.md</code>.</li>
       <li><b>Cost.</b> At Gateway list prices the first Sonnet pass cost ${usd(SPEND.v1)} and the second ${usd(v2cost)} (${usd(sonnetV2Cost)} for the full run${S.classified_sonnet_v2 > S.v1_set.cards ? ' and the refreshes' : ''}, ${usd(pilots)} for two 120-card pilots).${AUDITED ? '' : ` The ${LABELS_MODEL} run cost ${usd(labelsCost)}.`} Sorting the noise into sub-types (figure ${figNo('11')}) cost ${usd(S.cost.noise_usd)}, and Jev's pass ${usd(jevCost)}.</li>
@@ -1788,7 +1788,7 @@ ${CHARTS.map(figHTML).join('\n')}
     <h3>Data quality and limits</h3>
     <ul>
       <li>Post text in the feed is capped at 400 characters, and ${fmt(S.data_quality.text_exactly_400_chars)} posts (${pct(S.data_quality.text_exactly_400_chars / S.posts, 0)}) are cut. The claim chips come from the full post, so some numbers are visible only as chips.</li>
-      <li>The most-viewed post has a like rate of ${pct(num(stats.top_card_like_rate), 2)}, and ${stats.suspect_cards} posts with 100,000 or more views and a like rate under 0.2% hold ${pct(num(stats.suspect_share_views))} of views. That pattern looks like promotion; figure ${figNo('02')} gives the numbers without them.</li>
+      <li>The most-viewed post has a like rate of ${pct(num(stats.top_card_like_rate), 2)}, and ${stats.suspect_cards} posts with 100,000 or more views and a like rate under 0.2% hold ${pct(num(stats.suspect_share_views))} of views. Figure ${figNo('02')} gives the numbers without them.</li>
       <li>Every label is one model's reading of a short post, not a check of what was built. Claims on the cards are the authors' own and aren't reproduced here.</li>
       <li>Every table behind these charts, the rubric and the scripts are in ${a(L.repo, 'the repo')}; this page and its charts are generated from those CSVs by <code>report/site/scripts/charts.mjs</code>.</li>
     </ul>

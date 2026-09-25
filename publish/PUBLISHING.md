@@ -36,9 +36,12 @@ Anyone can get the text again from the feed (README.md, step 1), or open a post 
 | `report/site/v3/` | Not left out: the report, published at the root as `index.html` and `charts/`, rebuilt by `stage.sh` with its published links. |
 | `report/site/video/` | Screen recordings of the page for social posts. The page does not use them, and they are about 40 MB. |
 | `data/snapshots-after-audit/` | A later pull of the feed (24 September), with full post text. Its 239 later posts are labelled in `data/labels-after-audit/` (shipped, text emptied) and left out of the analysis because the audit predates them. |
-| `report/site/summary/`, `report/site/jev-week-sorted.pdf`, `report/site/assets/` | The internal team brief, the PDF of the first edition and an image for the brief. Internal review material, not part of the record. |
+| `report/site/summary/`, `report/site/jev-week-sorted.pdf`, `report/site/assets/` | Review material and the PDF of the first edition, not part of the record. |
+| `report/data/06_low_like_rate_cards.csv` | The nine posts with very low like rates for their views, with their handles. The pages use only the aggregate; naming the accounts next to a judgement about their like rate is not the record's job. |
+| `report/audit-changes.md` | The working log of which drafts each corrected number touched. The corrections themselves are on the pages and in `review/`. |
+| `scripts/record-page.mjs`, `report/site/v3/video/` | A tool that records the page as a short video, and its output. Not part of the pipeline. |
 | `data/withdrawn-tables/charts/` | The chart of a withdrawn table. Its tables are in the repository; a picture of a withdrawn claim is not, so that nobody shares it as a finding. |
-| `publish/publish.sh`, `publish/SUBSTACK.md` | The author's release tools: the `gh` commands for this account and the notes for the Substack post. |
+| `publish/publish.sh`, `publish/SUBSTACK.md` | The author's release tools. |
 | `node_modules/`, `__pycache__/`, `.ruff_cache/`, `.DS_Store` | Local tools and caches. |
 
 `.gitignore` in the repository lists the same files, so that a run of the pipeline in a clone does not add them.

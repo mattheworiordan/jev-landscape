@@ -14,7 +14,7 @@ hand-labels-120.jsonl, hand-labels-disputes.jsonl, usage-*.jsonl, pilot/*.jsonl,
 and the independent audit in review/ (scripts/audit.py runs its scripts and writes
 report/data/13_audit_*.csv; the audit always describes the Sonnet v2 labels it sampled from).
 
-What v2 changes (review: Brain work/content/drafts/jev-landscape-review.md, §6):
+What v2 changes (the critical review of 23 September 2026, not published, §6):
 - labels come from rubric v2 (scripts/rubric.ts, report/rubric.md);
 - duplicates are merged (scripts/dedupe.py) and not_a_jev_build cards are left out
   of every use-case table (their count and share are reported);
@@ -166,7 +166,7 @@ RULE3_OVERRIDES = {SNAKE_ID: GAMES}
 SONNET_PRICE = {"input": 2.0, "output": 10.0, "cacheRead": 0.2, "cacheWrite": 2.5}  # $ per M tokens
 JEV_PRICE_INPUT = 0.042  # $ per M input tokens; output free (Gateway list, 2026-09-23)
 OPENCHAMBER_SURVEY = "https://openchamber.dev/blog/jev-typesafe-ai/"
-REVIEW_NOTE = "Brain `work/content/drafts/jev-landscape-review.md`"
+REVIEW_NOTE = "the critical review of 23 September 2026, not published"
 
 
 # ---------------------------------------------------------------- helpers

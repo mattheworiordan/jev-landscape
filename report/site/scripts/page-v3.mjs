@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// page-v3.mjs: "A week of Jev, sorted", restructured on 24 September 2026 after Matt's two reads.
+// page-v3.mjs: "A week of Jev, sorted", restructured on 24 September 2026.
 // Reads the CSVs and audit tables charts.mjs uses, plus four data files read at source on 24 Sep (the two
 // gateways, list prices, the rivals) and the head-to-head results collected from the posts, draws the new
 // figures with the helpers in lib.mjs, carries kept charts across from the current page with their number
@@ -80,7 +80,7 @@ const LUNA = WK['gpt-5.6-luna'], JEVWK = WK.jev;
 const PUBLISHED = process.env.PUBLISHED || '25 September 2026';
 const ARTICLE_URL = process.env.ARTICLE_URL || '#';
 const TECHNICAL_URL = process.env.TECHNICAL_URL || '../index.html'; // publish/stage.sh sets technical/
-const articleLink = ARTICLE_URL === '#' ? 'a separate piece, coming next week' : a(ARTICLE_URL, 'a separate piece');
+const articleLink = ARTICLE_URL === '#' ? 'a separate piece' : a(ARTICLE_URL, 'a separate piece');
 const L = {
   feed: 'https://jev.openchamber.dev', repo: 'https://github.com/mattheworiordan/jev-landscape', pong: 'https://jev-pong.ably.dev/how#other-models',
   or: 'https://openrouter.ai/typesafe/jev-1.13', orRank: 'https://openrouter.ai/rankings', vcExport: 'https://vercel.com/api/ai/leaderboard-export?dataset=models&modality=all&format=json',
@@ -156,7 +156,8 @@ const H2H = [
 const small = H2H.filter((h) => h.kind === 'small'), frontier = H2H.filter((h) => h.kind === 'frontier');
 const smallCost = small.filter((h) => h.cost).map((h) => h.cost), smallLat = small.filter((h) => h.lat).map((h) => h.lat);
 const frontierCost = frontier.map((h) => h.cost), frontierLat = frontier.map((h) => h.lat);
-const M = { smallCostMed: median(smallCost), smallLatMed: median(smallLat), smallCostLo: Math.min(...smallCost), smallCostHi: Math.max(...smallCost), smallLatLo: Math.min(...smallLat), smallLatHi: Math.max(...smallLat), frontierCostLo: Math.min(...frontierCost), frontierCostHi: Math.max(...frontierCost), frontierLatLo: Math.min(...frontierLat), frontierLatHi: Math.max(...frontierLat) };
+const noPong = small.filter((h) => !h.who.startsWith('Jev Pong'));
+const M = { smallCostMedNoPong: median(noPong.filter((h) => h.cost).map((h) => h.cost)), smallLatMedNoPong: median(noPong.filter((h) => h.lat).map((h) => h.lat)), smallCostMed: median(smallCost), smallLatMed: median(smallLat), smallCostLo: Math.min(...smallCost), smallCostHi: Math.max(...smallCost), smallLatLo: Math.min(...smallLat), smallLatHi: Math.max(...smallLat), frontierCostLo: Math.min(...frontierCost), frontierCostHi: Math.max(...frontierCost), frontierLatLo: Math.min(...frontierLat), frontierLatHi: Math.max(...frontierLat) };
 const LAUNCH = { costLo: 40, costHi: 400, speedLo: 20, speedHi: 200 }; // TypeSafe's launch post, against frontier LLMs
 
 // ---------------------------------------------------------------- footers: one line on the page, the full credit only in the files
@@ -229,7 +230,7 @@ const pricedOf = (n) => priced.find((x) => x.name === n).usd;
 const chartMoney = {
   key: '14', file: '14-weighted-by-money',
   title: 'More requests than GPT-5.6 Luna, for an eighth of the money',
-  subtitle: "OpenRouter, week to 23 Sep: Jev against the busiest chat model; then one day's Jev tokens priced on other models",
+  subtitle: "OpenRouter, week to 23 Sep: Jev against GPT-5.6 Luna; then one day's Jev tokens priced on other models",
   desc: `Jev ${mShort(JEVWK.requests)} requests, ${mShort(JEVWK.tokens)} tokens, ${usd(JEVWK.usd)}; GPT-5.6 Luna ${mShort(LUNA.requests)}, ${mShort(LUNA.tokens)}, ${usd(LUNA.usd)}. On 23 Sep Jev's ${mShort(promptTok)} prompt tokens cost ${usd(jevBill)}.`,
   body(T, { x0, x1, y0, narrow }) {
     const out = []; let y = y0;
@@ -307,7 +308,7 @@ function rangeRow(T, { y, x0, x1, lx, label, lo, hi, mid, role, narrow, note }) 
 }
 const chartClaims = {
   key: '17', file: '17-announced-claimed-measured',
-  title: `TypeSafe announced 40 to 400x cheaper. The posts claimed ${xf(num(chips.cost.median))}. Measured against comparable models, the median is ${xf(M.smallCostMed)}.`,
+  title: `TypeSafe's 40 to 400x cheaper is against frontier models. Against comparable small models, the measured median is ${xf(M.smallCostMed)}.`,
   subtitle: 'Cost and speed multiples: the launch claim, what the posts claimed, and what the published head-to-heads measured',
   desc: `Launch claim ${LAUNCH.costLo} to ${LAUNCH.costHi}x cheaper and ${LAUNCH.speedLo} to ${LAUNCH.speedHi}x faster against frontier models. Posts: median ${xf(num(chips.cost.median))} and ${xf(num(chips.speed.median))}. Head-to-heads against small models: cost ${xf(M.smallCostLo)} to ${xf(M.smallCostHi)}, median ${xf(M.smallCostMed)}; latency ${xf(M.smallLatLo)} to ${xf(M.smallLatHi)}, median ${xf(M.smallLatMed)}.`,
   body(T, { x0, x1, y0, narrow }) {
@@ -343,7 +344,7 @@ const chartClaims = {
 // ---------------------------------------------------------------- figure: Jev against the model it was compared with, by task
 const chartH2H = {
   key: '18', file: '18-jev-against-the-model-it-was-compared-with',
-  title: 'Against small models the gap is single digits; against frontier models it is hundreds',
+  title: `Against small models the median gap is ${xf(M.smallCostMed)} on cost and ${xf(M.smallLatMed)} on latency; against frontier models it is 100x and more`,
   subtitle: 'Every published head-to-head found: how many times cheaper and faster Jev was than the model it was compared with, on the same task',
   desc: `${H2H.length} comparisons from ${new Set(H2H.map((h) => h.who)).size} sources. Blue: against a small model. Grey: against a frontier model.`,
   body(T, { x0, x1, y0, narrow }) {
@@ -379,7 +380,7 @@ const chartH2H = {
 const chartRivals = {
   key: '16', file: '16-the-rivals',
   title: 'Twenty rivals in a week, and the rate is still rising',
-  subtitle: 'New Hugging Face models named jev or laya a day, 17 to 23 Sep; posts in the feed showing a rival model, 16 to 23 Sep',
+  subtitle: 'New Hugging Face models named jev or laya a day, 17 to 23 Sep; posts in the feed showing a rival model, 16 to 23 Sep. The twenty are listed under the chart.',
   desc: `${RV.rivals_count} distinct models and endpoints plus ${RV.benchmarks_count} benchmarks by 22 Sep. Hugging Face: ${RV.hf_new_models_per_day.map((d) => d.models).join(', ')} a day.`,
   body(T, { x0, x1, y0, narrow }) {
     const out = []; let y = y0;
@@ -429,7 +430,7 @@ function keptFigure(figId) {
 const CSS = OLD_HTML.match(/<style>([\s\S]*?)<\/style>/)[1];
 const SCRIPT = OLD_HTML.match(/<script>[\s\S]*?<\/script>/)[0];
 let AUDIT = (OLD_HTML.match(/<details class="audit-tables">[\s\S]*?<\/details>/) || [''])[0];
-AUDIT = AUDIT.replace(/<h3>What the charts count<\/h3>\s*<ul>[\s\S]*?<\/ul>/, '').replace(/figure (\d+[abc]?)/g, 'figure $1 of the technical page');
+AUDIT = AUDIT.replace(/<h3>What the charts count<\/h3>\s*<ul>[\s\S]*?<\/ul>/, '').replace(/figure (\d+[abc]?)/g, 'figure $1 of the technical page').replace(/suspect posts/g, 'low like-rate posts').replace(/looks like promotion/g, 'has a like rate far below the median');
 check(AUDIT.length > 2000, 'the audit tables were found in the current page');
 
 // ---------------------------------------------------------------- markup
@@ -496,19 +497,8 @@ const compoundTable = tbl(['Use case', 'How it was done before', 'What a decisio
   ['A live audience board, every message scored', 'sampled or batch sentiment; an LLM per message at $140 to $950 an hour', 'every message, categories redefined as you go, $37.86 an hour at 300 messages a second', 'cost', 'a measured demo'],
   ['Live minutes that flag a reversed decision', 'a summary after the meeting', 'flagged in about 130 ms, while everyone is still in the room', 'cost, mostly', 'one repo, on replay'],
 ]);
-const rivalsTable = tbl(['Name', 'Who', 'First seen', 'Competes on', 'Independent check', 'What it took'], [
-  ['Laya', 'Convai Innovations', '18 Sep', 'latency, cost, run yourself', 'JevBench #36; near chance zero-shot; a base to specialize', 'a 421M encoder'],
-  ['SemIf', 'TheoLeeCJ', '16 Sep', 'run yourself, cost, accuracy', 'JevBench #9 (was #2); 4,190 stars', 'one person, one day'],
-  ['Kev', 'Jared Palmer', '17 Sep', 'run yourself, cost, accuracy', 'JevBench #24 (4B); 6,598 stars', 'one person, two days'],
-  ['Reflex', 'Kshetrajna Raghavan, Shopify', '17 Sep', 'run yourself, cost, in the browser', 'JevBench #5; cheaper than Jev', 'one engineer, three days'],
-  ['JevK5', 'allebee', '22 Sep', 'latency, cost, run yourself', 'JevBench #2, 62.0 against Jev 63.3', 'a 4.2B model, a week after launch'],
-  ['Hopper', 'HopitAI', '21 Sep', 'latency, cost, calibration', 'JevBench #3; better calibrated than Jev', 'not published'],
-  ['AutoJev', 'Denis Yarats', '19 Sep', 'run yourself, cost', 'not benchmarked', 'trained by agents in 20 hours on one H200, $3,100'],
-  ['djev on DiffusionGemma', 'Maisa', '19 Sep', 'latency, cost, run yourself', "JevBench #6; promoted by Google's Gemma account", 'a community recipe on Cloud Run'],
-  ['localjev', 'GitHub Next', '18 Sep', 'run yourself', 'a local port of the API, built while the team was still waiting for access', 'a local port'],
-  ['laya-mlx', 'mizorewww', '19 Sep', 'latency, local', '7 to 14 ms on an M3 Max; 6,150 stars', 'a port'],
-  ['JevBench, S1Bench', 'Benchmark Heaven; Cuth', '19 Sep', 'the scoreboards', '77 systems ranked on 23 Sep', ''],
-]);
+const rivalsTable = tbl(['Name', 'Who', 'First seen', 'Type', 'Competes on', 'Independent check', 'Source'],
+  RV.rivals.map((r) => [r.name, r.who, r.first_seen, r.type, r.competes_on, r.check, a(r.source, 'link')]));
 const jb = RV['jevbench_v141_2026-09-23'];
 
 // ---------------------------------------------------------------- the page
@@ -541,19 +531,19 @@ figure details{margin-top:8px}
 <header>
   <p class="kicker">Data · Jev's first week · 16 to 23 September 2026</p>
   <h1>A week of Jev, sorted</h1>
-  <p class="dek">I sorted every post from Jev's first week, read the usage the gateways show, and counted the rivals. This is what the data says. What I make of it is ${articleLink}.</p>
+  <p class="dek">I sorted 5,950 posts from Jev's first week, read the usage the gateways show, and counted the rivals. This is what the data says. What I make of it is ${articleLink}.</p>
   <p class="byline"><strong>${a(L.linkedin, "Matthew O'Riordan")}</strong> · ${PUBLISHED} · Disclosure: I'm CEO of ${a(L.ably, 'Ably')}, a realtime infrastructure company.</p>
 </header>
 
 <div class="intro prose">
-  <p>Jev is TypeSafe AI's decision model. It doesn't write text. You give it a state and a typed question, pick one of these, score this, yes or no, and it answers in about 200 milliseconds with a probability. TypeSafe says it's 100x cheaper and 10x faster than an LLM for that kind of question.</p>
-  <p>I built ${a('https://jev-pong.ably.dev', 'Pong on it')} the week it came out. The post did well, and nearly every comment asked the same thing: fine, you built a game, what's it for? I tried to answer and couldn't. Every use case I reached for was either already solved or harder than a cheaper yes-or-no. So I stopped guessing and measured: every post from the first week, sorted and audited; the two gateways that publish usage; and the rivals that turned up. The ${a('#method', 'method and the audit')} are at the end.</p>
+  <p>Jev is TypeSafe AI's decision model. It doesn't write text. You give it a state and a typed question, pick one of these, score this, yes or no, and it answers in a few hundred milliseconds with a probability. ${a(L.launch, 'TypeSafe\'s launch claim')} was 20 to 200x faster and 40 to 400x cheaper than an LLM for that kind of question; "100x cheaper, 10x faster" is the shorthand the week settled on.</p>
+  <p>I built ${a('https://jev-pong.ably.dev', 'Pong on it')} the week it came out. The post did well, and nearly every comment asked the same thing: fine, you built a game, what's it for? I tried to answer and couldn't. Every use case I reached for was either already solved or harder than a cheaper yes-or-no. So I stopped guessing and measured: every post in OpenChamber's Jev feed for the first week, sorted and audited; the two gateways that publish usage; and the rivals that turned up. The ${a('#method', 'method and the audit')} are at the end.</p>
   <div class="short">
     <h2>The short version</h2>
     <ul>
-      <li>Jev is being called at scale, and the money is small. On 23 September it was a quarter of all requests on Vercel's AI Gateway and 2% of its tokens; on OpenRouter it served more requests that week than the busiest chat model, for an eighth of the spend. TypeSafe publishes no usage number, and 96% of the gateway volume is anonymous.</li>
-      <li>The buzz is about using it, not about what it makes possible. Four in five posts compared Jev with nothing, and none of the ${AE.candidates.value} most promising builds did something that was unavailable before.</li>
-      <li>TypeSafe announced 40 to 400x cheaper. The posts claimed ${xf(num(chips.cost.median))}. Measured against the small models you'd actually use, the median is ${xf(M.smallCostMed)} on cost and ${xf(M.smallLatMed)} on latency, often with better accuracy.</li>
+      <li>Jev is being called at scale, and the money is small. On 23 September it was a quarter of all requests on Vercel's AI Gateway and 2% of its tokens; on OpenRouter it served more requests that week than GPT-5.6 Luna, for an eighth of the spend. TypeSafe publishes no usage number, and 96% of OpenRouter's Jev requests come from apps that don't say who they are.</li>
+      <li>The buzz is about using it, not about what it makes possible. Four in five posts compared Jev with nothing, and none of the ${AE.candidates.value} builds most likely to show something new did something that was unavailable before.</li>
+      <li>TypeSafe announced 40 to 400x cheaper than frontier models, and against frontier models it holds. The posts claimed ${xf(num(chips.cost.median))}. Measured against the small models you'd actually use, the median is ${xf(M.smallCostMed)} on cost and ${xf(M.smallLatMed)} on latency, often with better accuracy.</li>
       <li>Twenty rivals in a week, mostly built by one person in days on open weights. None matches Jev's mix yet, and no big provider has shipped one.</li>
     </ul>
   </div>
@@ -586,14 +576,14 @@ ${section('s4', '4 · Was any of it new?', 'The buzz is about using it, not abou
   </div>
   ${figure(keptFigure('figure-3'))}
   <div class="prose" style="margin-top:22px">
-    <p>The audit went further. It took the ${AE.candidates.value} posts where someone measured a decision inside a live system with a person waiting on it, the builds most likely to need both the speed and the price, and asked what a team would have used before Jev. An LLM for ${before.llm}. Rules for ${before.rules}. A vendor API for ${before.vendor}. A classic model for ${before.classic}. None did something that was unavailable before. (${AE.substance_distinct.value} distinct builds; ${AE.candidates_still_meeting.value} still meet the test on the auditor's own labels.)</p>
+    <p>The audit went further. It took the ${AE.candidates.value} posts where the first-pass labels found a measured decision inside a live system with a person waiting on it, the builds most likely to need both the speed and the price, and asked what a team would have used before Jev. An LLM for ${before.llm}. Rules for ${before.rules}. A vendor API for ${before.vendor}. A classic model for ${before.classic}. None did something that was unavailable before. (${AE.substance_distinct.value} distinct builds; ${AE.candidates_still_meeting.value} still meet the test on the auditor's own labels.)</p>
   </div>
   ${figure(keptFigure('figure-1c'))}
   ${why('Faster and cheaper versions of jobs that had a tool. A real change to who can try them; one week in, not a change to what gets built.')}`)}
 
-${section('s5', '5 · Announced, claimed, measured', `TypeSafe said 40 to 400x. People claimed ${xf(num(chips.cost.median))}. Against comparable models, the median is ${xf(M.smallCostMed)}.`, `
+${section('s5', '5 · Announced, claimed, measured', `TypeSafe's 40 to 400x is against frontier models, and holds there. Against the small models you'd actually use, the median is ${xf(M.smallCostMed)}.`, `
   <div class="prose">
-    <p>The ${a(L.launch, 'launch claim')} was against frontier models, and the posts repeated it. Where someone put Jev against a small model on the same task and published the numbers (I found ${small.length} such comparisons, including my own Pong runs) the gap shrank to a median of ${xf(M.smallCostMed)} on cost and ${xf(M.smallLatMed)} on latency, with Jev at or above the small model on accuracy for most bounded questions. Against frontier models the multiples are real: ${xf(M.frontierCostLo)} to ${xf(M.frontierCostHi)} on cost.</p>
+    <p>The ${a(L.launch, 'launch claim')} was against frontier models, and on the four published frontier comparisons it holds. The posts repeated it. Where someone put Jev against a small model on the same task and published the numbers (I found ${small.length} such comparisons, including my own Pong runs) the gap shrank to a median of ${xf(M.smallCostMed)} on cost and ${xf(M.smallLatMed)} on latency (${xf(M.smallCostMedNoPong)} and ${xf(M.smallLatMedNoPong)} without my own runs), with Jev at or above the small model on accuracy for most bounded questions. Against frontier models the multiples are real: ${xf(M.frontierCostLo)} to ${xf(M.frontierCostHi)} on cost.</p>
   </div>
   ${figure({ svg: pageSVG['17'] })}
   ${figure({ svg: pageSVG['18'], table: h2hTable + '<h3>The cost uses people measured</h3>' + costTable })}
@@ -620,11 +610,11 @@ ${section('s7', '7 · Who else is coming', 'Twenty rivals in a week, most built 
 ${section('s8', '8 · Where it is', 'What the week adds up to', `
   <div class="prose">
     <ul>
-      <li>Jev is being called at scale, mostly anonymously, and the money is small.</li>
+      <li>Jev is being called at scale, mostly by apps that don't say who they are, and the money is small.</li>
       <li>Against comparable small models the gap is single digits, not 100x and 10x.</li>
       <li>The uses that can be named are decisions about data: labeling, routing, judging, extraction. Possible before, cheaper now, and getting cheaper regardless.</li>
       <li>Speed and cost compound in one place, decisions about a person's words in real time. It's ${pct(G.people.share, 0)} of posts, a few demos, and nothing measured in production.</li>
-      <li>None of the ${AE.candidates.value} most promising builds did something that was unavailable before.</li>
+      <li>None of the ${AE.candidates.value} builds most likely to show something new did something that was unavailable before.</li>
       <li>Twenty rivals in a week, built cheaply, none matching the mix yet, and no big provider.</li>
     </ul>
     <h3>What to watch</h3>
@@ -640,8 +630,8 @@ ${section('s8', '8 · Where it is', 'What the week adds up to', `
 <section class="method prose" id="method">
   <p class="eyebrow">Method</p>
   <h2>How this was measured</h2>
-  <p>The posts come from ${a(L.feed, "OpenChamber's Jev feed")}, snapshot 23 September 18:47 UTC: ${fmt(S.posts)} posts from ${fmt(S.authors)} authors between 16 and 23 September, as OpenChamber selected them. Without ${S.duplicates_merged} duplicates, the ${S.not_a_jev_build} posts that don't use Jev and one post the labeling model refused, ${fmt(BASE)} remain. The feed is what people chose to show, not a sample of usage: half of all views went to ${top1.views_cards} posts and the median post got ${num(stats.median_views)} views.</p>
-  <p>I used AI models to do the sorting, and I want to be plain about that. Claude Opus 5.5 labeled every post against a written rubric: what Jev decides, whether the author measured anything, what they compared it with, whether the decision sits in a live loop, and whether it's in production. Then a second model, Grok, labeled ${fmt(AE.labelled.value)} of those posts blind: every post in the rare groups the headlines rest on, and random samples of the rest. It produced its own estimates with 95% intervals, and wherever it checked a number this page uses its range, not the first model's count. It corrected several; the production count went from ${AE.production_model.value} to ${prodRows.length}. I hand-checked 13 posts myself, enough to catch problems, not enough to call it a human audit. A proper human sample is the check still missing. At Vercel AI Gateway list prices the labeling cost about $40.</p>
+  <p>The posts come from ${a(L.feed, "OpenChamber's Jev feed")}, snapshot 23 September 18:47 UTC: ${fmt(S.posts)} posts from ${fmt(S.authors)} authors between 16 and 23 September, as OpenChamber selected them. Without ${S.duplicates_merged} duplicates, the ${S.not_a_jev_build} posts that don't use Jev and one post the labeling model refused, ${fmt(BASE)} remain. The feed is what people chose to show, not a sample of usage: it starts six hours after launch, the top 1% of posts held half of all views, and the median post got ${num(stats.median_views)} views.</p>
+  <p>I used AI models to do the sorting, and I want to be plain about that. Claude Opus 5.5 labeled every post against a written rubric: what Jev decides, whether the author measured anything, what they compared it with, whether the decision sits in a live loop, and whether it's in production. Then a second model, Grok, labeled ${fmt(AE.labelled.value)} of those posts blind: every post in the rare groups the headlines rest on, and random samples of the rest. It produced its own estimates with 95% intervals, and wherever it checked a number this page uses its range, not the first model's count. It corrected several; the production count went from ${AE.production_model.value} to ${prodRows.length}. I hand-checked 13 posts myself, enough to catch problems, not enough to call it a human audit. A proper human sample is the check still missing. At Vercel AI Gateway list prices the labeling cost about $48.</p>
   <p>The gateway numbers were read at source on 24 September: ${a(L.or, "OpenRouter's model page")} and ${a(L.orRank, 'rankings')}, ${a(L.vcExport, "Vercel's open leaderboard export")} (CC BY 4.0), ${a(L.npm, 'npm')}, ${a(L.pypi, 'pypistats')} and ${a(L.discord, 'Discord')}. 24 September was a partial day and is left out everywhere. The head-to-heads are every comparison I could find where someone put Jev against another model on the same task and published cost, latency or accuracy; each is the author's own figure, unreproduced. The rivals were found from the feed, Hugging Face, GitHub and ${a(L.jevbench, 'JevBench')}; ranks move daily and are dated. Gateway requests are requests, not decisions, and can't separate production from testing. Vercel publishes shares, never counts.</p>
   <p>The labels, the tables behind every chart, the rubric and the code are at ${a(L.repo, 'github.com/mattheworiordan/jev-landscape')}, without the text of any post: code under MIT, data and method under CC BY 4.0. The posts belong to their authors. The ${a(L.technical, 'full technical page')} has every chart from the first edition, including the ones this page leaves out.</p>
   <p class="disclosure"><b>Disclosure.</b> I'm CEO of ${a(L.ably, 'Ably')}, a realtime infrastructure company. I looked at Jev because it sits in the low-latency part of the stack I work on. Read the numbers with that in mind. I'm ${a(L.linkedin, 'on LinkedIn')} if you want to argue with any of it.</p>

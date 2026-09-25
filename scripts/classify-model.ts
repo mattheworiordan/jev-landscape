@@ -4,7 +4,7 @@
  * Sonnet v2 path exactly as before (same model, prompt, thinking setting and
  * output files).
  *
- *   pnpm dlx tsx --env-file=/Users/matthew.oriordan/Workshop/work/projects/jev-pong/.env.local scripts/classify-model.ts \
+ *   pnpm dlx tsx --env-file=.env.local scripts/classify-model.ts \
  *     --model anthropic/claude-opus-5.5 --out data/classified-opus.jsonl
  *
  * Flags (env knob in brackets, flag wins):

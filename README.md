@@ -20,7 +20,7 @@ Every number on the report links to its source or to a table in this repository.
 1. **Source.** Every card in OpenChamber's Jev feed ([jev.openchamber.dev](https://jev.openchamber.dev)) posted from 2026-09-16 to 2026-09-23 (UTC): 5,950 X posts from 4,593 authors, feed snapshot of 2026-09-23 18:47 UTC.
 2. **Labels.** A model labeled every post against a written rubric ([report/rubric.md](report/rubric.md)): what Jev decides, how fast the decision must be, the evidence, the baseline, whether it sits in a live loop, and whether it is in production. The report uses the Claude Opus 5.5 labels (`data/classified-opus.jsonl`).
 3. **Second pass.** A critical review of the first labels tightened the rubric (v1 to v2), and every post was labeled again. Duplicates were merged and 347 posts that are not Jev builds were set aside, which leaves 5,595 use-case posts.
-4. **Audit.** Grok labeled 1,681 posts blind: every post in the rare groups, and seeded samples of the rest. The report gives the audit's estimates with 95% Wilson intervals ([review/critical-review-grok.md](review/critical-review-grok.md)). It sampled the Claude Sonnet 5 labels (`data/classified-sonnet-v2.jsonl`), and the page says so where it uses the Claude Opus 5.5 labels. The author hand-checked 16 posts, enough to catch problems, not a human audit.
+4. **Audit.** Grok labeled 1,681 posts blind: every post in the rare groups, and seeded samples of the rest. The report gives the audit's estimates with 95% Wilson intervals ([review/critical-review-grok.md](review/critical-review-grok.md)). It sampled the Claude Sonnet 5 labels (`data/classified-sonnet-v2.jsonl`), and the page says so where it uses the Claude Opus 5.5 labels. The author hand-checked 13 posts, enough to catch problems, not a human audit.
 5. **The gateways and the rivals.** OpenRouter's model page and rankings, Vercel's open leaderboard export, npm, pypistats, Discord, Hugging Face and JevBench were read at source on 24 September 2026. The files in `data/gateway-*.json` and `data/rivals-*.json` record what was read, where and when.
 6. **The head-to-heads.** Every comparison found where someone put Jev against another model on the same task and published cost, latency or accuracy, including the author's own Jev Pong runs. They are listed with links in `report/site/scripts/page-v3.mjs` and on the report; each figure is the author's own, unreproduced.
 
@@ -130,4 +130,4 @@ If you think a label or a figure is wrong, open an issue with the post id or the
 - **The pages and the charts** (`index.html`, `charts/`, `technical/`): © 2026 Matthew O'Riordan. They are not under either license.
 - **The posts** belong to their authors, and the feed belongs to OpenChamber. Neither is in this repository.
 
-Staged 2026-09-24 20:21 UTC from the 2026-09-23 18:47 UTC feed snapshot.
+Staged 2026-09-25 06:50 UTC from the 2026-09-23 18:47 UTC feed snapshot.

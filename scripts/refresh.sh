@@ -7,7 +7,7 @@
 # Env knobs:
 #   THROUGH=YYYY-MM-DD   last posting day (UTC) to include; default 2026-09-23
 #   REFRESH_MAX_USD=2    new spend allowed per label file in one refresh (dollars); 0 spends nothing
-#   ENV_FILE=...         Gateway credentials; default ../jev-pong/.env.local (keys are never printed)
+#   ENV_FILE=...         Gateway credentials; default .env.local (keys are never printed)
 #   SKIP_PULL=1          rebuild from the snapshots already kept, without pulling the feed
 #   OFFLINE=1            skip steps 4 to 6 (no labelling, no network, no spend): report the coverage and rebuild
 #   LABELS=...           reference label file for the analysis, the audit and the page (default data/classified-opus.jsonl,
@@ -36,7 +36,7 @@ REFRESH_MAX_USD=${REFRESH_MAX_USD:-2}
 export LABELS=${LABELS:-data/classified-opus.jsonl}
 REF_MODEL=${REF_MODEL:-anthropic/claude-opus-5.5}   # the Gateway model behind LABELS
 REF_USAGE=${REF_USAGE:-data/usage-opus-5.5.jsonl}
-ENV_FILE=${ENV_FILE:-/Users/matthew.oriordan/Workshop/work/projects/jev-pong/.env.local}
+ENV_FILE=${ENV_FILE:-.env.local}
 FEED_URL=https://jev.openchamber.dev/data/cards.json
 STAMP=$(date -u +%Y%m%d-%H%M)
 mkdir -p data/refresh-logs data/snapshots

@@ -2,7 +2,7 @@
  * Step 1: classify every OpenChamber Jev card with Claude Sonnet 5 against the
  * written rubric (./rubric.ts), through Vercel AI Gateway.
  *
- *   pnpm dlx tsx --env-file=/Users/matthew.oriordan/Workshop/work/projects/jev-pong/.env.local scripts/classify-sonnet.ts
+ *   pnpm dlx tsx --env-file=.env.local scripts/classify-sonnet.ts
  *
  * Env knobs:
  *   RUBRIC_VERSION  v2 (default) or v1. v1 reproduces the first run

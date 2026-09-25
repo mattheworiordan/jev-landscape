@@ -1,7 +1,7 @@
 /**
  * Step 2: classify every card's family with Jev itself, as a second classifier.
  *
- *   pnpm dlx tsx --env-file=/Users/matthew.oriordan/Workshop/work/projects/jev-pong/.env.local scripts/classify-jev.ts
+ *   pnpm dlx tsx --env-file=.env.local scripts/classify-jev.ts
  *
  * One `experimental_evaluate` call per card: a single choice question whose
  * options are the 14 families and whose criteria are the same one-sentence

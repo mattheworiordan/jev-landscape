@@ -1,1 +1,2144 @@
-{"generated": "2026-09-24", "rule": "card labelled not_a_jev_build by Sonnet v2 or Opus AND title matches model/port/endpoint keywords (clone, local, open-source, Jev-like/-compatible, decision model, endpoint, API, MLX, WebGPU, ONNX, GGUF, fine-tune, LoRA, distil, trained, model names) minus a short exclusion list; spot check: 27 of a random 30 fit", "source": "cards.json (corpus through 2026-09-23 18:47 UTC)", "posts": [{"id": "2102777898444673257", "d": "2026-09-23", "v": 5501, "sn": "AtlantisPleb", "t": "", "url": "https://x.com/AtlantisPleb/status/2102777898444673257", "art": null}, {"id": "2102728964477247964", "d": "2026-09-23", "v": 4144, "sn": "vanstriendaniel", "t": "", "url": "https://x.com/vanstriendaniel/status/2102728964477247964", "art": {"u": "http://huggingface.co/spaces/davanstrien/hub-task-tagger", "k": "site", "l": "huggingface.co"}}, {"id": "2102794829327675580", "d": "2026-09-23", "v": 1189, "sn": "agentspanel", "t": "", "url": "https://x.com/agentspanel/status/2102794829327675580", "art": null}, {"id": "2102729706944823640", "d": "2026-09-23", "v": 1068, "sn": "TeksEdge", "t": "", "url": "https://x.com/TeksEdge/status/2102729706944823640", "art": null}, {"id": "2102585992083538214", "d": "2026-09-23", "v": 390, "sn": "superoo7", "t": "", "url": "https://x.com/superoo7/status/2102585992083538214", "art": null}, {"id": "2102758519908811133", "d": "2026-09-23", "v": 116, "sn": "erik_kokalj", "t": "", "url": "https://x.com/erik_kokalj/status/2102758519908811133", "art": null}, {"id": "2102649099044725031", "d": "2026-09-23", "v": 109, "sn": "takku_4331", "t": "", "url": "https://x.com/takku_4331/status/2102649099044725031", "art": null}, {"id": "2102796348156518543", "d": "2026-09-23", "v": 102, "sn": "qqc1989", "t": "", "url": "https://x.com/qqc1989/status/2102796348156518543", "art": {"u": "https://github.com/AXERA-TECH/laya-axera", "k": "repo", "l": "axera-tech/laya-axera"}}, {"id": "2102566148982350256", "d": "2026-09-23", "v": 87, "sn": "abxda", "t": "", "url": "https://x.com/abxda/status/2102566148982350256", "art": {"u": "https://github.com/abxda/ambar-reflex-sistema-1", "k": "repo", "l": "abxda/ambar-reflex-sistema-1"}}, {"id": "2102682845915619333", "d": "2026-09-23", "v": 71, "sn": "Zefan_Cai", "t": "", "url": "https://x.com/Zefan_Cai/status/2102682845915619333", "art": {"u": "https://zefan-cai.github.io/open-jev/v1-1/", "k": "site", "l": "zefan-cai.github.io"}}, {"id": "2102604958193639640", "d": "2026-09-23", "v": 68, "sn": "tumf", "t": "", "url": "https://x.com/tumf/status/2102604958193639640", "art": null}, {"id": "2102602267199459650", "d": "2026-09-23", "v": 66, "sn": "Instance_VRC", "t": "", "url": "https://x.com/Instance_VRC/status/2102602267199459650", "art": null}, {"id": "2102755529181565419", "d": "2026-09-23", "v": 52, "sn": "yukke_", "t": "", "url": "https://x.com/yukke_/status/2102755529181565419", "art": null}, {"id": "2102738022148039107", "d": "2026-09-23", "v": 43, "sn": "pabloramosuy", "t": "", "url": "https://x.com/pabloramosuy/status/2102738022148039107", "art": null}, {"id": "2102760789300162610", "d": "2026-09-23", "v": 39, "sn": "kuma_XXP", "t": "", "url": "https://x.com/kuma_XXP/status/2102760789300162610", "art": null}, {"id": "2102631547371483394", "d": "2026-09-23", "v": 35, "sn": "prayag_sonar", "t": "", "url": "https://x.com/prayag_sonar/status/2102631547371483394", "art": null}, {"id": "2102720469959106630", "d": "2026-09-23", "v": 34, "sn": "LFrefman", "t": "", "url": "https://x.com/LFrefman/status/2102720469959106630", "art": {"u": "https://www.reddit.com/r/LocalLLaMA/comments/1wo07r8/jev_in_25_lines_of_python/", "k": "site", "l": "reddit.com"}}, {"id": "2102675318507229240", "d": "2026-09-23", "v": 31, "sn": "Zefan_Cai", "t": "", "url": "https://x.com/Zefan_Cai/status/2102675318507229240", "art": {"u": "https://github.com/Zefan-Cai/Open-Jev", "k": "repo", "l": "zefan-cai/open-jev"}}, {"id": "2102758018849075269", "d": "2026-09-23", "v": 27, "sn": "yukke_", "t": "", "url": "https://x.com/yukke_/status/2102758018849075269", "art": null}, {"id": "2102748765622825153", "d": "2026-09-23", "v": 26, "sn": "Noumenon_ai", "t": "", "url": "https://x.com/Noumenon_ai/status/2102748765622825153", "art": null}, {"id": "2102748954102259937", "d": "2026-09-23", "v": 25, "sn": "Noumenon_ai", "t": "", "url": "https://x.com/Noumenon_ai/status/2102748954102259937", "art": null}, {"id": "2102637830573076581", "d": "2026-09-23", "v": 20, "sn": "utkarshgsuv", "t": "", "url": "https://x.com/utkarshgsuv/status/2102637830573076581", "art": null}, {"id": "2102606290753114439", "d": "2026-09-23", "v": 19, "sn": "edplese", "t": "", "url": "https://x.com/edplese/status/2102606290753114439", "art": null}, {"id": "2102748852608483559", "d": "2026-09-23", "v": 19, "sn": "Noumenon_ai", "t": "", "url": "https://x.com/Noumenon_ai/status/2102748852608483559", "art": null}, {"id": "2102571319355158981", "d": "2026-09-23", "v": 17, "sn": "thedoomguy_ai", "t": "", "url": "https://x.com/thedoomguy_ai/status/2102571319355158981", "art": null}, {"id": "2102574201156915318", "d": "2026-09-23", "v": 17, "sn": "nullsoft_app", "t": "", "url": "https://x.com/nullsoft_app/status/2102574201156915318", "art": {"u": "https://zenn.dev/null_teck/articles/local-jev-reproduce", "k": "site", "l": "zenn.dev"}}, {"id": "2102800105371779568", "d": "2026-09-23", "v": 12, "sn": "Sollersxl", "t": "", "url": "https://x.com/Sollersxl/status/2102800105371779568", "art": null}, {"id": "2102642749757637005", "d": "2026-09-23", "v": 8, "sn": "Farhan60291312", "t": "", "url": "https://x.com/Farhan60291312/status/2102642749757637005", "art": null}, {"id": "2102774023121973553", "d": "2026-09-23", "v": 8, "sn": "igor_dev", "t": "", "url": "https://x.com/igor_dev/status/2102774023121973553", "art": {"u": "https://github.com/arigatodon/rayo", "k": "repo", "l": "arigatodon/rayo"}}, {"id": "2102647554437415036", "d": "2026-09-23", "v": 6, "sn": "utkarshgsuv", "t": "", "url": "https://x.com/utkarshgsuv/status/2102647554437415036", "art": null}, {"id": "2102813418940215614", "d": "2026-09-23", "v": 5, "sn": "0kaliasgar", "t": "", "url": "https://x.com/0kaliasgar/status/2102813418940215614", "art": {"u": "https://huggingface.co/NovusEdge/vera-deberta-v3-large", "k": "site", "l": "huggingface.co"}}, {"id": "2102536894169096357", "d": "2026-09-22", "v": 194139, "sn": "googlegemma", "t": "", "url": "https://x.com/googlegemma/status/2102536894169096357", "art": {"u": "https://github.com/taeold/djev-run", "k": "repo", "l": "taeold/djev-run"}}, {"id": "2102252088067850507", "d": "2026-09-22", "v": 14694, "sn": "denisyarats", "t": "", "url": "https://x.com/denisyarats/status/2102252088067850507", "art": {"u": "https://github.com/denis-pplx/autojev", "k": "repo", "l": "denis-pplx/autojev"}}, {"id": "2102493286653112440", "d": "2026-09-22", "v": 2781, "sn": "ErickSky", "t": "", "url": "https://x.com/ErickSky/status/2102493286653112440", "art": null}, {"id": "2102430169965212123", "d": "2026-09-22", "v": 989, "sn": "BorderleSint", "t": "", "url": "https://x.com/BorderleSint/status/2102430169965212123", "art": null}, {"id": "2102513611772145879", "d": "2026-09-22", "v": 662, "sn": "MajoSayo", "t": "", "url": "https://x.com/MajoSayo/status/2102513611772145879", "art": {"u": "https://github.com/DumoeDss/logjev", "k": "repo", "l": "dumoedss/logjev"}}, {"id": "2102370796245299546", "d": "2026-09-22", "v": 654, "sn": "pipix1121", "t": "", "url": "https://x.com/pipix1121/status/2102370796245299546", "art": null}, {"id": "2102269968930791643", "d": "2026-09-22", "v": 426, "sn": "yuvalav", "t": "", "url": "https://x.com/yuvalav/status/2102269968930791643", "art": null}, {"id": "2102282655437885460", "d": "2026-09-22", "v": 374, "sn": "totristeprakrai", "t": "", "url": "https://x.com/totristeprakrai/status/2102282655437885460", "art": null}, {"id": "2102539690540679222", "d": "2026-09-22", "v": 356, "sn": "sohail_hussain_", "t": "", "url": "https://x.com/sohail_hussain_/status/2102539690540679222", "art": null}, {"id": "2102451519388102755", "d": "2026-09-22", "v": 352, "sn": "stephenlb", "t": "", "url": "https://x.com/stephenlb/status/2102451519388102755", "art": {"u": "https://blocks.ai/blog/jev-open-model-doom", "k": "site", "l": "blocks.ai"}}, {"id": "2102329321876767018", "d": "2026-09-22", "v": 320, "sn": "smallnest", "t": "", "url": "https://x.com/smallnest/status/2102329321876767018", "art": null}, {"id": "2102544803556741273", "d": "2026-09-22", "v": 283, "sn": "Areai51", "t": "", "url": "https://x.com/Areai51/status/2102544803556741273", "art": {"u": "https://github.com/areai51/xsquad", "k": "repo", "l": "areai51/xsquad"}}, {"id": "2102384117866197463", "d": "2026-09-22", "v": 225, "sn": "ArturSkowronski", "t": "", "url": "https://x.com/ArturSkowronski/status/2102384117866197463", "art": {"u": "https://github.com/ArturSkowronski/kNES", "k": "repo", "l": "arturskowronski/knes"}}, {"id": "2102431431540822479", "d": "2026-09-22", "v": 196, "sn": "S1LV3R_J1NX", "t": "", "url": "https://x.com/S1LV3R_J1NX/status/2102431431540822479", "art": {"u": "https://github.com/S1LV3RJ1NX/openjev", "k": "repo", "l": "s1lv3rj1nx/openjev"}}, {"id": "2102213706059051162", "d": "2026-09-22", "v": 195, "sn": "tjm8874", "t": "", "url": "https://x.com/tjm8874/status/2102213706059051162", "art": null}, {"id": "2102245444663537859", "d": "2026-09-22", "v": 156, "sn": "chirag", "t": "", "url": "https://x.com/chirag/status/2102245444663537859", "art": {"u": "https://github.com/NakliTechie/llamacpp-jev", "k": "repo", "l": "naklitechie/llamacpp-jev"}}, {"id": "2102255801062834237", "d": "2026-09-22", "v": 136, "sn": "yukke_", "t": "", "url": "https://x.com/yukke_/status/2102255801062834237", "art": null}, {"id": "2102291267120193609", "d": "2026-09-22", "v": 92, "sn": "VipulDivyanshu", "t": "", "url": "https://x.com/VipulDivyanshu/status/2102291267120193609", "art": null}, {"id": "2102233195294920886", "d": "2026-09-22", "v": 85, "sn": "eng_ahmd", "t": "", "url": "https://x.com/eng_ahmd/status/2102233195294920886", "art": {"u": "https://github.com/Eng-Ahmd/laya-breakout", "k": "repo", "l": "eng-ahmd/laya-breakout"}}, {"id": "2102435464066285848", "d": "2026-09-22", "v": 69, "sn": "_ollman", "t": "", "url": "https://x.com/_ollman/status/2102435464066285848", "art": {"u": "https://alexander-ollman.github.io/laya-ft/", "k": "site", "l": "alexander-ollman.github.io"}}, {"id": "2102266291226857777", "d": "2026-09-22", "v": 64, "sn": "MohammedAlaa", "t": "", "url": "https://x.com/MohammedAlaa/status/2102266291226857777", "art": null}, {"id": "2102315546490343543", "d": "2026-09-22", "v": 58, "sn": "logesh_umapathi", "t": "", "url": "https://x.com/logesh_umapathi/status/2102315546490343543", "art": null}, {"id": "2102514026886414693", "d": "2026-09-22", "v": 52, "sn": "techvignesh", "t": "", "url": "https://x.com/techvignesh/status/2102514026886414693", "art": {"u": "https://huggingface.co/vigneshlabs/ballot-jev-0.5b", "k": "site", "l": "huggingface.co"}}, {"id": "2102343304620707934", "d": "2026-09-22", "v": 49, "sn": "GirardJohannes", "t": "", "url": "https://x.com/GirardJohannes/status/2102343304620707934", "art": {"u": "https://github.com/JohGirard/doom-ai-overlord", "k": "repo", "l": "johgirard/doom-ai-overlord"}}, {"id": "2102406498576171183", "d": "2026-09-22", "v": 49, "sn": "koguchit", "t": "", "url": "https://x.com/koguchit/status/2102406498576171183", "art": {"u": "https://qiita.com/koguchit/items/92b9672c4bafe587478e", "k": "site", "l": "qiita.com"}}, {"id": "2102385640042283293", "d": "2026-09-22", "v": 48, "sn": "nutanc", "t": "", "url": "https://x.com/nutanc/status/2102385640042283293", "art": null}, {"id": "2102511301109166207", "d": "2026-09-22", "v": 48, "sn": "tangmian", "t": "", "url": "https://x.com/tangmian/status/2102511301109166207", "art": {"u": "https://www.npmjs.com/package/@gobing-ai/ts-laya-mlx", "k": "site", "l": "npmjs.com"}}, {"id": "2102276866610794687", "d": "2026-09-22", "v": 40, "sn": "geneLab_999", "t": "", "url": "https://x.com/geneLab_999/status/2102276866610794687", "art": {"u": "https://huggingface.co/GeneLab/sokudan-ja-310m", "k": "site", "l": "huggingface.co"}}, {"id": "2102405674680594812", "d": "2026-09-22", "v": 39, "sn": "seth_codes_", "t": "", "url": "https://x.com/seth_codes_/status/2102405674680594812", "art": null}, {"id": "2102197433333596671", "d": "2026-09-22", "v": 34, "sn": "Belisarius_Rex", "t": "", "url": "https://x.com/Belisarius_Rex/status/2102197433333596671", "art": {"u": "https://github.com/rcrandon/KaLM-Ultrafast", "k": "repo", "l": "rcrandon/kalm-ultrafast"}}, {"id": "2102316339323183276", "d": "2026-09-22", "v": 32, "sn": "Jeuner", "t": "", "url": "https://x.com/Jeuner/status/2102316339323183276", "art": null}, {"id": "2102215416865267835", "d": "2026-09-22", "v": 31, "sn": "witwall", "t": "", "url": "https://x.com/witwall/status/2102215416865267835", "art": {"u": "https://github.com/alitrack/jev-clone", "k": "repo", "l": "alitrack/jev-clone"}}, {"id": "2102323990320775197", "d": "2026-09-22", "v": 30, "sn": "PhyloTan", "t": "", "url": "https://x.com/PhyloTan/status/2102323990320775197", "art": {"u": "https://github.com/9pings/notjev", "k": "repo", "l": "9pings/notjev"}}, {"id": "2102449660094799987", "d": "2026-09-22", "v": 30, "sn": "sbaranskyi", "t": "", "url": "https://x.com/sbaranskyi/status/2102449660094799987", "art": null}, {"id": "2102383106409824305", "d": "2026-09-22", "v": 26, "sn": "edwin_samar", "t": "", "url": "https://x.com/edwin_samar/status/2102383106409824305", "art": {"u": "https://edwinsamar.com/blog/2026/09/decisions-not-tokens/", "k": "site", "l": "edwinsamar.com"}}, {"id": "2102409251243098542", "d": "2026-09-22", "v": 25, "sn": "essepl", "t": "", "url": "https://x.com/essepl/status/2102409251243098542", "art": {"u": "https://github.com/esse/laya-mlx-advisor", "k": "repo", "l": "esse/laya-mlx-advisor"}}, {"id": "2102512325622419774", "d": "2026-09-22", "v": 23, "sn": "kongtoulierenLM", "t": "", "url": "https://x.com/kongtoulierenLM/status/2102512325622419774", "art": null}, {"id": "2102327905858543976", "d": "2026-09-22", "v": 22, "sn": "alexdelrosso", "t": "", "url": "https://x.com/alexdelrosso/status/2102327905858543976", "art": null}, {"id": "2102453783246868948", "d": "2026-09-22", "v": 12, "sn": "bet0x", "t": "", "url": "https://x.com/bet0x/status/2102453783246868948", "art": {"u": "https://huggingface.co/BarraHome/Decision-Jef-0.1", "k": "site", "l": "huggingface.co"}}, {"id": "2102300752341352815", "d": "2026-09-22", "v": 9, "sn": "scaiado", "t": "", "url": "https://x.com/scaiado/status/2102300752341352815", "art": {"u": "https://www.tinylittlelab.com/news/the-94-9-trap-decision-layer-2026-09-22.html", "k": "site", "l": "tinylittlelab.com"}}, {"id": "2102343847598752216", "d": "2026-09-22", "v": 6, "sn": "sitowebveloce", "t": "", "url": "https://x.com/sitowebveloce/status/2102343847598752216", "art": {"u": "https://youtu.be/gQt-47L2i8s?si=vSBv9jA--fyPhWkF", "k": "site", "l": "youtu.be"}}, {"id": "2102308420527489168", "d": "2026-09-22", "v": 5, "sn": "nvkudva", "t": "", "url": "https://x.com/nvkudva/status/2102308420527489168", "art": {"u": "https://laya-web.pages.dev", "k": "site", "l": "laya-web.pages.dev"}}, {"id": "2102307496971182351", "d": "2026-09-22", "v": 3, "sn": "nvkudva", "t": "", "url": "https://x.com/nvkudva/status/2102307496971182351", "art": {"u": "https://github.com/nvkudva/laya-server", "k": "repo", "l": "nvkudva/laya-server"}}, {"id": "2102062149841588395", "d": "2026-09-21", "v": 78932, "sn": "hawkymisc", "t": "", "url": "https://x.com/hawkymisc/status/2102062149841588395", "art": {"u": "https://github.com/hawkymisc/typed-decision-bert", "k": "repo", "l": "hawkymisc/typed-decision-bert"}}, {"id": "2101925770432008665", "d": "2026-09-21", "v": 17431, "sn": "nicodotdev", "t": "", "url": "https://x.com/nicodotdev/status/2101925770432008665", "art": null}, {"id": "2102088674699850107", "d": "2026-09-21", "v": 12824, "sn": "yoheinakajima", "t": "", "url": "https://x.com/yoheinakajima/status/2102088674699850107", "art": {"u": "https://github.com/yoheinakajima/glance", "k": "repo", "l": "yoheinakajima/glance"}}, {"id": "2102141680728080783", "d": "2026-09-21", "v": 6858, "sn": "speyronnet", "t": "", "url": "https://x.com/speyronnet/status/2102141680728080783", "art": null}, {"id": "2101927214820499627", "d": "2026-09-21", "v": 5375, "sn": "repsiace", "t": "", "url": "https://x.com/repsiace/status/2101927214820499627", "art": null}, {"id": "2102163870945079785", "d": "2026-09-21", "v": 4874, "sn": "Wilf_Lin", "t": "", "url": "https://x.com/Wilf_Lin/status/2102163870945079785", "art": {"u": "http://wilflin.me/jev", "k": "site", "l": "wilflin.me"}}, {"id": "2102115001368739906", "d": "2026-09-21", "v": 1775, "sn": "0xAsm0d3us", "t": "", "url": "https://x.com/0xAsm0d3us/status/2102115001368739906", "art": null}, {"id": "2102085143988953561", "d": "2026-09-21", "v": 1743, "sn": "TTUX_tech", "t": "", "url": "https://x.com/TTUX_tech/status/2102085143988953561", "art": {"u": "https://github.com/AmirTahaMim/LayaSnakeGame", "k": "repo", "l": "amirtahamim/layasnakegame"}}, {"id": "2102014071557996621", "d": "2026-09-21", "v": 1697, "sn": "totristeprakrai", "t": "", "url": "https://x.com/totristeprakrai/status/2102014071557996621", "art": null}, {"id": "2102080664527044940", "d": "2026-09-21", "v": 1555, "sn": "seanphan", "t": "", "url": "https://x.com/seanphan/status/2102080664527044940", "art": null}, {"id": "2101866046714187808", "d": "2026-09-21", "v": 1375, "sn": "moritalous", "t": "", "url": "https://x.com/moritalous/status/2101866046714187808", "art": {"u": "https://qiita.com/moritalous/items/41c9402a5dd9d80fc7a9", "k": "site", "l": "qiita.com"}}, {"id": "2101823727667441671", "d": "2026-09-21", "v": 1355, "sn": "Isichan_Hitori", "t": "", "url": "https://x.com/Isichan_Hitori/status/2101823727667441671", "art": null}, {"id": "2101925772516569243", "d": "2026-09-21", "v": 905, "sn": "nicodotdev", "t": "", "url": "https://x.com/nicodotdev/status/2101925772516569243", "art": {"u": "https://www.npmjs.com/package/open-jev", "k": "site", "l": "npmjs.com"}}, {"id": "2102093905940611452", "d": "2026-09-21", "v": 839, "sn": "peterpme", "t": "", "url": "https://x.com/peterpme/status/2102093905940611452", "art": {"u": "https://github.com/peterpme/lev", "k": "repo", "l": "peterpme/lev"}}, {"id": "2101925774278152664", "d": "2026-09-21", "v": 826, "sn": "nicodotdev", "t": "", "url": "https://x.com/nicodotdev/status/2101925774278152664", "art": {"u": "https://huggingface.co/onnx-community/kev-0.6b-ONNX", "k": "site", "l": "huggingface.co"}}, {"id": "2102126688092189096", "d": "2026-09-21", "v": 819, "sn": "TheSeriousProg", "t": "", "url": "https://x.com/TheSeriousProg/status/2102126688092189096", "art": null}, {"id": "2101990059142737998", "d": "2026-09-21", "v": 809, "sn": "gojiteji", "t": "", "url": "https://x.com/gojiteji/status/2101990059142737998", "art": null}, {"id": "2102125508721004903", "d": "2026-09-21", "v": 698, "sn": "Zefan_Cai", "t": "", "url": "https://x.com/Zefan_Cai/status/2102125508721004903", "art": {"u": "https://zefan-cai.github.io/open-jev/#jevbench", "k": "site", "l": "zefan-cai.github.io"}}, {"id": "2101848385456390653", "d": "2026-09-21", "v": 570, "sn": "sven_ai", "t": "", "url": "https://x.com/sven_ai/status/2101848385456390653", "art": null}, {"id": "2102180717405073575", "d": "2026-09-21", "v": 502, "sn": "chirag", "t": "", "url": "https://x.com/chirag/status/2102180717405073575", "art": {"u": "https://github.com/NakliTechie/verdict", "k": "repo", "l": "naklitechie/verdict"}}, {"id": "2102072026156662954", "d": "2026-09-21", "v": 427, "sn": "doubledescent0", "t": "", "url": "https://x.com/doubledescent0/status/2102072026156662954", "art": {"u": "https://github.com/mjdileep/OpenJev", "k": "repo", "l": "mjdileep/openjev"}}, {"id": "2102125246522478695", "d": "2026-09-21", "v": 402, "sn": "pdp", "t": "", "url": "https://x.com/pdp/status/2102125246522478695", "art": null}, {"id": "2101967688973344992", "d": "2026-09-21", "v": 350, "sn": "krishnakhanna", "t": "", "url": "https://x.com/krishnakhanna/status/2101967688973344992", "art": {"u": "https://github.com/razorback16/openjev", "k": "repo", "l": "razorback16/openjev"}}, {"id": "2102128437058302184", "d": "2026-09-21", "v": 319, "sn": "cristianexer", "t": "", "url": "https://x.com/cristianexer/status/2102128437058302184", "art": {"u": "https://github.com/cristianexer/wst", "k": "repo", "l": "cristianexer/wst"}}, {"id": "2101881584756600844", "d": "2026-09-21", "v": 248, "sn": "fallout_tokyo", "t": "", "url": "https://x.com/fallout_tokyo/status/2101881584756600844", "art": {"u": "https://github.com/jagsan-cyber/reflex-gate", "k": "repo", "l": "jagsan-cyber/reflex-gate"}}, {"id": "2102171094635745310", "d": "2026-09-21", "v": 225, "sn": "rsensui", "t": "", "url": "https://x.com/rsensui/status/2102171094635745310", "art": null}, {"id": "2102067083920216185", "d": "2026-09-21", "v": 177, "sn": "0xhikae", "t": "", "url": "https://x.com/0xhikae/status/2102067083920216185", "art": null}, {"id": "2101932981606817820", "d": "2026-09-21", "v": 150, "sn": "debichanchan", "t": "", "url": "https://x.com/debichanchan/status/2101932981606817820", "art": null}, {"id": "2102040848716136563", "d": "2026-09-21", "v": 87, "sn": "50bbx", "t": "", "url": "https://x.com/50bbx/status/2102040848716136563", "art": {"u": "https://github.com/50bbx/laya-needle", "k": "repo", "l": "50bbx/laya-needle"}}, {"id": "2101963900606423282", "d": "2026-09-21", "v": 84, "sn": "abhi43210", "t": "", "url": "https://x.com/abhi43210/status/2101963900606423282", "art": {"u": "https://github.com/abhishek085/op", "k": "repo", "l": "abhishek085/op"}}, {"id": "2101836921185956320", "d": "2026-09-21", "v": 82, "sn": "abhi43210", "t": "", "url": "https://x.com/abhi43210/status/2101836921185956320", "art": {"u": "https://github.com/abhishek085/open-spark-jev", "k": "repo", "l": "abhishek085/open-spark-jev"}}, {"id": "2101890478623129748", "d": "2026-09-21", "v": 81, "sn": "Azhar41429690", "t": "", "url": "https://x.com/Azhar41429690/status/2101890478623129748", "art": null}, {"id": "2102108564353622360", "d": "2026-09-21", "v": 81, "sn": "sixwell", "t": "", "url": "https://x.com/sixwell/status/2102108564353622360", "art": null}, {"id": "2102131273003332050", "d": "2026-09-21", "v": 79, "sn": "TslShahir", "t": "", "url": "https://x.com/TslShahir/status/2102131273003332050", "art": null}, {"id": "2102063258962161852", "d": "2026-09-21", "v": 78, "sn": "ashokgelal", "t": "", "url": "https://x.com/ashokgelal/status/2102063258962161852", "art": null}, {"id": "2102039678039835035", "d": "2026-09-21", "v": 76, "sn": "EldanRing", "t": "", "url": "https://x.com/EldanRing/status/2102039678039835035", "art": {"u": "https://huggingface.co/EldanRing/Winnow-12B", "k": "site", "l": "huggingface.co"}}, {"id": "2102179803856343402", "d": "2026-09-21", "v": 73, "sn": "bhowconda", "t": "", "url": "https://x.com/bhowconda/status/2102179803856343402", "art": {"u": "https://huggingface.co/openjev", "k": "site", "l": "huggingface.co"}}, {"id": "2102018709552341213", "d": "2026-09-21", "v": 62, "sn": "Steven_AI_Dev", "t": "", "url": "https://x.com/Steven_AI_Dev/status/2102018709552341213", "art": null}, {"id": "2102150753850708082", "d": "2026-09-21", "v": 61, "sn": "AlexAITrends", "t": "", "url": "https://x.com/AlexAITrends/status/2102150753850708082", "art": null}, {"id": "2101878783301337214", "d": "2026-09-21", "v": 57, "sn": "yamyam_rvc", "t": "", "url": "https://x.com/yamyam_rvc/status/2101878783301337214", "art": {"u": "https://github.com/yamyam-rvc/bonsai-decision-engine", "k": "repo", "l": "yamyam-rvc/bonsai-decision-engine"}}, {"id": "2102078088180019303", "d": "2026-09-21", "v": 46, "sn": "wangoroge333", "t": "", "url": "https://x.com/wangoroge333/status/2102078088180019303", "art": {"u": "https://github.com/kokuren333/Doku-Chiwawa-Extension", "k": "repo", "l": "kokuren333/doku-chiwawa-extension"}}, {"id": "2101838550643659255", "d": "2026-09-21", "v": 40, "sn": "danielamitay", "t": "", "url": "https://x.com/danielamitay/status/2101838550643659255", "art": {"u": "https://github.com/danielamitay/swev", "k": "repo", "l": "danielamitay/swev"}}, {"id": "2101941334580035732", "d": "2026-09-21", "v": 38, "sn": "pawn_4_t", "t": "", "url": "https://x.com/pawn_4_t/status/2101941334580035732", "art": {"u": "https://qiita.com/ho-rai/items/4faeb79995a4ceb24087", "k": "site", "l": "qiita.com"}}, {"id": "2101889522653077653", "d": "2026-09-21", "v": 28, "sn": "Azhar41429690", "t": "", "url": "https://x.com/Azhar41429690/status/2101889522653077653", "art": {"u": "https://huggingface.co/azharmo/build-jev-from-scratch", "k": "site", "l": "huggingface.co"}}, {"id": "2101982631642685625", "d": "2026-09-21", "v": 26, "sn": "EndmanWork", "t": "", "url": "https://x.com/EndmanWork/status/2101982631642685625", "art": {"u": "https://github.com/endman100/research-Qwen3.8-JevLike", "k": "repo", "l": "endman100/research-qwen3.8-jevlike"}}, {"id": "2101974394687889505", "d": "2026-09-21", "v": 25, "sn": "RepoGems", "t": "", "url": "https://x.com/RepoGems/status/2101974394687889505", "art": null}, {"id": "2101882693147656692", "d": "2026-09-21", "v": 24, "sn": "nullsoft_app", "t": "", "url": "https://x.com/nullsoft_app/status/2101882693147656692", "art": {"u": "https://zenn.dev/null_teck/articles/bge-bonsai-grep", "k": "site", "l": "zenn.dev"}}, {"id": "2102050829763022908", "d": "2026-09-21", "v": 21, "sn": "cto_digital", "t": "", "url": "https://x.com/cto_digital/status/2102050829763022908", "art": {"u": "https://github.com/bdauzats/jul", "k": "repo", "l": "bdauzats/jul"}}, {"id": "2102088862579183813", "d": "2026-09-21", "v": 14, "sn": "Daemonrat", "t": "", "url": "https://x.com/Daemonrat/status/2102088862579183813", "art": null}, {"id": "2101863414003896637", "d": "2026-09-21", "v": 13, "sn": "entropyjoao", "t": "", "url": "https://x.com/entropyjoao/status/2101863414003896637", "art": null}, {"id": "2101866820672360506", "d": "2026-09-21", "v": 12, "sn": "kailunchen5", "t": "", "url": "https://x.com/kailunchen5/status/2101866820672360506", "art": {"u": "https://huggingface.co/cklxx/laya-browser", "k": "site", "l": "huggingface.co"}}, {"id": "2101903074935685210", "d": "2026-09-21", "v": 10, "sn": "USPraveenRaj1", "t": "", "url": "https://x.com/USPraveenRaj1/status/2101903074935685210", "art": {"u": "https://github.com/uspraveen/Jevify", "k": "repo", "l": "uspraveen/jevify"}}, {"id": "2101473552956555427", "d": "2026-09-20", "v": 101777, "sn": "mizorewww", "t": "", "url": "https://x.com/mizorewww/status/2101473552956555427", "art": {"u": "https://github.com/mizorewww/laya-mlx", "k": "repo", "l": "mizorewww/laya-mlx"}}, {"id": "2101782262949835211", "d": "2026-09-20", "v": 39891, "sn": "brainFnCl", "t": "", "url": "https://x.com/brainFnCl/status/2101782262949835211", "art": {"u": "https://brainfunctioncollapse.com/laya", "k": "site", "l": "brainfunctioncollapse.com"}}, {"id": "2101473352074625344", "d": "2026-09-20", "v": 14767, "sn": "LoganMarkewich", "t": "", "url": "https://x.com/LoganMarkewich/status/2101473352074625344", "art": {"u": "https://github.com/logan-markewich/jeff", "k": "repo", "l": "logan-markewich/jeff"}}, {"id": "2101813176887390398", "d": "2026-09-20", "v": 14741, "sn": "gigabit_million", "t": "", "url": "https://x.com/gigabit_million/status/2101813176887390398", "art": {"u": "https://kotoba-color-bert.gigabitmillion-games.workers.dev/?lang=ja", "k": "site", "l": "kotoba-color-bert.gigabitmillion-games.workers.dev"}}, {"id": "2101750897189495133", "d": "2026-09-20", "v": 13301, "sn": "johnny5__alive", "t": "", "url": "https://x.com/johnny5__alive/status/2101750897189495133", "art": null}, {"id": "2101612373098610878", "d": "2026-09-20", "v": 6555, "sn": "Tono_Ken3", "t": "", "url": "https://x.com/Tono_Ken3/status/2101612373098610878", "art": null}, {"id": "2101709185155231895", "d": "2026-09-20", "v": 5511, "sn": "AstroHanRay", "t": "", "url": "https://x.com/AstroHanRay/status/2101709185155231895", "art": null}, {"id": "2101800107968782645", "d": "2026-09-20", "v": 5498, "sn": "kis", "t": "", "url": "https://x.com/kis/status/2101800107968782645", "art": null}, {"id": "2101688954114457752", "d": "2026-09-20", "v": 5223, "sn": "xiangxiang103", "t": "", "url": "https://x.com/xiangxiang103/status/2101688954114457752", "art": null}, {"id": "2101616002119471163", "d": "2026-09-20", "v": 3764, "sn": "yu_ichi_suzuki", "t": "", "url": "https://x.com/yu_ichi_suzuki/status/2101616002119471163", "art": null}, {"id": "2101519615243542762", "d": "2026-09-20", "v": 2194, "sn": "RootCert", "t": "", "url": "https://x.com/RootCert/status/2101519615243542762", "art": {"u": "https://hex.pm/packages/laya", "k": "site", "l": "hex.pm"}}, {"id": "2101698718353514910", "d": "2026-09-20", "v": 1029, "sn": "pyran19", "t": "", "url": "https://x.com/pyran19/status/2101698718353514910", "art": {"u": "https://pyran19.girlfriend.jp/temporary_page/jevlike-ai.html", "k": "site", "l": "pyran19.girlfriend.jp"}}, {"id": "2101780379837599955", "d": "2026-09-20", "v": 636, "sn": "llqoli", "t": "", "url": "https://x.com/llqoli/status/2101780379837599955", "art": null}, {"id": "2101718233292161254", "d": "2026-09-20", "v": 289, "sn": "BrockMcBreadcat", "t": "", "url": "https://x.com/BrockMcBreadcat/status/2101718233292161254", "art": null}, {"id": "2101756281665061028", "d": "2026-09-20", "v": 240, "sn": "betterhn20", "t": "", "url": "https://x.com/betterhn20/status/2101756281665061028", "art": {"u": "https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0", "k": "site", "l": "gist.github.com"}}, {"id": "2101551339285389499", "d": "2026-09-20", "v": 222, "sn": "keisan", "t": "", "url": "https://x.com/keisan/status/2101551339285389499", "art": {"u": "https://github.com/kexi/localjev", "k": "repo", "l": "kexi/localjev"}}, {"id": "2101539880149160295", "d": "2026-09-20", "v": 184, "sn": "osushi_cr", "t": "", "url": "https://x.com/osushi_cr/status/2101539880149160295", "art": null}, {"id": "2101781625344278696", "d": "2026-09-20", "v": 181, "sn": "imdaidr", "t": "", "url": "https://x.com/imdaidr/status/2101781625344278696", "art": {"u": "https://github.com/daidr/browser-jev", "k": "repo", "l": "daidr/browser-jev"}}, {"id": "2101711735233396972", "d": "2026-09-20", "v": 172, "sn": "doyc_1", "t": "", "url": "https://x.com/doyc_1/status/2101711735233396972", "art": null}, {"id": "2101709574327976257", "d": "2026-09-20", "v": 166, "sn": "ryo_7421", "t": "", "url": "https://x.com/ryo_7421/status/2101709574327976257", "art": {"u": "https://github.com/siren2345/jev-single-decode", "k": "repo", "l": "siren2345/jev-single-decode"}}, {"id": "2101567704276881492", "d": "2026-09-20", "v": 155, "sn": "fallout_tokyo", "t": "", "url": "https://x.com/fallout_tokyo/status/2101567704276881492", "art": null}, {"id": "2101722738670837890", "d": "2026-09-20", "v": 151, "sn": "CeozX", "t": "", "url": "https://x.com/CeozX/status/2101722738670837890", "art": {"u": "https://github.com/Fr3akaz0id/arbiter", "k": "repo", "l": "fr3akaz0id/arbiter"}}, {"id": "2101575279902924850", "d": "2026-09-20", "v": 129, "sn": "Bizuayeu", "t": "", "url": "https://x.com/Bizuayeu/status/2101575279902924850", "art": null}, {"id": "2101770890925031674", "d": "2026-09-20", "v": 119, "sn": "MikeLeiterDev", "t": "", "url": "https://x.com/MikeLeiterDev/status/2101770890925031674", "art": {"u": "http://openjev.com", "k": "site", "l": "openjev.com"}}, {"id": "2101650415897243985", "d": "2026-09-20", "v": 114, "sn": "otto_explorer", "t": "", "url": "https://x.com/otto_explorer/status/2101650415897243985", "art": null}, {"id": "2101581497396560356", "d": "2026-09-20", "v": 109, "sn": "noctus91", "t": "", "url": "https://x.com/noctus91/status/2101581497396560356", "art": null}, {"id": "2101742625413906511", "d": "2026-09-20", "v": 103, "sn": "theiskaa", "t": "", "url": "https://x.com/theiskaa/status/2101742625413906511", "art": {"u": "https://convaiinnovations.com", "k": "site", "l": "convaiinnovations.com"}}, {"id": "2101543771196276982", "d": "2026-09-20", "v": 93, "sn": "felipeinfante", "t": "", "url": "https://x.com/felipeinfante/status/2101543771196276982", "art": {"u": "https://github.com/fidecastro/jevify", "k": "repo", "l": "fidecastro/jevify"}}, {"id": "2101813173728985346", "d": "2026-09-20", "v": 83, "sn": "yclian", "t": "", "url": "https://x.com/yclian/status/2101813173728985346", "art": {"u": "https://github.com/yclian/skills", "k": "repo", "l": "yclian/skills"}}, {"id": "2101737024101490958", "d": "2026-09-20", "v": 76, "sn": "Tanemomi_Ver2", "t": "", "url": "https://x.com/Tanemomi_Ver2/status/2101737024101490958", "art": null}, {"id": "2101759927039508783", "d": "2026-09-20", "v": 74, "sn": "paulNL", "t": "", "url": "https://x.com/paulNL/status/2101759927039508783", "art": null}, {"id": "2101675407053562260", "d": "2026-09-20", "v": 72, "sn": "ai_aoi_ia", "t": "", "url": "https://x.com/ai_aoi_ia/status/2101675407053562260", "art": null}, {"id": "2101685592560165043", "d": "2026-09-20", "v": 70, "sn": "hama_jp", "t": "", "url": "https://x.com/hama_jp/status/2101685592560165043", "art": {"u": "https://youtu.be/SUyEc48b_HQ?si=97wCbNhB5d5R7RDH", "k": "site", "l": "youtu.be"}}, {"id": "2101545077189267588", "d": "2026-09-20", "v": 62, "sn": "felipeinfante", "t": "", "url": "https://x.com/felipeinfante/status/2101545077189267588", "art": null}, {"id": "2101622239573524491", "d": "2026-09-20", "v": 60, "sn": "clxymox", "t": "", "url": "https://x.com/clxymox/status/2101622239573524491", "art": null}, {"id": "2101791527580414102", "d": "2026-09-20", "v": 51, "sn": "druvthebruv", "t": "", "url": "https://x.com/druvthebruv/status/2101791527580414102", "art": {"u": "https://github.com/DhruvShah09/frozen-decision-engine", "k": "repo", "l": "dhruvshah09/frozen-decision-engine"}}, {"id": "2101737977932050827", "d": "2026-09-20", "v": 43, "sn": "Douglance", "t": "", "url": "https://x.com/Douglance/status/2101737977932050827", "art": {"u": "https://github.com/douglance/stdbev", "k": "repo", "l": "douglance/stdbev"}}, {"id": "2101652995624816913", "d": "2026-09-20", "v": 39, "sn": "debichanchan", "t": "", "url": "https://x.com/debichanchan/status/2101652995624816913", "art": null}, {"id": "2101794549135716518", "d": "2026-09-20", "v": 37, "sn": "NickLo641579", "t": "", "url": "https://x.com/NickLo641579/status/2101794549135716518", "art": null}, {"id": "2101545701083685188", "d": "2026-09-20", "v": 36, "sn": "Raymondvshen", "t": "", "url": "https://x.com/Raymondvshen/status/2101545701083685188", "art": null}, {"id": "2101683580321804459", "d": "2026-09-20", "v": 35, "sn": "blune66", "t": "", "url": "https://x.com/blune66/status/2101683580321804459", "art": null}, {"id": "2101707887051788436", "d": "2026-09-20", "v": 26, "sn": "pawn_4_t", "t": "", "url": "https://x.com/pawn_4_t/status/2101707887051788436", "art": null}, {"id": "2101740979497713703", "d": "2026-09-20", "v": 25, "sn": "DesignCntrl", "t": "", "url": "https://x.com/DesignCntrl/status/2101740979497713703", "art": null}, {"id": "2101568907366785297", "d": "2026-09-20", "v": 22, "sn": "angeworkCoLtd", "t": "", "url": "https://x.com/angeworkCoLtd/status/2101568907366785297", "art": {"u": "https://huggingface.co/Mapika/decider-2b", "k": "site", "l": "huggingface.co"}}, {"id": "2101587300006375548", "d": "2026-09-20", "v": 19, "sn": "bwgift20th", "t": "", "url": "https://x.com/bwgift20th/status/2101587300006375548", "art": {"u": "https://bwgift.hatenadiary.jp/entry/2026/09/20/171937", "k": "site", "l": "bwgift.hatenadiary.jp"}}, {"id": "2101554436040761795", "d": "2026-09-20", "v": 17, "sn": "UPHASHbigsalt", "t": "", "url": "https://x.com/UPHASHbigsalt/status/2101554436040761795", "art": {"u": "https://github.com/UpHash-Network/mini-jev", "k": "repo", "l": "uphash-network/mini-jev"}}, {"id": "2101550368924836296", "d": "2026-09-20", "v": 11, "sn": "gavinorgav", "t": "", "url": "https://x.com/gavinorgav/status/2101550368924836296", "art": {"u": "https://github.com/gavinHuang/laya-mario", "k": "repo", "l": "gavinhuang/laya-mario"}}, {"id": "2101106887840370919", "d": "2026-09-19", "v": 426247, "sn": "taroleo", "t": "", "url": "https://x.com/taroleo/status/2101106887840370919", "art": null}, {"id": "2101193436816920798", "d": "2026-09-19", "v": 206466, "sn": "GitHubNext", "t": "", "url": "https://x.com/GitHubNext/status/2101193436816920798", "art": {"u": "https://github.com/githubnext/localjev", "k": "repo", "l": "githubnext/localjev"}}, {"id": "2101209390992994570", "d": "2026-09-19", "v": 92294, "sn": "skeptrune", "t": "", "url": "https://x.com/skeptrune/status/2101209390992994570", "art": null}, {"id": "2101330185044074958", "d": "2026-09-19", "v": 72532, "sn": "argos_M1111", "t": "", "url": "https://x.com/argos_M1111/status/2101330185044074958", "art": null}, {"id": "2101426969971916863", "d": "2026-09-19", "v": 38981, "sn": "kis", "t": "", "url": "https://x.com/kis/status/2101426969971916863", "art": null}, {"id": "2101294352790348072", "d": "2026-09-19", "v": 5663, "sn": "kis", "t": "", "url": "https://x.com/kis/status/2101294352790348072", "art": null}, {"id": "2101309103402623365", "d": "2026-09-19", "v": 5181, "sn": "heman10x", "t": "", "url": "https://x.com/heman10x/status/2101309103402623365", "art": null}, {"id": "2101404411306061898", "d": "2026-09-19", "v": 3554, "sn": "kevinkern", "t": "", "url": "https://x.com/kevinkern/status/2101404411306061898", "art": null}, {"id": "2101172428861059351", "d": "2026-09-19", "v": 3316, "sn": "YunfengB", "t": "", "url": "https://x.com/YunfengB/status/2101172428861059351", "art": {"u": "https://github.com/knowledgator/gliclass", "k": "repo", "l": "knowledgator/gliclass"}}, {"id": "2101337432587427842", "d": "2026-09-19", "v": 3059, "sn": "BohuTANG", "t": "", "url": "https://x.com/BohuTANG/status/2101337432587427842", "art": null}, {"id": "2101125879766421755", "d": "2026-09-19", "v": 2599, "sn": "QingQ77", "t": "", "url": "https://x.com/QingQ77/status/2101125879766421755", "art": {"u": "https://github.com/TianyuCodings/NanoJev", "k": "repo", "l": "tianyucodings/nanojev"}}, {"id": "2101359643847274711", "d": "2026-09-19", "v": 1983, "sn": "KarnikShreyas", "t": "", "url": "https://x.com/KarnikShreyas/status/2101359643847274711", "art": null}, {"id": "2101320980446535779", "d": "2026-09-19", "v": 1557, "sn": "DJLougen", "t": "", "url": "https://x.com/DJLougen/status/2101320980446535779", "art": {"u": "https://huggingface.co/GestaltLabs/Jeff-1", "k": "site", "l": "huggingface.co"}}, {"id": "2101372265963110530", "d": "2026-09-19", "v": 673, "sn": "SamiBizConsult", "t": "", "url": "https://x.com/SamiBizConsult/status/2101372265963110530", "art": null}, {"id": "2101296574546739396", "d": "2026-09-19", "v": 559, "sn": "tagforgame", "t": "", "url": "https://x.com/tagforgame/status/2101296574546739396", "art": null}, {"id": "2101125771821760527", "d": "2026-09-19", "v": 407, "sn": "Richelle_Ji", "t": "", "url": "https://x.com/Richelle_Ji/status/2101125771821760527", "art": {"u": "https://simplejev.ai", "k": "site", "l": "simplejev.ai"}}, {"id": "2101325959551238486", "d": "2026-09-19", "v": 381, "sn": "AzamIntikhab", "t": "", "url": "https://x.com/AzamIntikhab/status/2101325959551238486", "art": null}, {"id": "2101446697536876623", "d": "2026-09-19", "v": 289, "sn": "tjm8874", "t": "", "url": "https://x.com/tjm8874/status/2101446697536876623", "art": null}, {"id": "2101164410958131708", "d": "2026-09-19", "v": 236, "sn": "icools", "t": "", "url": "https://x.com/icools/status/2101164410958131708", "art": null}, {"id": "2101453506007732526", "d": "2026-09-19", "v": 119, "sn": "narphorium", "t": "", "url": "https://x.com/narphorium/status/2101453506007732526", "art": {"u": "https://github.com/narphorium/nl-logic-interpreter", "k": "repo", "l": "narphorium/nl-logic-interpreter"}}, {"id": "2101367304886047084", "d": "2026-09-19", "v": 77, "sn": "Eseshinpu", "t": "", "url": "https://x.com/Eseshinpu/status/2101367304886047084", "art": null}, {"id": "2101195858213474763", "d": "2026-09-19", "v": 75, "sn": "soederpop", "t": "", "url": "https://x.com/soederpop/status/2101195858213474763", "art": {"u": "https://github.com/soederpop/luca", "k": "repo", "l": "soederpop/luca"}}, {"id": "2101249350601171378", "d": "2026-09-19", "v": 52, "sn": "otto_explorer", "t": "", "url": "https://x.com/otto_explorer/status/2101249350601171378", "art": null}, {"id": "2101284077114413408", "d": "2026-09-19", "v": 50, "sn": "michhachula", "t": "", "url": "https://x.com/michhachula/status/2101284077114413408", "art": {"u": "https://huggingface.co/convaiinnovations/laya", "k": "site", "l": "huggingface.co"}}, {"id": "2101216386790154678", "d": "2026-09-19", "v": 42, "sn": "DwidLee", "t": "", "url": "https://x.com/DwidLee/status/2101216386790154678", "art": {"u": "https://github.com/fritzprix/systemone-lite", "k": "repo", "l": "fritzprix/systemone-lite"}}, {"id": "2101385288077504715", "d": "2026-09-19", "v": 35, "sn": "JA1MEXD3ZTR0Y3R", "t": "", "url": "https://x.com/JA1MEXD3ZTR0Y3R/status/2101385288077504715", "art": null}, {"id": "2101453955809390703", "d": "2026-09-19", "v": 30, "sn": "GUILE_channel", "t": "", "url": "https://x.com/GUILE_channel/status/2101453955809390703", "art": null}, {"id": "2101243025359839557", "d": "2026-09-19", "v": 25, "sn": "TravisJChauvin", "t": "", "url": "https://x.com/TravisJChauvin/status/2101243025359839557", "art": {"u": "https://github.com/Mintzs/jevify", "k": "repo", "l": "mintzs/jevify"}}, {"id": "2101454303923753057", "d": "2026-09-19", "v": 24, "sn": "Alissonks", "t": "", "url": "https://x.com/Alissonks/status/2101454303923753057", "art": null}, {"id": "2101229328482676787", "d": "2026-09-19", "v": 19, "sn": "m_newhaus", "t": "", "url": "https://x.com/m_newhaus/status/2101229328482676787", "art": {"u": "https://github.com/m-newhauser/gliner25-compaction", "k": "repo", "l": "m-newhauser/gliner25-compaction"}}, {"id": "2100739853101195744", "d": "2026-09-18", "v": 132023, "sn": "kshetrajna", "t": "", "url": "https://x.com/kshetrajna/status/2100739853101195744", "art": {"u": "https://kshetrajna12.github.io/reflex/", "k": "site", "l": "kshetrajna12.github.io"}}, {"id": "2101028325472841920", "d": "2026-09-18", "v": 94462, "sn": "jaredpalmer", "t": "", "url": "https://x.com/jaredpalmer/status/2101028325472841920", "art": {"u": "https://github.com/jaredpalmer/kev", "k": "repo", "l": "jaredpalmer/kev"}}, {"id": "2101011110132601054", "d": "2026-09-18", "v": 94368, "sn": "mmastrac", "t": "", "url": "https://x.com/mmastrac/status/2101011110132601054", "art": null}, {"id": "2101006253829046539", "d": "2026-09-18", "v": 49370, "sn": "picocreator", "t": "", "url": "https://x.com/picocreator/status/2101006253829046539", "art": {"u": "https://SimpleJev.ai", "k": "site", "l": "SimpleJev.ai"}}, {"id": "2100982446221373644", "d": "2026-09-18", "v": 43102, "sn": "agentspanel", "t": "", "url": "https://x.com/agentspanel/status/2100982446221373644", "art": null}, {"id": "2101091012559151480", "d": "2026-09-18", "v": 28085, "sn": "michellechen", "t": "", "url": "https://x.com/michellechen/status/2101091012559151480", "art": {"u": "https://kev.workers-ai-mle.workers.dev/", "k": "site", "l": "kev.workers-ai-mle.workers.dev"}}, {"id": "2101009663445942393", "d": "2026-09-18", "v": 21190, "sn": "argos_M1111", "t": "", "url": "https://x.com/argos_M1111/status/2101009663445942393", "art": null}, {"id": "2100999697456660934", "d": "2026-09-18", "v": 19858, "sn": "argos_M1111", "t": "", "url": "https://x.com/argos_M1111/status/2100999697456660934", "art": null}, {"id": "2100974458458784124", "d": "2026-09-18", "v": 15727, "sn": "sadsadasgaaxwa", "t": "", "url": "https://x.com/sadsadasgaaxwa/status/2100974458458784124", "art": {"u": "https://zenn.dev/genkunjc/articles/local-llm-judge-only", "k": "site", "l": "zenn.dev"}}, {"id": "2100978402174120134", "d": "2026-09-18", "v": 12421, "sn": "sagar_builds", "t": "", "url": "https://x.com/sagar_builds/status/2100978402174120134", "art": {"u": "https://sarvam-jev.feynmanpi.com/", "k": "site", "l": "sarvam-jev.feynmanpi.com"}}, {"id": "2100847239438508478", "d": "2026-09-18", "v": 7396, "sn": "_AbolfazlAbbasi", "t": "", "url": "https://x.com/_AbolfazlAbbasi/status/2100847239438508478", "art": null}, {"id": "2100974901909983621", "d": "2026-09-18", "v": 5150, "sn": "Zen_with_AI", "t": "", "url": "https://x.com/Zen_with_AI/status/2100974901909983621", "art": {"u": "https://github.com/TheoLeeCJ/SemIf", "k": "repo", "l": "theoleecj/semif"}}, {"id": "2101073889266925822", "d": "2026-09-18", "v": 3547, "sn": "tazr_dev", "t": "", "url": "https://x.com/tazr_dev/status/2101073889266925822", "art": null}, {"id": "2100788984918184296", "d": "2026-09-18", "v": 3225, "sn": "mattn_jp", "t": "", "url": "https://x.com/mattn_jp/status/2100788984918184296", "art": null}, {"id": "2100836659533336676", "d": "2026-09-18", "v": 3133, "sn": "heman10x", "t": "", "url": "https://x.com/heman10x/status/2100836659533336676", "art": null}, {"id": "2100994179380007367", "d": "2026-09-18", "v": 2802, "sn": "s_tat1204", "t": "", "url": "https://x.com/s_tat1204/status/2100994179380007367", "art": null}, {"id": "2100873512760283567", "d": "2026-09-18", "v": 1537, "sn": "mah_lab", "t": "", "url": "https://x.com/mah_lab/status/2100873512760283567", "art": null}, {"id": "2101040177414062305", "d": "2026-09-18", "v": 1448, "sn": "evilpingwin", "t": "", "url": "https://x.com/evilpingwin/status/2101040177414062305", "art": null}, {"id": "2100749261310763276", "d": "2026-09-18", "v": 724, "sn": "_AbolfazlAbbasi", "t": "", "url": "https://x.com/_AbolfazlAbbasi/status/2100749261310763276", "art": null}, {"id": "2100973209114075330", "d": "2026-09-18", "v": 723, "sn": "hxiao", "t": "", "url": "https://x.com/hxiao/status/2100973209114075330", "art": null}, {"id": "2101078507531223130", "d": "2026-09-18", "v": 535, "sn": "lucataco", "t": "", "url": "https://x.com/lucataco/status/2101078507531223130", "art": {"u": "https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v1", "k": "site", "l": "huggingface.co"}}, {"id": "2100815358232031381", "d": "2026-09-18", "v": 352, "sn": "neutron42jp", "t": "", "url": "https://x.com/neutron42jp/status/2100815358232031381", "art": null}, {"id": "2101042229720793104", "d": "2026-09-18", "v": 278, "sn": "TimothyZ77", "t": "", "url": "https://x.com/TimothyZ77/status/2101042229720793104", "art": {"u": "https://github.com/TimothyZhang7/open-decisions", "k": "repo", "l": "timothyzhang7/open-decisions"}}, {"id": "2100901849695920132", "d": "2026-09-18", "v": 197, "sn": "honglilai", "t": "", "url": "https://x.com/honglilai/status/2100901849695920132", "art": {"u": "http://OpenJev.com", "k": "site", "l": "OpenJev.com"}}, {"id": "2101055870171808062", "d": "2026-09-18", "v": 123, "sn": "_AbolfazlAbbasi", "t": "", "url": "https://x.com/_AbolfazlAbbasi/status/2101055870171808062", "art": {"u": "https://github.com/aabolfazl/typesafe-local", "k": "repo", "l": "aabolfazl/typesafe-local"}}, {"id": "2100878424542007786", "d": "2026-09-18", "v": 121, "sn": "_uyza_", "t": "", "url": "https://x.com/_uyza_/status/2100878424542007786", "art": null}, {"id": "2100967933744910347", "d": "2026-09-18", "v": 82, "sn": "B_Sardine", "t": "", "url": "https://x.com/B_Sardine/status/2100967933744910347", "art": null}, {"id": "2101013687565959393", "d": "2026-09-18", "v": 79, "sn": "abdulsaboooor", "t": "", "url": "https://x.com/abdulsaboooor/status/2101013687565959393", "art": {"u": "https://abdulsaboorshaikh.com", "k": "site", "l": "abdulsaboorshaikh.com"}}, {"id": "2100820617805303969", "d": "2026-09-18", "v": 63, "sn": "huato", "t": "", "url": "https://x.com/huato/status/2100820617805303969", "art": {"u": "https://www.modemguides.com/blogs/ai-news/jev-typesafe-reality-check-run-locally?_pos=1&_sid=769cc9ff9&_ss=r", "k": "site", "l": "modemguides.com"}}, {"id": "2100788131310252378", "d": "2026-09-18", "v": 32, "sn": "JayCooperBell", "t": "", "url": "https://x.com/JayCooperBell/status/2100788131310252378", "art": null}, {"id": "2100956378970083480", "d": "2026-09-18", "v": 29, "sn": "fallout_tokyo", "t": "", "url": "https://x.com/fallout_tokyo/status/2100956378970083480", "art": null}, {"id": "2100904312646099389", "d": "2026-09-18", "v": 28, "sn": "HaoyangSu_", "t": "", "url": "https://x.com/HaoyangSu_/status/2100904312646099389", "art": null}, {"id": "2100969738377592846", "d": "2026-09-18", "v": 26, "sn": "rndhouse", "t": "", "url": "https://x.com/rndhouse/status/2100969738377592846", "art": {"u": "https://github.com/rndhouse/weblayer", "k": "repo", "l": "rndhouse/weblayer"}}, {"id": "2101068666356076706", "d": "2026-09-18", "v": 21, "sn": "JA1MEXD3ZTR0Y3R", "t": "", "url": "https://x.com/JA1MEXD3ZTR0Y3R/status/2101068666356076706", "art": null}, {"id": "2100651678110515383", "d": "2026-09-17", "v": 142494, "sn": "ekzhang1", "t": "", "url": "https://x.com/ekzhang1/status/2100651678110515383", "art": {"u": "https://github.com/ekzhang/openjev-sglang", "k": "repo", "l": "ekzhang/openjev-sglang"}}, {"id": "2100454049359577516", "d": "2026-09-17", "v": 94310, "sn": "wmoto_ai", "t": "", "url": "https://x.com/wmoto_ai/status/2100454049359577516", "art": null}, {"id": "2100646513412292873", "d": "2026-09-17", "v": 34908, "sn": "hr98w", "t": "", "url": "https://x.com/hr98w/status/2100646513412292873", "art": {"u": "https://github.com/hr98w/jev-visual", "k": "repo", "l": "hr98w/jev-visual"}}, {"id": "2100467548298899918", "d": "2026-09-17", "v": 26252, "sn": "iamMrDuncan", "t": "", "url": "https://x.com/iamMrDuncan/status/2100467548298899918", "art": {"u": "https://github.com/iammrduncan/typesafe-ai-benchmark", "k": "repo", "l": "iammrduncan/typesafe-ai-benchmark"}}, {"id": "2100709039613100112", "d": "2026-09-17", "v": 6828, "sn": "JoshKuechly", "t": "", "url": "https://x.com/JoshKuechly/status/2100709039613100112", "art": null}, {"id": "2100685797779177797", "d": "2026-09-17", "v": 4010, "sn": "lcm_in_ai", "t": "", "url": "https://x.com/lcm_in_ai/status/2100685797779177797", "art": {"u": "https://github.com/jamescorbett/mlx-vlm", "k": "repo", "l": "jamescorbett/mlx-vlm"}}, {"id": "2100559043769012589", "d": "2026-09-17", "v": 2376, "sn": "DJLougen", "t": "", "url": "https://x.com/DJLougen/status/2100559043769012589", "art": null}, {"id": "2100502587917336783", "d": "2026-09-17", "v": 1804, "sn": "mattn_jp", "t": "", "url": "https://x.com/mattn_jp/status/2100502587917336783", "art": null}, {"id": "2100672847261671439", "d": "2026-09-17", "v": 1787, "sn": "Stephan007", "t": "", "url": "https://x.com/Stephan007/status/2100672847261671439", "art": {"u": "https://github.com/stephanj/parallelConstraintDecoding", "k": "repo", "l": "stephanj/parallelconstraintdecoding"}}, {"id": "2100634777032298583", "d": "2026-09-17", "v": 1002, "sn": "nickvernij", "t": "", "url": "https://x.com/nickvernij/status/2100634777032298583", "art": null}, {"id": "2100713859162202606", "d": "2026-09-17", "v": 814, "sn": "MingtianZhang", "t": "", "url": "https://x.com/MingtianZhang/status/2100713859162202606", "art": {"u": "https://typear.ai/blog/introducing-typear", "k": "site", "l": "typear.ai"}}, {"id": "2100462684370256134", "d": "2026-09-17", "v": 583, "sn": "DanFessler", "t": "", "url": "https://x.com/DanFessler/status/2100462684370256134", "art": null}, {"id": "2100574360176300115", "d": "2026-09-17", "v": 472, "sn": "MingtianZhang", "t": "", "url": "https://x.com/MingtianZhang/status/2100574360176300115", "art": {"u": "https://github.com/zmtomorrow/typear", "k": "repo", "l": "zmtomorrow/typear"}}, {"id": "2100549517171175807", "d": "2026-09-17", "v": 434, "sn": "aqty", "t": "", "url": "https://x.com/aqty/status/2100549517171175807", "art": {"u": "https://github.com/NullPo-jp/PocketJev", "k": "repo", "l": "nullpo-jp/pocketjev"}}, {"id": "2100528523324903511", "d": "2026-09-17", "v": 136, "sn": "teacupdog4", "t": "", "url": "https://x.com/teacupdog4/status/2100528523324903511", "art": null}, {"id": "2100634919202378002", "d": "2026-09-17", "v": 134, "sn": "iamlemec", "t": "", "url": "https://x.com/iamlemec/status/2100634919202378002", "art": {"u": "https://github.com/iamlemec/llama.cpp", "k": "repo", "l": "iamlemec/llama.cpp"}}, {"id": "2100633299794481343", "d": "2026-09-17", "v": 121, "sn": "b_sagnnik", "t": "", "url": "https://x.com/b_sagnnik/status/2100633299794481343", "art": null}, {"id": "2100578238871593412", "d": "2026-09-17", "v": 106, "sn": "hr98w", "t": "", "url": "https://x.com/hr98w/status/2100578238871593412", "art": {"u": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD", "k": "site", "l": "huggingface.co"}}, {"id": "2100572372478955589", "d": "2026-09-17", "v": 69, "sn": "AIDIYlover", "t": "", "url": "https://x.com/AIDIYlover/status/2100572372478955589", "art": {"u": "https://openvons.com/", "k": "site", "l": "openvons.com"}}, {"id": "2100446188038213654", "d": "2026-09-17", "v": 68, "sn": "grishahq", "t": "", "url": "https://x.com/grishahq/status/2100446188038213654", "art": {"u": "https://github.com/grishahq/decisionbridge", "k": "repo", "l": "grishahq/decisionbridge"}}, {"id": "2100681192777331013", "d": "2026-09-17", "v": 55, "sn": "mobarmg", "t": "", "url": "https://x.com/mobarmg/status/2100681192777331013", "art": {"u": "https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large", "k": "site", "l": "huggingface.co"}}, {"id": "2100696115456679989", "d": "2026-09-17", "v": 46, "sn": "m_rakutko", "t": "", "url": "https://x.com/m_rakutko/status/2100696115456679989", "art": {"u": "https://github.com/r-ms/mini-jev", "k": "repo", "l": "r-ms/mini-jev"}}, {"id": "2100542891273949218", "d": "2026-09-17", "v": 39, "sn": "aaryantwt", "t": "", "url": "https://x.com/aaryantwt/status/2100542891273949218", "art": {"u": "https://whiteye.in/oracle", "k": "site", "l": "whiteye.in"}}, {"id": "2100564846794219869", "d": "2026-09-17", "v": 34, "sn": "DesignCntrl", "t": "", "url": "https://x.com/DesignCntrl/status/2100564846794219869", "art": null}, {"id": "2100170846346097083", "d": "2026-09-16", "v": 162200, "sn": "vinnylarouge", "t": "", "url": "https://x.com/vinnylarouge/status/2100170846346097083", "art": {"u": "https://github.com/vinnylarouge/jevlike", "k": "repo", "l": "vinnylarouge/jevlike"}}, {"id": "2100246355318817175", "d": "2026-09-16", "v": 36826, "sn": "austinvhuang", "t": "", "url": "https://x.com/austinvhuang/status/2100246355318817175", "art": null}, {"id": "2100373761195401724", "d": "2026-09-16", "v": 17433, "sn": "mmastrac", "t": "", "url": "https://x.com/mmastrac/status/2100373761195401724", "art": {"u": "https://github.com/vllm-project/vllm", "k": "repo", "l": "vllm-project/vllm"}}, {"id": "2100322461497823638", "d": "2026-09-16", "v": 1417, "sn": "joshua_s_penman", "t": "", "url": "https://x.com/joshua_s_penman/status/2100322461497823638", "art": {"u": "https://github.com/JoshuaSP/open-jev", "k": "repo", "l": "joshuasp/open-jev"}}, {"id": "2100157777595314615", "d": "2026-09-16", "v": 196, "sn": "5am2x", "t": "", "url": "https://x.com/5am2x/status/2100157777595314615", "art": null}, {"id": "2100153674173718874", "d": "2026-09-16", "v": 87, "sn": "shubham_19hshs", "t": "", "url": "https://x.com/shubham_19hshs/status/2100153674173718874", "art": {"u": "https://armhole-eldest-ashamed.ngrok-free.dev/", "k": "site", "l": "armhole-eldest-ashamed.ngrok-free.dev"}}]}
+{
+ "generated": "2026-09-24",
+ "rule": "card labelled not_a_jev_build by Sonnet v2 or Opus AND title matches model/port/endpoint keywords (clone, local, open-source, Jev-like/-compatible, decision model, endpoint, API, MLX, WebGPU, ONNX, GGUF, fine-tune, LoRA, distil, trained, model names) minus a short exclusion list; spot check: 27 of a random 30 fit",
+ "source": "cards.json (corpus through 2026-09-23 18:47 UTC)",
+ "posts": [
+  {
+   "id": "2102777898444673257",
+   "d": "2026-09-23",
+   "v": 5501,
+   "sn": "AtlantisPleb",
+   "t": "",
+   "url": "https://x.com/AtlantisPleb/status/2102777898444673257"
+  },
+  {
+   "id": "2102728964477247964",
+   "d": "2026-09-23",
+   "v": 4144,
+   "sn": "vanstriendaniel",
+   "t": "",
+   "url": "https://x.com/vanstriendaniel/status/2102728964477247964"
+  },
+  {
+   "id": "2102794829327675580",
+   "d": "2026-09-23",
+   "v": 1189,
+   "sn": "agentspanel",
+   "t": "",
+   "url": "https://x.com/agentspanel/status/2102794829327675580"
+  },
+  {
+   "id": "2102729706944823640",
+   "d": "2026-09-23",
+   "v": 1068,
+   "sn": "TeksEdge",
+   "t": "",
+   "url": "https://x.com/TeksEdge/status/2102729706944823640"
+  },
+  {
+   "id": "2102585992083538214",
+   "d": "2026-09-23",
+   "v": 390,
+   "sn": "superoo7",
+   "t": "",
+   "url": "https://x.com/superoo7/status/2102585992083538214"
+  },
+  {
+   "id": "2102758519908811133",
+   "d": "2026-09-23",
+   "v": 116,
+   "sn": "erik_kokalj",
+   "t": "",
+   "url": "https://x.com/erik_kokalj/status/2102758519908811133"
+  },
+  {
+   "id": "2102649099044725031",
+   "d": "2026-09-23",
+   "v": 109,
+   "sn": "takku_4331",
+   "t": "",
+   "url": "https://x.com/takku_4331/status/2102649099044725031"
+  },
+  {
+   "id": "2102796348156518543",
+   "d": "2026-09-23",
+   "v": 102,
+   "sn": "qqc1989",
+   "t": "",
+   "url": "https://x.com/qqc1989/status/2102796348156518543"
+  },
+  {
+   "id": "2102566148982350256",
+   "d": "2026-09-23",
+   "v": 87,
+   "sn": "abxda",
+   "t": "",
+   "url": "https://x.com/abxda/status/2102566148982350256"
+  },
+  {
+   "id": "2102682845915619333",
+   "d": "2026-09-23",
+   "v": 71,
+   "sn": "Zefan_Cai",
+   "t": "",
+   "url": "https://x.com/Zefan_Cai/status/2102682845915619333"
+  },
+  {
+   "id": "2102604958193639640",
+   "d": "2026-09-23",
+   "v": 68,
+   "sn": "tumf",
+   "t": "",
+   "url": "https://x.com/tumf/status/2102604958193639640"
+  },
+  {
+   "id": "2102602267199459650",
+   "d": "2026-09-23",
+   "v": 66,
+   "sn": "Instance_VRC",
+   "t": "",
+   "url": "https://x.com/Instance_VRC/status/2102602267199459650"
+  },
+  {
+   "id": "2102755529181565419",
+   "d": "2026-09-23",
+   "v": 52,
+   "sn": "yukke_",
+   "t": "",
+   "url": "https://x.com/yukke_/status/2102755529181565419"
+  },
+  {
+   "id": "2102738022148039107",
+   "d": "2026-09-23",
+   "v": 43,
+   "sn": "pabloramosuy",
+   "t": "",
+   "url": "https://x.com/pabloramosuy/status/2102738022148039107"
+  },
+  {
+   "id": "2102760789300162610",
+   "d": "2026-09-23",
+   "v": 39,
+   "sn": "kuma_XXP",
+   "t": "",
+   "url": "https://x.com/kuma_XXP/status/2102760789300162610"
+  },
+  {
+   "id": "2102631547371483394",
+   "d": "2026-09-23",
+   "v": 35,
+   "sn": "prayag_sonar",
+   "t": "",
+   "url": "https://x.com/prayag_sonar/status/2102631547371483394"
+  },
+  {
+   "id": "2102720469959106630",
+   "d": "2026-09-23",
+   "v": 34,
+   "sn": "LFrefman",
+   "t": "",
+   "url": "https://x.com/LFrefman/status/2102720469959106630"
+  },
+  {
+   "id": "2102675318507229240",
+   "d": "2026-09-23",
+   "v": 31,
+   "sn": "Zefan_Cai",
+   "t": "",
+   "url": "https://x.com/Zefan_Cai/status/2102675318507229240"
+  },
+  {
+   "id": "2102758018849075269",
+   "d": "2026-09-23",
+   "v": 27,
+   "sn": "yukke_",
+   "t": "",
+   "url": "https://x.com/yukke_/status/2102758018849075269"
+  },
+  {
+   "id": "2102748765622825153",
+   "d": "2026-09-23",
+   "v": 26,
+   "sn": "Noumenon_ai",
+   "t": "",
+   "url": "https://x.com/Noumenon_ai/status/2102748765622825153"
+  },
+  {
+   "id": "2102748954102259937",
+   "d": "2026-09-23",
+   "v": 25,
+   "sn": "Noumenon_ai",
+   "t": "",
+   "url": "https://x.com/Noumenon_ai/status/2102748954102259937"
+  },
+  {
+   "id": "2102637830573076581",
+   "d": "2026-09-23",
+   "v": 20,
+   "sn": "utkarshgsuv",
+   "t": "",
+   "url": "https://x.com/utkarshgsuv/status/2102637830573076581"
+  },
+  {
+   "id": "2102606290753114439",
+   "d": "2026-09-23",
+   "v": 19,
+   "sn": "edplese",
+   "t": "",
+   "url": "https://x.com/edplese/status/2102606290753114439"
+  },
+  {
+   "id": "2102748852608483559",
+   "d": "2026-09-23",
+   "v": 19,
+   "sn": "Noumenon_ai",
+   "t": "",
+   "url": "https://x.com/Noumenon_ai/status/2102748852608483559"
+  },
+  {
+   "id": "2102571319355158981",
+   "d": "2026-09-23",
+   "v": 17,
+   "sn": "thedoomguy_ai",
+   "t": "",
+   "url": "https://x.com/thedoomguy_ai/status/2102571319355158981"
+  },
+  {
+   "id": "2102574201156915318",
+   "d": "2026-09-23",
+   "v": 17,
+   "sn": "nullsoft_app",
+   "t": "",
+   "url": "https://x.com/nullsoft_app/status/2102574201156915318"
+  },
+  {
+   "id": "2102800105371779568",
+   "d": "2026-09-23",
+   "v": 12,
+   "sn": "Sollersxl",
+   "t": "",
+   "url": "https://x.com/Sollersxl/status/2102800105371779568"
+  },
+  {
+   "id": "2102642749757637005",
+   "d": "2026-09-23",
+   "v": 8,
+   "sn": "Farhan60291312",
+   "t": "",
+   "url": "https://x.com/Farhan60291312/status/2102642749757637005"
+  },
+  {
+   "id": "2102774023121973553",
+   "d": "2026-09-23",
+   "v": 8,
+   "sn": "igor_dev",
+   "t": "",
+   "url": "https://x.com/igor_dev/status/2102774023121973553"
+  },
+  {
+   "id": "2102647554437415036",
+   "d": "2026-09-23",
+   "v": 6,
+   "sn": "utkarshgsuv",
+   "t": "",
+   "url": "https://x.com/utkarshgsuv/status/2102647554437415036"
+  },
+  {
+   "id": "2102813418940215614",
+   "d": "2026-09-23",
+   "v": 5,
+   "sn": "0kaliasgar",
+   "t": "",
+   "url": "https://x.com/0kaliasgar/status/2102813418940215614"
+  },
+  {
+   "id": "2102536894169096357",
+   "d": "2026-09-22",
+   "v": 194139,
+   "sn": "googlegemma",
+   "t": "",
+   "url": "https://x.com/googlegemma/status/2102536894169096357"
+  },
+  {
+   "id": "2102252088067850507",
+   "d": "2026-09-22",
+   "v": 14694,
+   "sn": "denisyarats",
+   "t": "",
+   "url": "https://x.com/denisyarats/status/2102252088067850507"
+  },
+  {
+   "id": "2102493286653112440",
+   "d": "2026-09-22",
+   "v": 2781,
+   "sn": "ErickSky",
+   "t": "",
+   "url": "https://x.com/ErickSky/status/2102493286653112440"
+  },
+  {
+   "id": "2102430169965212123",
+   "d": "2026-09-22",
+   "v": 989,
+   "sn": "BorderleSint",
+   "t": "",
+   "url": "https://x.com/BorderleSint/status/2102430169965212123"
+  },
+  {
+   "id": "2102513611772145879",
+   "d": "2026-09-22",
+   "v": 662,
+   "sn": "MajoSayo",
+   "t": "",
+   "url": "https://x.com/MajoSayo/status/2102513611772145879"
+  },
+  {
+   "id": "2102370796245299546",
+   "d": "2026-09-22",
+   "v": 654,
+   "sn": "pipix1121",
+   "t": "",
+   "url": "https://x.com/pipix1121/status/2102370796245299546"
+  },
+  {
+   "id": "2102269968930791643",
+   "d": "2026-09-22",
+   "v": 426,
+   "sn": "yuvalav",
+   "t": "",
+   "url": "https://x.com/yuvalav/status/2102269968930791643"
+  },
+  {
+   "id": "2102282655437885460",
+   "d": "2026-09-22",
+   "v": 374,
+   "sn": "totristeprakrai",
+   "t": "",
+   "url": "https://x.com/totristeprakrai/status/2102282655437885460"
+  },
+  {
+   "id": "2102539690540679222",
+   "d": "2026-09-22",
+   "v": 356,
+   "sn": "sohail_hussain_",
+   "t": "",
+   "url": "https://x.com/sohail_hussain_/status/2102539690540679222"
+  },
+  {
+   "id": "2102451519388102755",
+   "d": "2026-09-22",
+   "v": 352,
+   "sn": "stephenlb",
+   "t": "",
+   "url": "https://x.com/stephenlb/status/2102451519388102755"
+  },
+  {
+   "id": "2102329321876767018",
+   "d": "2026-09-22",
+   "v": 320,
+   "sn": "smallnest",
+   "t": "",
+   "url": "https://x.com/smallnest/status/2102329321876767018"
+  },
+  {
+   "id": "2102544803556741273",
+   "d": "2026-09-22",
+   "v": 283,
+   "sn": "Areai51",
+   "t": "",
+   "url": "https://x.com/Areai51/status/2102544803556741273"
+  },
+  {
+   "id": "2102384117866197463",
+   "d": "2026-09-22",
+   "v": 225,
+   "sn": "ArturSkowronski",
+   "t": "",
+   "url": "https://x.com/ArturSkowronski/status/2102384117866197463"
+  },
+  {
+   "id": "2102431431540822479",
+   "d": "2026-09-22",
+   "v": 196,
+   "sn": "S1LV3R_J1NX",
+   "t": "",
+   "url": "https://x.com/S1LV3R_J1NX/status/2102431431540822479"
+  },
+  {
+   "id": "2102213706059051162",
+   "d": "2026-09-22",
+   "v": 195,
+   "sn": "tjm8874",
+   "t": "",
+   "url": "https://x.com/tjm8874/status/2102213706059051162"
+  },
+  {
+   "id": "2102245444663537859",
+   "d": "2026-09-22",
+   "v": 156,
+   "sn": "chirag",
+   "t": "",
+   "url": "https://x.com/chirag/status/2102245444663537859"
+  },
+  {
+   "id": "2102255801062834237",
+   "d": "2026-09-22",
+   "v": 136,
+   "sn": "yukke_",
+   "t": "",
+   "url": "https://x.com/yukke_/status/2102255801062834237"
+  },
+  {
+   "id": "2102291267120193609",
+   "d": "2026-09-22",
+   "v": 92,
+   "sn": "VipulDivyanshu",
+   "t": "",
+   "url": "https://x.com/VipulDivyanshu/status/2102291267120193609"
+  },
+  {
+   "id": "2102233195294920886",
+   "d": "2026-09-22",
+   "v": 85,
+   "sn": "eng_ahmd",
+   "t": "",
+   "url": "https://x.com/eng_ahmd/status/2102233195294920886"
+  },
+  {
+   "id": "2102435464066285848",
+   "d": "2026-09-22",
+   "v": 69,
+   "sn": "_ollman",
+   "t": "",
+   "url": "https://x.com/_ollman/status/2102435464066285848"
+  },
+  {
+   "id": "2102266291226857777",
+   "d": "2026-09-22",
+   "v": 64,
+   "sn": "MohammedAlaa",
+   "t": "",
+   "url": "https://x.com/MohammedAlaa/status/2102266291226857777"
+  },
+  {
+   "id": "2102315546490343543",
+   "d": "2026-09-22",
+   "v": 58,
+   "sn": "logesh_umapathi",
+   "t": "",
+   "url": "https://x.com/logesh_umapathi/status/2102315546490343543"
+  },
+  {
+   "id": "2102514026886414693",
+   "d": "2026-09-22",
+   "v": 52,
+   "sn": "techvignesh",
+   "t": "",
+   "url": "https://x.com/techvignesh/status/2102514026886414693"
+  },
+  {
+   "id": "2102343304620707934",
+   "d": "2026-09-22",
+   "v": 49,
+   "sn": "GirardJohannes",
+   "t": "",
+   "url": "https://x.com/GirardJohannes/status/2102343304620707934"
+  },
+  {
+   "id": "2102406498576171183",
+   "d": "2026-09-22",
+   "v": 49,
+   "sn": "koguchit",
+   "t": "",
+   "url": "https://x.com/koguchit/status/2102406498576171183"
+  },
+  {
+   "id": "2102385640042283293",
+   "d": "2026-09-22",
+   "v": 48,
+   "sn": "nutanc",
+   "t": "",
+   "url": "https://x.com/nutanc/status/2102385640042283293"
+  },
+  {
+   "id": "2102511301109166207",
+   "d": "2026-09-22",
+   "v": 48,
+   "sn": "tangmian",
+   "t": "",
+   "url": "https://x.com/tangmian/status/2102511301109166207"
+  },
+  {
+   "id": "2102276866610794687",
+   "d": "2026-09-22",
+   "v": 40,
+   "sn": "geneLab_999",
+   "t": "",
+   "url": "https://x.com/geneLab_999/status/2102276866610794687"
+  },
+  {
+   "id": "2102405674680594812",
+   "d": "2026-09-22",
+   "v": 39,
+   "sn": "seth_codes_",
+   "t": "",
+   "url": "https://x.com/seth_codes_/status/2102405674680594812"
+  },
+  {
+   "id": "2102197433333596671",
+   "d": "2026-09-22",
+   "v": 34,
+   "sn": "Belisarius_Rex",
+   "t": "",
+   "url": "https://x.com/Belisarius_Rex/status/2102197433333596671"
+  },
+  {
+   "id": "2102316339323183276",
+   "d": "2026-09-22",
+   "v": 32,
+   "sn": "Jeuner",
+   "t": "",
+   "url": "https://x.com/Jeuner/status/2102316339323183276"
+  },
+  {
+   "id": "2102215416865267835",
+   "d": "2026-09-22",
+   "v": 31,
+   "sn": "witwall",
+   "t": "",
+   "url": "https://x.com/witwall/status/2102215416865267835"
+  },
+  {
+   "id": "2102323990320775197",
+   "d": "2026-09-22",
+   "v": 30,
+   "sn": "PhyloTan",
+   "t": "",
+   "url": "https://x.com/PhyloTan/status/2102323990320775197"
+  },
+  {
+   "id": "2102449660094799987",
+   "d": "2026-09-22",
+   "v": 30,
+   "sn": "sbaranskyi",
+   "t": "",
+   "url": "https://x.com/sbaranskyi/status/2102449660094799987"
+  },
+  {
+   "id": "2102383106409824305",
+   "d": "2026-09-22",
+   "v": 26,
+   "sn": "edwin_samar",
+   "t": "",
+   "url": "https://x.com/edwin_samar/status/2102383106409824305"
+  },
+  {
+   "id": "2102409251243098542",
+   "d": "2026-09-22",
+   "v": 25,
+   "sn": "essepl",
+   "t": "",
+   "url": "https://x.com/essepl/status/2102409251243098542"
+  },
+  {
+   "id": "2102512325622419774",
+   "d": "2026-09-22",
+   "v": 23,
+   "sn": "kongtoulierenLM",
+   "t": "",
+   "url": "https://x.com/kongtoulierenLM/status/2102512325622419774"
+  },
+  {
+   "id": "2102327905858543976",
+   "d": "2026-09-22",
+   "v": 22,
+   "sn": "alexdelrosso",
+   "t": "",
+   "url": "https://x.com/alexdelrosso/status/2102327905858543976"
+  },
+  {
+   "id": "2102453783246868948",
+   "d": "2026-09-22",
+   "v": 12,
+   "sn": "bet0x",
+   "t": "",
+   "url": "https://x.com/bet0x/status/2102453783246868948"
+  },
+  {
+   "id": "2102300752341352815",
+   "d": "2026-09-22",
+   "v": 9,
+   "sn": "scaiado",
+   "t": "",
+   "url": "https://x.com/scaiado/status/2102300752341352815"
+  },
+  {
+   "id": "2102343847598752216",
+   "d": "2026-09-22",
+   "v": 6,
+   "sn": "sitowebveloce",
+   "t": "",
+   "url": "https://x.com/sitowebveloce/status/2102343847598752216"
+  },
+  {
+   "id": "2102308420527489168",
+   "d": "2026-09-22",
+   "v": 5,
+   "sn": "nvkudva",
+   "t": "",
+   "url": "https://x.com/nvkudva/status/2102308420527489168"
+  },
+  {
+   "id": "2102307496971182351",
+   "d": "2026-09-22",
+   "v": 3,
+   "sn": "nvkudva",
+   "t": "",
+   "url": "https://x.com/nvkudva/status/2102307496971182351"
+  },
+  {
+   "id": "2102062149841588395",
+   "d": "2026-09-21",
+   "v": 78932,
+   "sn": "hawkymisc",
+   "t": "",
+   "url": "https://x.com/hawkymisc/status/2102062149841588395"
+  },
+  {
+   "id": "2101925770432008665",
+   "d": "2026-09-21",
+   "v": 17431,
+   "sn": "nicodotdev",
+   "t": "",
+   "url": "https://x.com/nicodotdev/status/2101925770432008665"
+  },
+  {
+   "id": "2102088674699850107",
+   "d": "2026-09-21",
+   "v": 12824,
+   "sn": "yoheinakajima",
+   "t": "",
+   "url": "https://x.com/yoheinakajima/status/2102088674699850107"
+  },
+  {
+   "id": "2102141680728080783",
+   "d": "2026-09-21",
+   "v": 6858,
+   "sn": "speyronnet",
+   "t": "",
+   "url": "https://x.com/speyronnet/status/2102141680728080783"
+  },
+  {
+   "id": "2101927214820499627",
+   "d": "2026-09-21",
+   "v": 5375,
+   "sn": "repsiace",
+   "t": "",
+   "url": "https://x.com/repsiace/status/2101927214820499627"
+  },
+  {
+   "id": "2102163870945079785",
+   "d": "2026-09-21",
+   "v": 4874,
+   "sn": "Wilf_Lin",
+   "t": "",
+   "url": "https://x.com/Wilf_Lin/status/2102163870945079785"
+  },
+  {
+   "id": "2102115001368739906",
+   "d": "2026-09-21",
+   "v": 1775,
+   "sn": "0xAsm0d3us",
+   "t": "",
+   "url": "https://x.com/0xAsm0d3us/status/2102115001368739906"
+  },
+  {
+   "id": "2102085143988953561",
+   "d": "2026-09-21",
+   "v": 1743,
+   "sn": "TTUX_tech",
+   "t": "",
+   "url": "https://x.com/TTUX_tech/status/2102085143988953561"
+  },
+  {
+   "id": "2102014071557996621",
+   "d": "2026-09-21",
+   "v": 1697,
+   "sn": "totristeprakrai",
+   "t": "",
+   "url": "https://x.com/totristeprakrai/status/2102014071557996621"
+  },
+  {
+   "id": "2102080664527044940",
+   "d": "2026-09-21",
+   "v": 1555,
+   "sn": "seanphan",
+   "t": "",
+   "url": "https://x.com/seanphan/status/2102080664527044940"
+  },
+  {
+   "id": "2101866046714187808",
+   "d": "2026-09-21",
+   "v": 1375,
+   "sn": "moritalous",
+   "t": "",
+   "url": "https://x.com/moritalous/status/2101866046714187808"
+  },
+  {
+   "id": "2101823727667441671",
+   "d": "2026-09-21",
+   "v": 1355,
+   "sn": "Isichan_Hitori",
+   "t": "",
+   "url": "https://x.com/Isichan_Hitori/status/2101823727667441671"
+  },
+  {
+   "id": "2101925772516569243",
+   "d": "2026-09-21",
+   "v": 905,
+   "sn": "nicodotdev",
+   "t": "",
+   "url": "https://x.com/nicodotdev/status/2101925772516569243"
+  },
+  {
+   "id": "2102093905940611452",
+   "d": "2026-09-21",
+   "v": 839,
+   "sn": "peterpme",
+   "t": "",
+   "url": "https://x.com/peterpme/status/2102093905940611452"
+  },
+  {
+   "id": "2101925774278152664",
+   "d": "2026-09-21",
+   "v": 826,
+   "sn": "nicodotdev",
+   "t": "",
+   "url": "https://x.com/nicodotdev/status/2101925774278152664"
+  },
+  {
+   "id": "2102126688092189096",
+   "d": "2026-09-21",
+   "v": 819,
+   "sn": "TheSeriousProg",
+   "t": "",
+   "url": "https://x.com/TheSeriousProg/status/2102126688092189096"
+  },
+  {
+   "id": "2101990059142737998",
+   "d": "2026-09-21",
+   "v": 809,
+   "sn": "gojiteji",
+   "t": "",
+   "url": "https://x.com/gojiteji/status/2101990059142737998"
+  },
+  {
+   "id": "2102125508721004903",
+   "d": "2026-09-21",
+   "v": 698,
+   "sn": "Zefan_Cai",
+   "t": "",
+   "url": "https://x.com/Zefan_Cai/status/2102125508721004903"
+  },
+  {
+   "id": "2101848385456390653",
+   "d": "2026-09-21",
+   "v": 570,
+   "sn": "sven_ai",
+   "t": "",
+   "url": "https://x.com/sven_ai/status/2101848385456390653"
+  },
+  {
+   "id": "2102180717405073575",
+   "d": "2026-09-21",
+   "v": 502,
+   "sn": "chirag",
+   "t": "",
+   "url": "https://x.com/chirag/status/2102180717405073575"
+  },
+  {
+   "id": "2102072026156662954",
+   "d": "2026-09-21",
+   "v": 427,
+   "sn": "doubledescent0",
+   "t": "",
+   "url": "https://x.com/doubledescent0/status/2102072026156662954"
+  },
+  {
+   "id": "2102125246522478695",
+   "d": "2026-09-21",
+   "v": 402,
+   "sn": "pdp",
+   "t": "",
+   "url": "https://x.com/pdp/status/2102125246522478695"
+  },
+  {
+   "id": "2101967688973344992",
+   "d": "2026-09-21",
+   "v": 350,
+   "sn": "krishnakhanna",
+   "t": "",
+   "url": "https://x.com/krishnakhanna/status/2101967688973344992"
+  },
+  {
+   "id": "2102128437058302184",
+   "d": "2026-09-21",
+   "v": 319,
+   "sn": "cristianexer",
+   "t": "",
+   "url": "https://x.com/cristianexer/status/2102128437058302184"
+  },
+  {
+   "id": "2101881584756600844",
+   "d": "2026-09-21",
+   "v": 248,
+   "sn": "fallout_tokyo",
+   "t": "",
+   "url": "https://x.com/fallout_tokyo/status/2101881584756600844"
+  },
+  {
+   "id": "2102171094635745310",
+   "d": "2026-09-21",
+   "v": 225,
+   "sn": "rsensui",
+   "t": "",
+   "url": "https://x.com/rsensui/status/2102171094635745310"
+  },
+  {
+   "id": "2102067083920216185",
+   "d": "2026-09-21",
+   "v": 177,
+   "sn": "0xhikae",
+   "t": "",
+   "url": "https://x.com/0xhikae/status/2102067083920216185"
+  },
+  {
+   "id": "2101932981606817820",
+   "d": "2026-09-21",
+   "v": 150,
+   "sn": "debichanchan",
+   "t": "",
+   "url": "https://x.com/debichanchan/status/2101932981606817820"
+  },
+  {
+   "id": "2102040848716136563",
+   "d": "2026-09-21",
+   "v": 87,
+   "sn": "50bbx",
+   "t": "",
+   "url": "https://x.com/50bbx/status/2102040848716136563"
+  },
+  {
+   "id": "2101963900606423282",
+   "d": "2026-09-21",
+   "v": 84,
+   "sn": "abhi43210",
+   "t": "",
+   "url": "https://x.com/abhi43210/status/2101963900606423282"
+  },
+  {
+   "id": "2101836921185956320",
+   "d": "2026-09-21",
+   "v": 82,
+   "sn": "abhi43210",
+   "t": "",
+   "url": "https://x.com/abhi43210/status/2101836921185956320"
+  },
+  {
+   "id": "2101890478623129748",
+   "d": "2026-09-21",
+   "v": 81,
+   "sn": "Azhar41429690",
+   "t": "",
+   "url": "https://x.com/Azhar41429690/status/2101890478623129748"
+  },
+  {
+   "id": "2102108564353622360",
+   "d": "2026-09-21",
+   "v": 81,
+   "sn": "sixwell",
+   "t": "",
+   "url": "https://x.com/sixwell/status/2102108564353622360"
+  },
+  {
+   "id": "2102131273003332050",
+   "d": "2026-09-21",
+   "v": 79,
+   "sn": "TslShahir",
+   "t": "",
+   "url": "https://x.com/TslShahir/status/2102131273003332050"
+  },
+  {
+   "id": "2102063258962161852",
+   "d": "2026-09-21",
+   "v": 78,
+   "sn": "ashokgelal",
+   "t": "",
+   "url": "https://x.com/ashokgelal/status/2102063258962161852"
+  },
+  {
+   "id": "2102039678039835035",
+   "d": "2026-09-21",
+   "v": 76,
+   "sn": "EldanRing",
+   "t": "",
+   "url": "https://x.com/EldanRing/status/2102039678039835035"
+  },
+  {
+   "id": "2102179803856343402",
+   "d": "2026-09-21",
+   "v": 73,
+   "sn": "bhowconda",
+   "t": "",
+   "url": "https://x.com/bhowconda/status/2102179803856343402"
+  },
+  {
+   "id": "2102018709552341213",
+   "d": "2026-09-21",
+   "v": 62,
+   "sn": "Steven_AI_Dev",
+   "t": "",
+   "url": "https://x.com/Steven_AI_Dev/status/2102018709552341213"
+  },
+  {
+   "id": "2102150753850708082",
+   "d": "2026-09-21",
+   "v": 61,
+   "sn": "AlexAITrends",
+   "t": "",
+   "url": "https://x.com/AlexAITrends/status/2102150753850708082"
+  },
+  {
+   "id": "2101878783301337214",
+   "d": "2026-09-21",
+   "v": 57,
+   "sn": "yamyam_rvc",
+   "t": "",
+   "url": "https://x.com/yamyam_rvc/status/2101878783301337214"
+  },
+  {
+   "id": "2102078088180019303",
+   "d": "2026-09-21",
+   "v": 46,
+   "sn": "wangoroge333",
+   "t": "",
+   "url": "https://x.com/wangoroge333/status/2102078088180019303"
+  },
+  {
+   "id": "2101838550643659255",
+   "d": "2026-09-21",
+   "v": 40,
+   "sn": "danielamitay",
+   "t": "",
+   "url": "https://x.com/danielamitay/status/2101838550643659255"
+  },
+  {
+   "id": "2101941334580035732",
+   "d": "2026-09-21",
+   "v": 38,
+   "sn": "pawn_4_t",
+   "t": "",
+   "url": "https://x.com/pawn_4_t/status/2101941334580035732"
+  },
+  {
+   "id": "2101889522653077653",
+   "d": "2026-09-21",
+   "v": 28,
+   "sn": "Azhar41429690",
+   "t": "",
+   "url": "https://x.com/Azhar41429690/status/2101889522653077653"
+  },
+  {
+   "id": "2101982631642685625",
+   "d": "2026-09-21",
+   "v": 26,
+   "sn": "EndmanWork",
+   "t": "",
+   "url": "https://x.com/EndmanWork/status/2101982631642685625"
+  },
+  {
+   "id": "2101974394687889505",
+   "d": "2026-09-21",
+   "v": 25,
+   "sn": "RepoGems",
+   "t": "",
+   "url": "https://x.com/RepoGems/status/2101974394687889505"
+  },
+  {
+   "id": "2101882693147656692",
+   "d": "2026-09-21",
+   "v": 24,
+   "sn": "nullsoft_app",
+   "t": "",
+   "url": "https://x.com/nullsoft_app/status/2101882693147656692"
+  },
+  {
+   "id": "2102050829763022908",
+   "d": "2026-09-21",
+   "v": 21,
+   "sn": "cto_digital",
+   "t": "",
+   "url": "https://x.com/cto_digital/status/2102050829763022908"
+  },
+  {
+   "id": "2102088862579183813",
+   "d": "2026-09-21",
+   "v": 14,
+   "sn": "Daemonrat",
+   "t": "",
+   "url": "https://x.com/Daemonrat/status/2102088862579183813"
+  },
+  {
+   "id": "2101863414003896637",
+   "d": "2026-09-21",
+   "v": 13,
+   "sn": "entropyjoao",
+   "t": "",
+   "url": "https://x.com/entropyjoao/status/2101863414003896637"
+  },
+  {
+   "id": "2101866820672360506",
+   "d": "2026-09-21",
+   "v": 12,
+   "sn": "kailunchen5",
+   "t": "",
+   "url": "https://x.com/kailunchen5/status/2101866820672360506"
+  },
+  {
+   "id": "2101903074935685210",
+   "d": "2026-09-21",
+   "v": 10,
+   "sn": "USPraveenRaj1",
+   "t": "",
+   "url": "https://x.com/USPraveenRaj1/status/2101903074935685210"
+  },
+  {
+   "id": "2101473552956555427",
+   "d": "2026-09-20",
+   "v": 101777,
+   "sn": "mizorewww",
+   "t": "",
+   "url": "https://x.com/mizorewww/status/2101473552956555427"
+  },
+  {
+   "id": "2101782262949835211",
+   "d": "2026-09-20",
+   "v": 39891,
+   "sn": "brainFnCl",
+   "t": "",
+   "url": "https://x.com/brainFnCl/status/2101782262949835211"
+  },
+  {
+   "id": "2101473352074625344",
+   "d": "2026-09-20",
+   "v": 14767,
+   "sn": "LoganMarkewich",
+   "t": "",
+   "url": "https://x.com/LoganMarkewich/status/2101473352074625344"
+  },
+  {
+   "id": "2101813176887390398",
+   "d": "2026-09-20",
+   "v": 14741,
+   "sn": "gigabit_million",
+   "t": "",
+   "url": "https://x.com/gigabit_million/status/2101813176887390398"
+  },
+  {
+   "id": "2101750897189495133",
+   "d": "2026-09-20",
+   "v": 13301,
+   "sn": "johnny5__alive",
+   "t": "",
+   "url": "https://x.com/johnny5__alive/status/2101750897189495133"
+  },
+  {
+   "id": "2101612373098610878",
+   "d": "2026-09-20",
+   "v": 6555,
+   "sn": "Tono_Ken3",
+   "t": "",
+   "url": "https://x.com/Tono_Ken3/status/2101612373098610878"
+  },
+  {
+   "id": "2101709185155231895",
+   "d": "2026-09-20",
+   "v": 5511,
+   "sn": "AstroHanRay",
+   "t": "",
+   "url": "https://x.com/AstroHanRay/status/2101709185155231895"
+  },
+  {
+   "id": "2101800107968782645",
+   "d": "2026-09-20",
+   "v": 5498,
+   "sn": "kis",
+   "t": "",
+   "url": "https://x.com/kis/status/2101800107968782645"
+  },
+  {
+   "id": "2101688954114457752",
+   "d": "2026-09-20",
+   "v": 5223,
+   "sn": "xiangxiang103",
+   "t": "",
+   "url": "https://x.com/xiangxiang103/status/2101688954114457752"
+  },
+  {
+   "id": "2101616002119471163",
+   "d": "2026-09-20",
+   "v": 3764,
+   "sn": "yu_ichi_suzuki",
+   "t": "",
+   "url": "https://x.com/yu_ichi_suzuki/status/2101616002119471163"
+  },
+  {
+   "id": "2101519615243542762",
+   "d": "2026-09-20",
+   "v": 2194,
+   "sn": "RootCert",
+   "t": "",
+   "url": "https://x.com/RootCert/status/2101519615243542762"
+  },
+  {
+   "id": "2101698718353514910",
+   "d": "2026-09-20",
+   "v": 1029,
+   "sn": "pyran19",
+   "t": "",
+   "url": "https://x.com/pyran19/status/2101698718353514910"
+  },
+  {
+   "id": "2101780379837599955",
+   "d": "2026-09-20",
+   "v": 636,
+   "sn": "llqoli",
+   "t": "",
+   "url": "https://x.com/llqoli/status/2101780379837599955"
+  },
+  {
+   "id": "2101718233292161254",
+   "d": "2026-09-20",
+   "v": 289,
+   "sn": "BrockMcBreadcat",
+   "t": "",
+   "url": "https://x.com/BrockMcBreadcat/status/2101718233292161254"
+  },
+  {
+   "id": "2101756281665061028",
+   "d": "2026-09-20",
+   "v": 240,
+   "sn": "betterhn20",
+   "t": "",
+   "url": "https://x.com/betterhn20/status/2101756281665061028"
+  },
+  {
+   "id": "2101551339285389499",
+   "d": "2026-09-20",
+   "v": 222,
+   "sn": "keisan",
+   "t": "",
+   "url": "https://x.com/keisan/status/2101551339285389499"
+  },
+  {
+   "id": "2101539880149160295",
+   "d": "2026-09-20",
+   "v": 184,
+   "sn": "osushi_cr",
+   "t": "",
+   "url": "https://x.com/osushi_cr/status/2101539880149160295"
+  },
+  {
+   "id": "2101781625344278696",
+   "d": "2026-09-20",
+   "v": 181,
+   "sn": "imdaidr",
+   "t": "",
+   "url": "https://x.com/imdaidr/status/2101781625344278696"
+  },
+  {
+   "id": "2101711735233396972",
+   "d": "2026-09-20",
+   "v": 172,
+   "sn": "doyc_1",
+   "t": "",
+   "url": "https://x.com/doyc_1/status/2101711735233396972"
+  },
+  {
+   "id": "2101709574327976257",
+   "d": "2026-09-20",
+   "v": 166,
+   "sn": "ryo_7421",
+   "t": "",
+   "url": "https://x.com/ryo_7421/status/2101709574327976257"
+  },
+  {
+   "id": "2101567704276881492",
+   "d": "2026-09-20",
+   "v": 155,
+   "sn": "fallout_tokyo",
+   "t": "",
+   "url": "https://x.com/fallout_tokyo/status/2101567704276881492"
+  },
+  {
+   "id": "2101722738670837890",
+   "d": "2026-09-20",
+   "v": 151,
+   "sn": "CeozX",
+   "t": "",
+   "url": "https://x.com/CeozX/status/2101722738670837890"
+  },
+  {
+   "id": "2101575279902924850",
+   "d": "2026-09-20",
+   "v": 129,
+   "sn": "Bizuayeu",
+   "t": "",
+   "url": "https://x.com/Bizuayeu/status/2101575279902924850"
+  },
+  {
+   "id": "2101770890925031674",
+   "d": "2026-09-20",
+   "v": 119,
+   "sn": "MikeLeiterDev",
+   "t": "",
+   "url": "https://x.com/MikeLeiterDev/status/2101770890925031674"
+  },
+  {
+   "id": "2101650415897243985",
+   "d": "2026-09-20",
+   "v": 114,
+   "sn": "otto_explorer",
+   "t": "",
+   "url": "https://x.com/otto_explorer/status/2101650415897243985"
+  },
+  {
+   "id": "2101581497396560356",
+   "d": "2026-09-20",
+   "v": 109,
+   "sn": "noctus91",
+   "t": "",
+   "url": "https://x.com/noctus91/status/2101581497396560356"
+  },
+  {
+   "id": "2101742625413906511",
+   "d": "2026-09-20",
+   "v": 103,
+   "sn": "theiskaa",
+   "t": "",
+   "url": "https://x.com/theiskaa/status/2101742625413906511"
+  },
+  {
+   "id": "2101543771196276982",
+   "d": "2026-09-20",
+   "v": 93,
+   "sn": "felipeinfante",
+   "t": "",
+   "url": "https://x.com/felipeinfante/status/2101543771196276982"
+  },
+  {
+   "id": "2101813173728985346",
+   "d": "2026-09-20",
+   "v": 83,
+   "sn": "yclian",
+   "t": "",
+   "url": "https://x.com/yclian/status/2101813173728985346"
+  },
+  {
+   "id": "2101737024101490958",
+   "d": "2026-09-20",
+   "v": 76,
+   "sn": "Tanemomi_Ver2",
+   "t": "",
+   "url": "https://x.com/Tanemomi_Ver2/status/2101737024101490958"
+  },
+  {
+   "id": "2101759927039508783",
+   "d": "2026-09-20",
+   "v": 74,
+   "sn": "paulNL",
+   "t": "",
+   "url": "https://x.com/paulNL/status/2101759927039508783"
+  },
+  {
+   "id": "2101675407053562260",
+   "d": "2026-09-20",
+   "v": 72,
+   "sn": "ai_aoi_ia",
+   "t": "",
+   "url": "https://x.com/ai_aoi_ia/status/2101675407053562260"
+  },
+  {
+   "id": "2101685592560165043",
+   "d": "2026-09-20",
+   "v": 70,
+   "sn": "hama_jp",
+   "t": "",
+   "url": "https://x.com/hama_jp/status/2101685592560165043"
+  },
+  {
+   "id": "2101545077189267588",
+   "d": "2026-09-20",
+   "v": 62,
+   "sn": "felipeinfante",
+   "t": "",
+   "url": "https://x.com/felipeinfante/status/2101545077189267588"
+  },
+  {
+   "id": "2101622239573524491",
+   "d": "2026-09-20",
+   "v": 60,
+   "sn": "clxymox",
+   "t": "",
+   "url": "https://x.com/clxymox/status/2101622239573524491"
+  },
+  {
+   "id": "2101791527580414102",
+   "d": "2026-09-20",
+   "v": 51,
+   "sn": "druvthebruv",
+   "t": "",
+   "url": "https://x.com/druvthebruv/status/2101791527580414102"
+  },
+  {
+   "id": "2101737977932050827",
+   "d": "2026-09-20",
+   "v": 43,
+   "sn": "Douglance",
+   "t": "",
+   "url": "https://x.com/Douglance/status/2101737977932050827"
+  },
+  {
+   "id": "2101652995624816913",
+   "d": "2026-09-20",
+   "v": 39,
+   "sn": "debichanchan",
+   "t": "",
+   "url": "https://x.com/debichanchan/status/2101652995624816913"
+  },
+  {
+   "id": "2101794549135716518",
+   "d": "2026-09-20",
+   "v": 37,
+   "sn": "NickLo641579",
+   "t": "",
+   "url": "https://x.com/NickLo641579/status/2101794549135716518"
+  },
+  {
+   "id": "2101545701083685188",
+   "d": "2026-09-20",
+   "v": 36,
+   "sn": "Raymondvshen",
+   "t": "",
+   "url": "https://x.com/Raymondvshen/status/2101545701083685188"
+  },
+  {
+   "id": "2101683580321804459",
+   "d": "2026-09-20",
+   "v": 35,
+   "sn": "blune66",
+   "t": "",
+   "url": "https://x.com/blune66/status/2101683580321804459"
+  },
+  {
+   "id": "2101707887051788436",
+   "d": "2026-09-20",
+   "v": 26,
+   "sn": "pawn_4_t",
+   "t": "",
+   "url": "https://x.com/pawn_4_t/status/2101707887051788436"
+  },
+  {
+   "id": "2101740979497713703",
+   "d": "2026-09-20",
+   "v": 25,
+   "sn": "DesignCntrl",
+   "t": "",
+   "url": "https://x.com/DesignCntrl/status/2101740979497713703"
+  },
+  {
+   "id": "2101568907366785297",
+   "d": "2026-09-20",
+   "v": 22,
+   "sn": "angeworkCoLtd",
+   "t": "",
+   "url": "https://x.com/angeworkCoLtd/status/2101568907366785297"
+  },
+  {
+   "id": "2101587300006375548",
+   "d": "2026-09-20",
+   "v": 19,
+   "sn": "bwgift20th",
+   "t": "",
+   "url": "https://x.com/bwgift20th/status/2101587300006375548"
+  },
+  {
+   "id": "2101554436040761795",
+   "d": "2026-09-20",
+   "v": 17,
+   "sn": "UPHASHbigsalt",
+   "t": "",
+   "url": "https://x.com/UPHASHbigsalt/status/2101554436040761795"
+  },
+  {
+   "id": "2101550368924836296",
+   "d": "2026-09-20",
+   "v": 11,
+   "sn": "gavinorgav",
+   "t": "",
+   "url": "https://x.com/gavinorgav/status/2101550368924836296"
+  },
+  {
+   "id": "2101106887840370919",
+   "d": "2026-09-19",
+   "v": 426247,
+   "sn": "taroleo",
+   "t": "",
+   "url": "https://x.com/taroleo/status/2101106887840370919"
+  },
+  {
+   "id": "2101193436816920798",
+   "d": "2026-09-19",
+   "v": 206466,
+   "sn": "GitHubNext",
+   "t": "",
+   "url": "https://x.com/GitHubNext/status/2101193436816920798"
+  },
+  {
+   "id": "2101209390992994570",
+   "d": "2026-09-19",
+   "v": 92294,
+   "sn": "skeptrune",
+   "t": "",
+   "url": "https://x.com/skeptrune/status/2101209390992994570"
+  },
+  {
+   "id": "2101330185044074958",
+   "d": "2026-09-19",
+   "v": 72532,
+   "sn": "argos_M1111",
+   "t": "",
+   "url": "https://x.com/argos_M1111/status/2101330185044074958"
+  },
+  {
+   "id": "2101426969971916863",
+   "d": "2026-09-19",
+   "v": 38981,
+   "sn": "kis",
+   "t": "",
+   "url": "https://x.com/kis/status/2101426969971916863"
+  },
+  {
+   "id": "2101294352790348072",
+   "d": "2026-09-19",
+   "v": 5663,
+   "sn": "kis",
+   "t": "",
+   "url": "https://x.com/kis/status/2101294352790348072"
+  },
+  {
+   "id": "2101309103402623365",
+   "d": "2026-09-19",
+   "v": 5181,
+   "sn": "heman10x",
+   "t": "",
+   "url": "https://x.com/heman10x/status/2101309103402623365"
+  },
+  {
+   "id": "2101404411306061898",
+   "d": "2026-09-19",
+   "v": 3554,
+   "sn": "kevinkern",
+   "t": "",
+   "url": "https://x.com/kevinkern/status/2101404411306061898"
+  },
+  {
+   "id": "2101172428861059351",
+   "d": "2026-09-19",
+   "v": 3316,
+   "sn": "YunfengB",
+   "t": "",
+   "url": "https://x.com/YunfengB/status/2101172428861059351"
+  },
+  {
+   "id": "2101337432587427842",
+   "d": "2026-09-19",
+   "v": 3059,
+   "sn": "BohuTANG",
+   "t": "",
+   "url": "https://x.com/BohuTANG/status/2101337432587427842"
+  },
+  {
+   "id": "2101125879766421755",
+   "d": "2026-09-19",
+   "v": 2599,
+   "sn": "QingQ77",
+   "t": "",
+   "url": "https://x.com/QingQ77/status/2101125879766421755"
+  },
+  {
+   "id": "2101359643847274711",
+   "d": "2026-09-19",
+   "v": 1983,
+   "sn": "KarnikShreyas",
+   "t": "",
+   "url": "https://x.com/KarnikShreyas/status/2101359643847274711"
+  },
+  {
+   "id": "2101320980446535779",
+   "d": "2026-09-19",
+   "v": 1557,
+   "sn": "DJLougen",
+   "t": "",
+   "url": "https://x.com/DJLougen/status/2101320980446535779"
+  },
+  {
+   "id": "2101372265963110530",
+   "d": "2026-09-19",
+   "v": 673,
+   "sn": "SamiBizConsult",
+   "t": "",
+   "url": "https://x.com/SamiBizConsult/status/2101372265963110530"
+  },
+  {
+   "id": "2101296574546739396",
+   "d": "2026-09-19",
+   "v": 559,
+   "sn": "tagforgame",
+   "t": "",
+   "url": "https://x.com/tagforgame/status/2101296574546739396"
+  },
+  {
+   "id": "2101125771821760527",
+   "d": "2026-09-19",
+   "v": 407,
+   "sn": "Richelle_Ji",
+   "t": "",
+   "url": "https://x.com/Richelle_Ji/status/2101125771821760527"
+  },
+  {
+   "id": "2101325959551238486",
+   "d": "2026-09-19",
+   "v": 381,
+   "sn": "AzamIntikhab",
+   "t": "",
+   "url": "https://x.com/AzamIntikhab/status/2101325959551238486"
+  },
+  {
+   "id": "2101446697536876623",
+   "d": "2026-09-19",
+   "v": 289,
+   "sn": "tjm8874",
+   "t": "",
+   "url": "https://x.com/tjm8874/status/2101446697536876623"
+  },
+  {
+   "id": "2101164410958131708",
+   "d": "2026-09-19",
+   "v": 236,
+   "sn": "icools",
+   "t": "",
+   "url": "https://x.com/icools/status/2101164410958131708"
+  },
+  {
+   "id": "2101453506007732526",
+   "d": "2026-09-19",
+   "v": 119,
+   "sn": "narphorium",
+   "t": "",
+   "url": "https://x.com/narphorium/status/2101453506007732526"
+  },
+  {
+   "id": "2101367304886047084",
+   "d": "2026-09-19",
+   "v": 77,
+   "sn": "Eseshinpu",
+   "t": "",
+   "url": "https://x.com/Eseshinpu/status/2101367304886047084"
+  },
+  {
+   "id": "2101195858213474763",
+   "d": "2026-09-19",
+   "v": 75,
+   "sn": "soederpop",
+   "t": "",
+   "url": "https://x.com/soederpop/status/2101195858213474763"
+  },
+  {
+   "id": "2101249350601171378",
+   "d": "2026-09-19",
+   "v": 52,
+   "sn": "otto_explorer",
+   "t": "",
+   "url": "https://x.com/otto_explorer/status/2101249350601171378"
+  },
+  {
+   "id": "2101284077114413408",
+   "d": "2026-09-19",
+   "v": 50,
+   "sn": "michhachula",
+   "t": "",
+   "url": "https://x.com/michhachula/status/2101284077114413408"
+  },
+  {
+   "id": "2101216386790154678",
+   "d": "2026-09-19",
+   "v": 42,
+   "sn": "DwidLee",
+   "t": "",
+   "url": "https://x.com/DwidLee/status/2101216386790154678"
+  },
+  {
+   "id": "2101385288077504715",
+   "d": "2026-09-19",
+   "v": 35,
+   "sn": "JA1MEXD3ZTR0Y3R",
+   "t": "",
+   "url": "https://x.com/JA1MEXD3ZTR0Y3R/status/2101385288077504715"
+  },
+  {
+   "id": "2101453955809390703",
+   "d": "2026-09-19",
+   "v": 30,
+   "sn": "GUILE_channel",
+   "t": "",
+   "url": "https://x.com/GUILE_channel/status/2101453955809390703"
+  },
+  {
+   "id": "2101243025359839557",
+   "d": "2026-09-19",
+   "v": 25,
+   "sn": "TravisJChauvin",
+   "t": "",
+   "url": "https://x.com/TravisJChauvin/status/2101243025359839557"
+  },
+  {
+   "id": "2101454303923753057",
+   "d": "2026-09-19",
+   "v": 24,
+   "sn": "Alissonks",
+   "t": "",
+   "url": "https://x.com/Alissonks/status/2101454303923753057"
+  },
+  {
+   "id": "2101229328482676787",
+   "d": "2026-09-19",
+   "v": 19,
+   "sn": "m_newhaus",
+   "t": "",
+   "url": "https://x.com/m_newhaus/status/2101229328482676787"
+  },
+  {
+   "id": "2100739853101195744",
+   "d": "2026-09-18",
+   "v": 132023,
+   "sn": "kshetrajna",
+   "t": "",
+   "url": "https://x.com/kshetrajna/status/2100739853101195744"
+  },
+  {
+   "id": "2101028325472841920",
+   "d": "2026-09-18",
+   "v": 94462,
+   "sn": "jaredpalmer",
+   "t": "",
+   "url": "https://x.com/jaredpalmer/status/2101028325472841920"
+  },
+  {
+   "id": "2101011110132601054",
+   "d": "2026-09-18",
+   "v": 94368,
+   "sn": "mmastrac",
+   "t": "",
+   "url": "https://x.com/mmastrac/status/2101011110132601054"
+  },
+  {
+   "id": "2101006253829046539",
+   "d": "2026-09-18",
+   "v": 49370,
+   "sn": "picocreator",
+   "t": "",
+   "url": "https://x.com/picocreator/status/2101006253829046539"
+  },
+  {
+   "id": "2100982446221373644",
+   "d": "2026-09-18",
+   "v": 43102,
+   "sn": "agentspanel",
+   "t": "",
+   "url": "https://x.com/agentspanel/status/2100982446221373644"
+  },
+  {
+   "id": "2101091012559151480",
+   "d": "2026-09-18",
+   "v": 28085,
+   "sn": "michellechen",
+   "t": "",
+   "url": "https://x.com/michellechen/status/2101091012559151480"
+  },
+  {
+   "id": "2101009663445942393",
+   "d": "2026-09-18",
+   "v": 21190,
+   "sn": "argos_M1111",
+   "t": "",
+   "url": "https://x.com/argos_M1111/status/2101009663445942393"
+  },
+  {
+   "id": "2100999697456660934",
+   "d": "2026-09-18",
+   "v": 19858,
+   "sn": "argos_M1111",
+   "t": "",
+   "url": "https://x.com/argos_M1111/status/2100999697456660934"
+  },
+  {
+   "id": "2100974458458784124",
+   "d": "2026-09-18",
+   "v": 15727,
+   "sn": "sadsadasgaaxwa",
+   "t": "",
+   "url": "https://x.com/sadsadasgaaxwa/status/2100974458458784124"
+  },
+  {
+   "id": "2100978402174120134",
+   "d": "2026-09-18",
+   "v": 12421,
+   "sn": "sagar_builds",
+   "t": "",
+   "url": "https://x.com/sagar_builds/status/2100978402174120134"
+  },
+  {
+   "id": "2100847239438508478",
+   "d": "2026-09-18",
+   "v": 7396,
+   "sn": "_AbolfazlAbbasi",
+   "t": "",
+   "url": "https://x.com/_AbolfazlAbbasi/status/2100847239438508478"
+  },
+  {
+   "id": "2100974901909983621",
+   "d": "2026-09-18",
+   "v": 5150,
+   "sn": "Zen_with_AI",
+   "t": "",
+   "url": "https://x.com/Zen_with_AI/status/2100974901909983621"
+  },
+  {
+   "id": "2101073889266925822",
+   "d": "2026-09-18",
+   "v": 3547,
+   "sn": "tazr_dev",
+   "t": "",
+   "url": "https://x.com/tazr_dev/status/2101073889266925822"
+  },
+  {
+   "id": "2100788984918184296",
+   "d": "2026-09-18",
+   "v": 3225,
+   "sn": "mattn_jp",
+   "t": "",
+   "url": "https://x.com/mattn_jp/status/2100788984918184296"
+  },
+  {
+   "id": "2100836659533336676",
+   "d": "2026-09-18",
+   "v": 3133,
+   "sn": "heman10x",
+   "t": "",
+   "url": "https://x.com/heman10x/status/2100836659533336676"
+  },
+  {
+   "id": "2100994179380007367",
+   "d": "2026-09-18",
+   "v": 2802,
+   "sn": "s_tat1204",
+   "t": "",
+   "url": "https://x.com/s_tat1204/status/2100994179380007367"
+  },
+  {
+   "id": "2100873512760283567",
+   "d": "2026-09-18",
+   "v": 1537,
+   "sn": "mah_lab",
+   "t": "",
+   "url": "https://x.com/mah_lab/status/2100873512760283567"
+  },
+  {
+   "id": "2101040177414062305",
+   "d": "2026-09-18",
+   "v": 1448,
+   "sn": "evilpingwin",
+   "t": "",
+   "url": "https://x.com/evilpingwin/status/2101040177414062305"
+  },
+  {
+   "id": "2100749261310763276",
+   "d": "2026-09-18",
+   "v": 724,
+   "sn": "_AbolfazlAbbasi",
+   "t": "",
+   "url": "https://x.com/_AbolfazlAbbasi/status/2100749261310763276"
+  },
+  {
+   "id": "2100973209114075330",
+   "d": "2026-09-18",
+   "v": 723,
+   "sn": "hxiao",
+   "t": "",
+   "url": "https://x.com/hxiao/status/2100973209114075330"
+  },
+  {
+   "id": "2101078507531223130",
+   "d": "2026-09-18",
+   "v": 535,
+   "sn": "lucataco",
+   "t": "",
+   "url": "https://x.com/lucataco/status/2101078507531223130"
+  },
+  {
+   "id": "2100815358232031381",
+   "d": "2026-09-18",
+   "v": 352,
+   "sn": "neutron42jp",
+   "t": "",
+   "url": "https://x.com/neutron42jp/status/2100815358232031381"
+  },
+  {
+   "id": "2101042229720793104",
+   "d": "2026-09-18",
+   "v": 278,
+   "sn": "TimothyZ77",
+   "t": "",
+   "url": "https://x.com/TimothyZ77/status/2101042229720793104"
+  },
+  {
+   "id": "2100901849695920132",
+   "d": "2026-09-18",
+   "v": 197,
+   "sn": "honglilai",
+   "t": "",
+   "url": "https://x.com/honglilai/status/2100901849695920132"
+  },
+  {
+   "id": "2101055870171808062",
+   "d": "2026-09-18",
+   "v": 123,
+   "sn": "_AbolfazlAbbasi",
+   "t": "",
+   "url": "https://x.com/_AbolfazlAbbasi/status/2101055870171808062"
+  },
+  {
+   "id": "2100878424542007786",
+   "d": "2026-09-18",
+   "v": 121,
+   "sn": "_uyza_",
+   "t": "",
+   "url": "https://x.com/_uyza_/status/2100878424542007786"
+  },
+  {
+   "id": "2100967933744910347",
+   "d": "2026-09-18",
+   "v": 82,
+   "sn": "B_Sardine",
+   "t": "",
+   "url": "https://x.com/B_Sardine/status/2100967933744910347"
+  },
+  {
+   "id": "2101013687565959393",
+   "d": "2026-09-18",
+   "v": 79,
+   "sn": "abdulsaboooor",
+   "t": "",
+   "url": "https://x.com/abdulsaboooor/status/2101013687565959393"
+  },
+  {
+   "id": "2100820617805303969",
+   "d": "2026-09-18",
+   "v": 63,
+   "sn": "huato",
+   "t": "",
+   "url": "https://x.com/huato/status/2100820617805303969"
+  },
+  {
+   "id": "2100788131310252378",
+   "d": "2026-09-18",
+   "v": 32,
+   "sn": "JayCooperBell",
+   "t": "",
+   "url": "https://x.com/JayCooperBell/status/2100788131310252378"
+  },
+  {
+   "id": "2100956378970083480",
+   "d": "2026-09-18",
+   "v": 29,
+   "sn": "fallout_tokyo",
+   "t": "",
+   "url": "https://x.com/fallout_tokyo/status/2100956378970083480"
+  },
+  {
+   "id": "2100904312646099389",
+   "d": "2026-09-18",
+   "v": 28,
+   "sn": "HaoyangSu_",
+   "t": "",
+   "url": "https://x.com/HaoyangSu_/status/2100904312646099389"
+  },
+  {
+   "id": "2100969738377592846",
+   "d": "2026-09-18",
+   "v": 26,
+   "sn": "rndhouse",
+   "t": "",
+   "url": "https://x.com/rndhouse/status/2100969738377592846"
+  },
+  {
+   "id": "2101068666356076706",
+   "d": "2026-09-18",
+   "v": 21,
+   "sn": "JA1MEXD3ZTR0Y3R",
+   "t": "",
+   "url": "https://x.com/JA1MEXD3ZTR0Y3R/status/2101068666356076706"
+  },
+  {
+   "id": "2100651678110515383",
+   "d": "2026-09-17",
+   "v": 142494,
+   "sn": "ekzhang1",
+   "t": "",
+   "url": "https://x.com/ekzhang1/status/2100651678110515383"
+  },
+  {
+   "id": "2100454049359577516",
+   "d": "2026-09-17",
+   "v": 94310,
+   "sn": "wmoto_ai",
+   "t": "",
+   "url": "https://x.com/wmoto_ai/status/2100454049359577516"
+  },
+  {
+   "id": "2100646513412292873",
+   "d": "2026-09-17",
+   "v": 34908,
+   "sn": "hr98w",
+   "t": "",
+   "url": "https://x.com/hr98w/status/2100646513412292873"
+  },
+  {
+   "id": "2100467548298899918",
+   "d": "2026-09-17",
+   "v": 26252,
+   "sn": "iamMrDuncan",
+   "t": "",
+   "url": "https://x.com/iamMrDuncan/status/2100467548298899918"
+  },
+  {
+   "id": "2100709039613100112",
+   "d": "2026-09-17",
+   "v": 6828,
+   "sn": "JoshKuechly",
+   "t": "",
+   "url": "https://x.com/JoshKuechly/status/2100709039613100112"
+  },
+  {
+   "id": "2100685797779177797",
+   "d": "2026-09-17",
+   "v": 4010,
+   "sn": "lcm_in_ai",
+   "t": "",
+   "url": "https://x.com/lcm_in_ai/status/2100685797779177797"
+  },
+  {
+   "id": "2100559043769012589",
+   "d": "2026-09-17",
+   "v": 2376,
+   "sn": "DJLougen",
+   "t": "",
+   "url": "https://x.com/DJLougen/status/2100559043769012589"
+  },
+  {
+   "id": "2100502587917336783",
+   "d": "2026-09-17",
+   "v": 1804,
+   "sn": "mattn_jp",
+   "t": "",
+   "url": "https://x.com/mattn_jp/status/2100502587917336783"
+  },
+  {
+   "id": "2100672847261671439",
+   "d": "2026-09-17",
+   "v": 1787,
+   "sn": "Stephan007",
+   "t": "",
+   "url": "https://x.com/Stephan007/status/2100672847261671439"
+  },
+  {
+   "id": "2100634777032298583",
+   "d": "2026-09-17",
+   "v": 1002,
+   "sn": "nickvernij",
+   "t": "",
+   "url": "https://x.com/nickvernij/status/2100634777032298583"
+  },
+  {
+   "id": "2100713859162202606",
+   "d": "2026-09-17",
+   "v": 814,
+   "sn": "MingtianZhang",
+   "t": "",
+   "url": "https://x.com/MingtianZhang/status/2100713859162202606"
+  },
+  {
+   "id": "2100462684370256134",
+   "d": "2026-09-17",
+   "v": 583,
+   "sn": "DanFessler",
+   "t": "",
+   "url": "https://x.com/DanFessler/status/2100462684370256134"
+  },
+  {
+   "id": "2100574360176300115",
+   "d": "2026-09-17",
+   "v": 472,
+   "sn": "MingtianZhang",
+   "t": "",
+   "url": "https://x.com/MingtianZhang/status/2100574360176300115"
+  },
+  {
+   "id": "2100549517171175807",
+   "d": "2026-09-17",
+   "v": 434,
+   "sn": "aqty",
+   "t": "",
+   "url": "https://x.com/aqty/status/2100549517171175807"
+  },
+  {
+   "id": "2100528523324903511",
+   "d": "2026-09-17",
+   "v": 136,
+   "sn": "teacupdog4",
+   "t": "",
+   "url": "https://x.com/teacupdog4/status/2100528523324903511"
+  },
+  {
+   "id": "2100634919202378002",
+   "d": "2026-09-17",
+   "v": 134,
+   "sn": "iamlemec",
+   "t": "",
+   "url": "https://x.com/iamlemec/status/2100634919202378002"
+  },
+  {
+   "id": "2100633299794481343",
+   "d": "2026-09-17",
+   "v": 121,
+   "sn": "b_sagnnik",
+   "t": "",
+   "url": "https://x.com/b_sagnnik/status/2100633299794481343"
+  },
+  {
+   "id": "2100578238871593412",
+   "d": "2026-09-17",
+   "v": 106,
+   "sn": "hr98w",
+   "t": "",
+   "url": "https://x.com/hr98w/status/2100578238871593412"
+  },
+  {
+   "id": "2100572372478955589",
+   "d": "2026-09-17",
+   "v": 69,
+   "sn": "AIDIYlover",
+   "t": "",
+   "url": "https://x.com/AIDIYlover/status/2100572372478955589"
+  },
+  {
+   "id": "2100446188038213654",
+   "d": "2026-09-17",
+   "v": 68,
+   "sn": "grishahq",
+   "t": "",
+   "url": "https://x.com/grishahq/status/2100446188038213654"
+  },
+  {
+   "id": "2100681192777331013",
+   "d": "2026-09-17",
+   "v": 55,
+   "sn": "mobarmg",
+   "t": "",
+   "url": "https://x.com/mobarmg/status/2100681192777331013"
+  },
+  {
+   "id": "2100696115456679989",
+   "d": "2026-09-17",
+   "v": 46,
+   "sn": "m_rakutko",
+   "t": "",
+   "url": "https://x.com/m_rakutko/status/2100696115456679989"
+  },
+  {
+   "id": "2100542891273949218",
+   "d": "2026-09-17",
+   "v": 39,
+   "sn": "aaryantwt",
+   "t": "",
+   "url": "https://x.com/aaryantwt/status/2100542891273949218"
+  },
+  {
+   "id": "2100564846794219869",
+   "d": "2026-09-17",
+   "v": 34,
+   "sn": "DesignCntrl",
+   "t": "",
+   "url": "https://x.com/DesignCntrl/status/2100564846794219869"
+  },
+  {
+   "id": "2100170846346097083",
+   "d": "2026-09-16",
+   "v": 162200,
+   "sn": "vinnylarouge",
+   "t": "",
+   "url": "https://x.com/vinnylarouge/status/2100170846346097083"
+  },
+  {
+   "id": "2100246355318817175",
+   "d": "2026-09-16",
+   "v": 36826,
+   "sn": "austinvhuang",
+   "t": "",
+   "url": "https://x.com/austinvhuang/status/2100246355318817175"
+  },
+  {
+   "id": "2100373761195401724",
+   "d": "2026-09-16",
+   "v": 17433,
+   "sn": "mmastrac",
+   "t": "",
+   "url": "https://x.com/mmastrac/status/2100373761195401724"
+  },
+  {
+   "id": "2100322461497823638",
+   "d": "2026-09-16",
+   "v": 1417,
+   "sn": "joshua_s_penman",
+   "t": "",
+   "url": "https://x.com/joshua_s_penman/status/2100322461497823638"
+  },
+  {
+   "id": "2100157777595314615",
+   "d": "2026-09-16",
+   "v": 196,
+   "sn": "5am2x",
+   "t": "",
+   "url": "https://x.com/5am2x/status/2100157777595314615"
+  },
+  {
+   "id": "2100153674173718874",
+   "d": "2026-09-16",
+   "v": 87,
+   "sn": "shubham_19hshs",
+   "t": "",
+   "url": "https://x.com/shubham_19hshs/status/2100153674173718874"
+  }
+ ],
+ "note": "ids, dates, views, handles and post links only; the feed's link previews are not included"
+}

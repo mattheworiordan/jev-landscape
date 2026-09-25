@@ -7,7 +7,7 @@ The visual layer for the Jev landscape report: twelve charts as standalone SVG f
 To pull the latest feed, label the new posts and rebuild everything (data, report, charts, page), run one command:
 
 ```sh
-~/Workshop/work/projects/jev-landscape/scripts/refresh.sh
+scripts/refresh.sh
 ```
 
 It keeps each pull in `../../data/snapshots/`, labels only the posts not yet labelled (Sonnet v2, the reference labels' model, Jev, and the noise sub-types), reruns the analysis and this generator, and prints what changed: cards before and after, new cards by day, and the headline numbers before and after. Posts after `THROUGH` (default 2026-09-23, UTC) are left out. `REFRESH_MAX_USD` caps new spend per label file (0 spends nothing), and `OFFLINE=1` skips labelling altogether. The log is in `../../data/refresh-logs/`.
@@ -15,7 +15,6 @@ It keeps each pull in `../../data/snapshots/`, labels only the posts not yet lab
 To rebuild only the charts and the page from the current CSVs:
 
 ```sh
-cd ~/Workshop/work/projects/jev-landscape
 node report/site/scripts/charts.mjs
 ```
 
@@ -91,7 +90,7 @@ On the page, charts 11 and 12 follow chart 1 as figures 1b and 1c: chart 11 brea
 |---|---|---|---|---|
 | 1 | `01-week-in-one-picture` | Unit chart: every one of the 5,595 use-case posts as a square, grouped by family and tinted by the measurement ladder (no measurement 3,835; measured demo 1,723; Opus's production label split into 8 confirmed by the audit's re-read and 29 not confirmed). | `08_ladder_per_card.csv`, `08_ladder.csv`, `01_family_distribution.csv`, `13_audit_estimates.csv` | Tint is Opus's evidence label (93% agreement with the audit); audited: no measurement 67% (64 to 70), measured demo 33% (29 to 36), production 0.14%, at most 2%. |
 | 12 | `12-what-would-have-done-the-job` | Figure 1c, the substance test. What a team would have used before Jev for each of the 91 candidate builds: an LLM 64, rules or heuristics 12, a vendor API 11, a classic model 4, unavailable at any price 0 (an empty dashed slot). | `13_audit_substance.csv`, `13_audit_estimates.csv` | Judged from title and text by the independent reviewer; 85 distinct builds; 38 of the 91 still meet the selection test on the reviewer's labels. The 91 were picked on the Sonnet v2 labels. |
-| 2 | `02-attention-concentration` | Cumulative share of views and likes against share of posts, most-viewed first, log x-axis, with an equal-share reference. Top 1% (56 posts): 53.3% of views, 47.0% of likes. | `06_lorenz_points.csv`, `06_attention_concentration.csv`, `06_attention_stats.csv`, `06_attention_by_day.csv` | Views are unverified; the top post is 7.8% of views at a 0.06% like rate (49.7% without it, 49.8% without the 9 suspect posts); the audit's recount on its own base gives 53.4%; posts from 16 to 19 Sep hold 79% of views. |
+| 2 | `02-attention-concentration` | Cumulative share of views and likes against share of posts, most-viewed first, log x-axis, with an equal-share reference. Top 1% (56 posts): 53.3% of views, 47.0% of likes. | `06_lorenz_points.csv`, `06_attention_concentration.csv`, `06_attention_stats.csv`, `06_attention_by_day.csv` | Views are unverified; the top post is 7.8% of views at a 0.06% like rate (49.7% without it, 49.8% without the 9 low like-rate posts); the audit's recount on its own base gives 53.4%; posts from 16 to 19 Sep hold 79% of views. |
 | 3 | `03-what-they-compared-against` | Share of posts by named baseline as bars (Opus: nothing 80.4%, frontier LLM 11.3%, small LLM 4.3%, rules 2.5%, classic ML 1.1%, vendor API 0.6%; the last three bracketed, 4.1%), with the audit's estimate and 95% interval as a marker under each bar. | `05_baseline_overall.csv`, `13_audit_estimates.csv` | Audited: nothing 80% (77 to 82), frontier LLM 11.3% (10 to 13), small LLM 5.0% (4 to 7), the tools Jev would replace 3.7% (3 to 5); all four of Opus's shares are inside; frontier and small were not sampled. |
 | 4 | `04-claims-without-numbers` | Evidence level by family as 100% bars, sorted by measured share. The darkest segment is Opus's production label, which the audit does not support (it agrees with 11 of the 20 it read); the call-out gives the audit's 8. | `03_evidence_by_family_counts.csv`, `03_evidence_overall.csv`, `13_audit_production.csv`, `13_audit_estimates.csv` | Production 0.14% on the audit, at most 2%; the first pass said 1.6%. Evidence agrees with the audit on 93%. |
 | 5 | `05-what-people-claimed` | Histograms of the cost and speed multiples on the claim chips, in log bins, with the median line, OpenChamber's survey and the measured small-model band marked. Median 28× (34× without "1×" chips) and 6× (8.1×). | `11_chip_multiples_long.csv`, `11_chip_multiples.csv`, `14_small_model_reference.csv` | Authors' claims, unverified; "1×" chips are an extractor artifact; accuracy and latency medians are withdrawn and not drawn. |

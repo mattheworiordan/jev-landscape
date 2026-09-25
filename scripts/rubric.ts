@@ -7,7 +7,7 @@
  *   FAMILY_DEFINITIONS (one-sentence definitions, no examples) as the criteria of
  *   its single choice question, so those two exports must not change.
  * - v2 (RUBRIC_V2, 15 families): the tightened rubric from the critical review
- *   (Brain: work/content/drafts/jev-landscape-review.md, item 9), 2026-09-23
+ *   (the critical review of 23 September 2026, not published, item 9)
  *   (data/classified-sonnet-v2.jsonl). It adds not_a_jev_build, requires the
  *   author's own number for "measured", an explicit "not possible before" for
  *   "capability", a named or clearly implied comparison for a baseline, an

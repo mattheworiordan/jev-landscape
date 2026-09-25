@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The withdrawn bucket scheme (noise / hype / demo / cost-only / fast loop / material), kept for the record.
 
-The buckets were written for the critical review of 2026-09-23 (Brain: work/content/drafts/jev-landscape-review.md)
+The buckets were written for the critical review of 2026-09-23 (not published)
 and used in report v2. The independent audit of 2026-09-24 (review/critical-review-grok.md, claim 3) found that
 they do not hold, so report v3 withdraws them and nothing in the current report reads them. This script
 regenerates the record of what they said on the v2 labels. Plain json, no pandas. From the jev-landscape folder:
@@ -11,8 +11,8 @@ regenerates the record of what they said on the v2 labels. Plain json, no pandas
 It reads the Sonnet v2 labels (data/classified-sonnet-v2.jsonl) on the use-case base that analyze.py uses
 (duplicates merged as in data/dedupe-groups.jsonl, not_a_jev_build left out, rubric rule 3 for the Snake card),
 with the v1 labels (data/classified-sonnet.jsonl, every card v1 saw) for comparison. It prints three tables:
-  A. the rules as pre-registered in jev-positioning-post.md, read literally,
-  B. the rules as first applied in jev-landscape-findings.md (v1),
+  A. the rules as pre-registered in a note written before the labels existed (not published), read literally,
+  B. the rules as first applied in the v1 findings (not published),
   C. the corrected rules proposed by the review,
 and writes them to report/v1/buckets-on-v2-labels.md and report/v1/data/buckets-on-v2-labels/*.csv.
 """
@@ -93,7 +93,7 @@ def applied(r):
 
 
 def preregistered(r):
-    """jev-positioning-post.md, 'the interpretation rubric, fixed BEFORE the numbers land', read literally.
+    """The pre-registration note, 'the interpretation rubric, fixed BEFORE the numbers land', read literally.
     Anything the written tests do not cover goes to 'not covered'."""
     if is_noise(r):
         return 'noise'
@@ -134,7 +134,7 @@ TABLES = [
     ('applied', 'B. As first applied (v1 findings note)', applied, ['noise', 'hype', 'unproven_demo', 'cost_only', 'material']),
     ('corrected', 'C. Corrected (review)', corrected, ['noise', 'hype', 'demo', 'cost_only', 'fast_loop', 'material_vs_frontier', 'material']),
 ]
-RULES = """| rule | pre-registered (Brain `work/content/drafts/jev-positioning-post.md`, "fixed BEFORE the numbers land") | as first applied (findings note, v1) | corrected (review) |
+RULES = """| rule | pre-registered (a pre-registration note written before the labels existed, not published: "fixed BEFORE the numbers land") | as first applied (findings note, v1) | corrected (review) |
 |---|---|---|---|
 | noise | other_or_meta, or commentary | same | same |
 | hype | unmeasured AND cost or latency lead AND frontier-LLM baseline | unmeasured AND (cost, latency or capability lead OR frontier baseline) | unmeasured AND (cost, latency or accuracy lead OR any named baseline) |
@@ -198,7 +198,7 @@ def main():
     by_fam = Counter(r['family'] for r in mat).most_common()
     mp = sum(1 for r in mat if r['evidence'] == 'measured_production')
     deviation = (
-        f"**Deviation from pre-registration.** The positioning post fixed four tests before the labels existed. Read literally on the v2 labels, "
+        f"**Deviation from pre-registration.** A pre-registration note fixed four tests before the labels existed. Read literally on the v2 labels, "
         f"they place only {pct(1 - nc / n)} of cards: {nc:,} ({pct(nc / n)}) fall into no bucket, because the tests leave out demos with no cost or "
         f"latency claim, measured cards with no baseline, and the frame and feel tiers. So the scheme was finished after the data arrived. The first "
         f"applied version filled the gaps by widening the rules: it let the frame and feel tiers and a rules baseline into \"material\" ({len(ff)} "

@@ -4,7 +4,7 @@
  * gets one of seven sub-types, and a stance when it is a hot take, from Claude
  * Sonnet 5 through Vercel AI Gateway.
  *
- *   pnpm dlx tsx --env-file=/Users/matthew.oriordan/Workshop/work/projects/jev-pong/.env.local scripts/classify-noise.ts
+ *   pnpm dlx tsx --env-file=.env.local scripts/classify-noise.ts
  *
  * Env knobs:
  *   LABELS          the label file whose noise posts to sub-type (default data/classified-sonnet-v2.jsonl)

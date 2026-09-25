@@ -70,11 +70,11 @@ EXCLUDED=(                    # never shipped (publish/PUBLISHING.md gives the r
   "review/work/material-cards-*.jsonl" "review/work/production-cards.jsonl"
   "report/landscape.md" "report/v1/landscape.md" "report/v2/landscape.md" "report/human-labels-120.csv" "report/human-labels-README.md"
   "report/site/video/*" "data/withdrawn-tables/charts/*"
-  "data/snapshots-after-audit/*" "report/site/assets/*" "report/site/jev-week-sorted.pdf" "report/site/summary/*" "report/site/summary/src/*"
+  "report/audit-changes.md" "report/data/06_low_like_rate_cards.csv" "scripts/record-page.mjs" "data/snapshots-after-audit/*" "report/site/assets/*" "report/site/jev-week-sorted.pdf" "report/site/summary/*" "report/site/summary/src/*" "report/site/v3/video/*"
 )
 PUBLISH_FILES=("publish/PUBLISHING.md" "publish/stage.sh" "publish/strip_text.py" "publish/check_leaks.py"
                "publish/check_repro.sh" "publish/templates/*")
-LOCAL_ONLY=("publish/publish.sh" "publish/SUBSTACK.md")   # the author's release tools, not part of the repository
+LOCAL_ONLY=("publish/publish.sh" "publish/SUBSTACK.md" "publish/review-confidentiality-2026-09-24.md" "publish/critique-report-2026-09-25.md")   # the author's release tools, not part of the repository
 # Files that may quote feed titles, with the most titles each file may quote. Data files (JSON,
 # JSONL, CSV) and the charts may quote none. The page quotes the most-viewed post of each noise
 # sub-type, each with a link. Documents and code use a few titles as worked examples (the rubric
@@ -301,7 +301,7 @@ label_table = "The label files:\n\n" + "\n".join(rows)
 leaks = json.loads((work / "leaks-pre.json").read_text())
 page_titles = len(leaks.get("findings", {}).get("index.html", {}).get("title_cards", []))
 human = out / "review/human-labels.jsonl"
-human_n = sum(1 for l in human.read_text().splitlines() if l.strip()) if human.exists() else 0
+human_n = (summary.get("human_calibration") or {}).get("n") or (sum(1 for l in human.read_text().splitlines() if l.strip()) if human.exists() else 0)
 cost = summary.get("cost", {})
 parts = []
 v2 = (cost.get("v2_full") or {}).get("usd")

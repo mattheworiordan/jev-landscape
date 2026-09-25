@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "classify:sonnet": "pnpm dlx tsx --env-file=/Users/matthew.oriordan/Workshop/work/projects/jev-pong/.env.local scripts/classify-sonnet.ts",
-    "classify:jev": "pnpm dlx tsx --env-file=/Users/matthew.oriordan/Workshop/work/projects/jev-pong/.env.local scripts/classify-jev.ts",
+    "classify:sonnet": "pnpm dlx tsx --env-file=.env.local scripts/classify-sonnet.ts",
+    "classify:jev": "pnpm dlx tsx --env-file=.env.local scripts/classify-jev.ts",
     "analyze": "python3 scripts/analyze.py"
   },
   "packageManager": "pnpm@10.22.0",
