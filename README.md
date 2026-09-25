@@ -1,6 +1,6 @@
 # A week of Jev, sorted
 
-What people did with Jev, TypeSafe AI's decision model, in its first week: every post from the week, sorted and audited; the usage the two public gateways show; and the rivals that turned up. This repository holds the report, the labels, the tables, the data read at source and the code that rebuilds all of it.
+What people did with Jev, TypeSafe AI's decision model, in its first week: every post from the week, sorted and audited; the usage the two public gateways show; and the rivals that turned up. This repository holds the report, the labels, the tables, the data read at source and the code that rebuilds all of it. The piece: https://blog.mattheworiordan.com/p/jev-is-built-for-tinkerers
 
 **The report: https://mattheworiordan.github.io/jev-landscape/** · The first edition, with every chart: https://mattheworiordan.github.io/jev-landscape/technical/
 
@@ -130,4 +130,4 @@ If you think a label or a figure is wrong, open an issue with the post id or the
 - **The pages and the charts** (`index.html`, `charts/`, `technical/`): © 2026 Matthew O'Riordan. They are not under either license.
 - **The posts** belong to their authors, and the feed belongs to OpenChamber. Neither is in this repository.
 
-Staged 2026-09-25 08:43 UTC from the 2026-09-23 18:47 UTC feed snapshot.
+Staged 2026-09-25 11:43 UTC from the 2026-09-23 18:47 UTC feed snapshot.
