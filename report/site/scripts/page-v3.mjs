@@ -50,7 +50,7 @@ const check = (cond, msg) => { if (!cond) problems.push(msg); };
 
 // ---------------------------------------------------------------- data
 const S = jsonf(join(REPORT, 'summary.json'));
-const AE = Object.fromEntries(csv('13_audit_estimates').map((r) => [r.key, { value: num(r.value), lo: r.lo === '' ? null : num(r.lo), hi: r.hi === '' ? null : num(r.hi), k: r.k === '' ? null : num(r.k), n: r.n === '' ? null : num(r.n) }]));
+const AE = Object.fromEntries(csv('13_audit_estimates').map((r) => [r.key, { value: num(r.value), lo: r.lo === '' ? null : num(r.lo), hi: r.hi === '' ? null : num(r.hi), k: r.k === '' ? null : num(r.k), n: r.n === '' ? null : num(r.n), model: r.model === '' ? null : num(r.model) }]));
 const aud = (key, d = 0) => { const e = AE[key]; return e.lo === null ? pct(e.value, d) : `${pct(e.value, d)} (${(e.lo * 100).toFixed(d)} to ${(e.hi * 100).toFixed(d)})`; };
 const BASE = S.use_case_base;
 const perCard = csv('08_ladder_per_card');
@@ -132,6 +132,131 @@ const stepTot = Object.fromEntries(STEPS.map((s) => [s.key, sum(GROUPS.map((g) =
 check(stepTot.prod_ok === prodRows.length, 'confirmed production posts match the audit table');
 check(before.unavailable === 0, 'none of the candidate builds did something unavailable before');
 const G = Object.fromEntries(GROUPS.map((g) => [g.key, g]));
+
+// ---------------------------------------------------------------- the hot-spot grid: the six groups by how soon the decision is needed
+// Three bands of the rubric's latency tiers on the Opus labels; the audit confirmed only the under-300 ms share and its games share.
+const BANDS = [
+  { key: 'sub300', name: 'Under 300 ms', short: 'Under 300 ms', tiers: ['frame', 'feel', 'turn'], note: 'frame, feel, turn' },
+  { key: 'sub1s', name: 'Under a second', short: 'Under 1 s', tiers: ['interaction'], note: 'interaction' },
+  { key: 'slow', name: 'Seconds or slower', short: 'Seconds+', tiers: ['task', 'batch'], note: 'task, batch' },
+  { key: 'unclear', name: 'Unclear', short: 'Unclear', tiers: ['unclear'], note: 'not placed' },
+];
+const JOB = Object.fromEntries(sub.filter((r) => r.kind === 'job').map((r) => [r.key, r.label]));
+const EX = {
+  classification_routing_triage: JOB.classify, search_rerank_extraction: JOB.search, evals_and_judging: 'Evals and judging', data_and_telemetry: 'Telemetry',
+  games_control_loops_simulation: JOB.game_or_sim, agent_harness_and_tool_gating: 'Tool-call gating', browser_and_computer_use: JOB.computer_use, compaction_and_context: 'Context pruning',
+  moderation_and_guardrails: JOB.feed_filter, voice_and_turn_taking: JOB.voice_turn, live_chat_streams_events: 'Live chat', collaboration_and_typing: JOB.typing_or_form,
+  trading_and_markets: JOB.trading, other_or_meta: 'Talk about the model',
+};
+const groupOf = {}; for (const g of GROUPS) for (const f of g.fams) groupOf[f] = g.key;
+const bandOf = {}; for (const b of BANDS) for (const t of b.tiers) bandOf[t] = b.key;
+check(perCard.every((r) => tierOf.has(String(r.id)) && bandOf[tierOf.get(String(r.id))]), 'every post in the base has a tier in a band');
+const HS = (() => {
+  const cells = {}; for (const g of GROUPS) for (const b of BANDS) cells[`${g.key}.${b.key}`] = { n: 0, fams: {} };
+  for (const r of perCard) { const c = cells[`${groupOf[r.family]}.${bandOf[tierOf.get(String(r.id))]}`]; c.n++; c.fams[r.family] = (c.fams[r.family] || 0) + 1; }
+  const rowN = Object.fromEntries(GROUPS.map((g) => [g.key, sum(BANDS.map((b) => cells[`${g.key}.${b.key}`].n))]));
+  const colN = Object.fromEntries(BANDS.map((b) => [b.key, sum(GROUPS.map((g) => cells[`${g.key}.${b.key}`].n))]));
+  return { cells, rowN, colN };
+})();
+check(sum(Object.values(HS.rowN)) === BASE, 'the hot-spot grid covers every post once');
+check(Math.abs(HS.colN.sub300 / BASE - AE.sub300_set.model) < 1e-6, "Opus's under-300 ms share matches the audit table's model value");
+check(Math.abs(HS.cells['games.sub300'].n / HS.colN.sub300 - AE.sub300_games.model) < 1e-6, "Opus's games share of the under-300 ms posts matches the audit table");
+const hsExample = (cell) => {
+  if (cell.n < 25) return '';
+  const top = Object.entries(cell.fams).sort((p, q) => q[1] - p[1]);
+  const one = EX[top[0][0]];
+  if (top[1] && top[1][1] >= 0.25 * cell.n) { const two = EX[top[1][0]]; return `${one}, ${two.charAt(0).toLowerCase()}${two.slice(1)}`; }
+  return one;
+};
+const hsShade = (n) => { let k = 0; for (const t of [25, 100, 250, 500, 750, 1000]) if (n >= t) k++; return k; };
+const HSF = { set: AE.sub300_set, games: AE.sub300_games, tier: AE.agreement_tier };
+const p0 = (x) => pct(x, 0), iv = (e, d = 1) => `${(e.lo * 100).toFixed(d)} to ${(e.hi * 100).toFixed(d)}`;
+const chartHotspot = {
+  key: '19', file: '19-where-the-interest-is-against-how-soon-the-decision-is-needed',
+  title: 'The need for a decision in under 300 ms has one hot spot: games',
+  subtitle: `${fmt(BASE)} posts by what the decision is about and how soon it is needed, on the labels. Shade is the number of posts; the audit estimated only the under-300 ms column and its games share.`,
+  desc: GROUPS.map((g) => `${g.name}: ${BANDS.map((b) => `${b.name.toLowerCase()} ${fmt(HS.cells[`${g.key}.${b.key}`].n)}`).join(', ')}.`).join(' ') + ` Audited: ${pct(HSF.set.value)} of posts need under 300 ms (${iv(HSF.set)}), ${p0(HSF.games.value)} of them games (${iv(HSF.games, 0)}).`,
+  body(T, { x0, x1, y0, narrow }) {
+    const out = []; let y = y0;
+    const lg = legend(T, [
+      { label: 'under 25', role: 'seq0' }, { label: '25+', role: 'seq1' }, { label: '100+', role: 'seq2' }, { label: '250+', role: 'seq3' },
+      { label: '500+', role: 'seq4' }, { label: '750+', role: 'seq5' }, { label: '1,000+ posts', role: 'seq6' },
+      { label: 'Unclear', role: 'g1' }, { label: `Outlined: games, ${p0(HSF.games.value)} of the under-300 ms posts on the audit`, role: 'accent', kind: 'line' },
+    ], x0, x1, y, { size: narrow ? 10 : 11 });
+    out.push(lg.svg); y = lg.y + 10;
+    const labelW = narrow ? 0 : 160; const totW = narrow ? 0 : 70; const gap = 3; const gapU = narrow ? 6 : 10;
+    const cellsW = x1 - x0 - labelW - totW - (narrow ? 0 : 8);
+    const wB = (cellsW - 2 * gap - gapU) / 4; const wU = wB;
+    const cx = []; { let x = x0 + labelW; for (let i = 0; i < 3; i++) { cx.push(x); x += wB + gap; } cx.push(cx[2] + wB + gapU); }
+    const cw = (i) => (i === 3 ? wU : wB);
+    const totX = x1 - totW;
+    const hs = narrow ? 10 : 11;
+    const headLines = BANDS.map((b, i) => wrap(narrow ? b.short : b.name, cw(i) - 4, hs, 700));
+    const hl = Math.max(...headLines.map((l) => l.length));
+    BANDS.forEach((b, i) => {
+      headLines[i].forEach((l, j) => out.push(tx(T, cx[i] + 2, y + hs + (hl - headLines[i].length + j) * (hs + 3), l, { size: hs, weight: 700, role: i === 3 ? 'ink2' : 'ink' })));
+      out.push(tx(T, cx[i] + 2, y + hs + (hl - 1) * (hs + 3) + 13, b.note, { size: narrow ? 9 : 10, role: 'muted' }));
+    });
+    if (!narrow) { out.push(tx(T, totX + 8, y + hs + (hl - 1) * (hs + 3), 'All posts', { size: hs, weight: 700 })); out.push(tx(T, totX + 8, y + hs + (hl - 1) * (hs + 3) + 13, 'and share', { size: 10, role: 'muted' })); }
+    y += hs + (hl - 1) * (hs + 3) + 22;
+    const rh = narrow ? 38 : 62;
+    const maxRow = Math.max(...Object.values(HS.rowN));
+    for (const g of GROUPS) {
+      const rowN = HS.rowN[g.key];
+      if (narrow) {
+        out.push(txs(T, x0, y + 11, [{ s: g.name, weight: 700 }], { size: 10.5 }));
+        const nm = tw(g.name, 10.5, 700);
+        if (nm + tw(`  ${fmt(rowN)} · ${p0(rowN / BASE)}`, 10) < x1 - x0) out.push(txs(T, x0 + nm, y + 11, [{ s: `  ${fmt(rowN)} · ${p0(rowN / BASE)}`, role: 'muted', size: 10 }], { size: 10 }));
+        y += 16;
+      } else {
+        const b = lines(T, x0, y + (rh - (wrap(g.name, labelW - 12, 12, 700).length * 15)) / 2 - 3, g.name, labelW - 12, { size: 12, lh: 15, weight: 700 });
+        out.push(b.svg);
+      }
+      BANDS.forEach((bd, i) => {
+        const c = HS.cells[`${g.key}.${bd.key}`]; const share = c.n / rowN;
+        const k = hsShade(c.n);
+        const fill = i === 3 ? (c.n >= 250 ? 'g2' : 'g1') : `seq${k}`;
+        const ink = i === 3 || k === 0 ? 'ink' : `sqt${k}`;
+        const tip = `${g.name}, ${bd.name.toLowerCase()}: ${fmt(c.n)} posts, ${p0(share)} of the group`;
+        out.push(rect(T, cx[i], y, cw(i), rh, fill, ' rx="3"').replace('/>', `><title>${esc(tip)}</title></rect>`));
+        const fs = narrow ? 11.5 : 13;
+        out.push(txs(T, cx[i] + (narrow ? 6 : 8), y + (narrow ? 16 : 19), [{ s: fmt(c.n), weight: 700, role: ink }, ...(narrow ? [] : [{ s: `  ${p0(share)}`, role: ink, size: 10.5 }])], { size: fs }));
+        if (narrow) out.push(tx(T, cx[i] + 6, y + 30, p0(share), { size: 9.5, role: ink }));
+        else {
+          const ex = hsExample(c);
+          if (ex) {
+            let ls = wrap(ex, cw(i) - 14, 9.5);
+            if (ls.length > 3) ls = wrap(EX[Object.entries(c.fams).sort((p, q) => q[1] - p[1])[0][0]], cw(i) - 14, 9.5);
+            ls.slice(0, 3).forEach((l, j) => out.push(tx(T, cx[i] + 8, y + 34 + j * 11, l, { size: 9.5, role: ink })));
+          }
+        }
+        if (g.key === 'games' && bd.key === 'sub300') out.push(`<rect x="${r1(cx[i] + 1)}" y="${r1(y + 1)}" width="${r1(cw(i) - 2)}" height="${r1(rh - 2)}" rx="3" fill="none" stroke-width="2.5" ${T.mode === 'vars' ? 'style="stroke:var(--v-accent)"' : `stroke="${T.accent}"`}/>`);
+      });
+      if (!narrow) {
+        const bw = (rowN / maxRow) * (totW - 12);
+        out.push(txs(T, totX + 8, y + 19, [{ s: fmt(rowN), weight: 700 }, { s: `  ${p0(rowN / BASE)}`, role: 'ink2', size: 10.5 }], { size: 12 }));
+        out.push(rect(T, totX + 8, y + 27, bw, 8, 'g2', ' rx="2"').replace('/>', `><title>${esc(`${g.name}: ${fmt(rowN)} posts, ${pct(rowN / BASE)} of all posts`)}</title></rect>`));
+      }
+      y += rh + gap;
+    }
+    y += 6;
+    if (!narrow) out.push(tx(T, x0, y + 13, 'All groups', { size: 12, weight: 700 }));
+    else { out.push(tx(T, x0, y + 11, `All groups  ${fmt(BASE)}`, { size: 10.5, weight: 700 })); y += 16; }
+    BANDS.forEach((bd, i) => {
+      const n = HS.colN[bd.key];
+      out.push(txs(T, cx[i] + (narrow ? 6 : 8), y + 13, [{ s: fmt(n), weight: 700 }, { s: `  ${p0(n / BASE)}`, role: 'ink2', size: narrow ? 9.5 : 10.5 }], { size: narrow ? 11 : 12 }));
+    });
+    if (!narrow) out.push(tx(T, totX + 8, y + 13, fmt(BASE), { size: 12, weight: 700 }));
+    y += 22;
+    const note = `Cells are the labelling model's calls, and how soon a decision is needed is the field the blind audit agrees with least (${p0(HSF.tier.value)} at seven tiers). The audit puts ${pct(HSF.set.value)} of posts under 300 ms (${iv(HSF.set)}), not the labels' ${pct(HSF.set.model)}, and ${p0(HSF.games.value)} of those are games (${iv(HSF.games, 0)}): the only two numbers here it confirms.`;
+    const b = lines(T, x0, y, note, x1 - x0, { size: narrow ? 10 : 10.5, lh: narrow ? 13.5 : 14, role: 'ink2' });
+    out.push(b.svg); y += b.h;
+    return { svg: out.join(''), y };
+  },
+};
+const hotspotTable = tbl(['Group', ...BANDS.map((b) => b.name), 'All posts'],
+  GROUPS.map((g) => [g.name, ...BANDS.map((b) => { const n = HS.cells[`${g.key}.${b.key}`].n; return `${fmt(n)} (${p0(n / HS.rowN[g.key])})`; }), fmt(HS.rowN[g.key])])
+    .concat([['All groups', ...BANDS.map((b) => `${fmt(HS.colN[b.key])} (${pct(HS.colN[b.key] / BASE)})`), fmt(BASE)]]));
 
 // ---------------------------------------------------------------- the head-to-heads: Jev against the model it was compared with, same task, numbers published
 // Multiples are the comparison model's figure divided by Jev's, from each source as read; "small" is the vendor's small or cheap tier.
@@ -405,7 +530,7 @@ mkdirSync(join(OUT, 'charts', 'narrow'), { recursive: true });
 const written = [];
 const PAGE_SOURCE = { corpus: `Source: jev.openchamber.dev, ${fmt(S.posts)} posts, 16 to 23 Sep 2026. Method and audit: see the end of this page.`, gateways: 'Source: OpenRouter and Vercel AI Gateway, read 24 Sep 2026. Method: see the end of this page.', prices: 'Source: OpenRouter rankings and list prices, read 24 Sep 2026. Method: see the end of this page.', h2h: 'Source: the linked write-ups and the Jev Pong runs. Method: see the end of this page.', rivals: 'Source: Hugging Face and jev.openchamber.dev, read 24 Sep 2026. Method: see the end of this page.' };
 const FILE_SOURCE = { corpus: SOURCE_CORPUS, gateways: `Source: openrouter.ai/typesafe/jev-1.13 and Vercel's AI Gateway leaderboard export (CC BY 4.0), read 24 Sep 2026; analysis by Matthew O'Riordan`, prices: `Source: openrouter.ai/rankings and the Jev model page, list prices from openrouter.ai/api/v1/models and docs.typesafe.ai, read 24 Sep 2026; analysis by Matthew O'Riordan`, h2h: `Source: the linked write-ups (Near Here, Lindfors, Sniff Test, OpenWork, CodeAlive, rerank bench, Classmethod, Hermes, LangWatch, Every, awlevin) and the Jev Pong runs; TypeSafe's launch post; the feed's claim chips; analysis by Matthew O'Riordan`, rivals: `Source: huggingface.co model search by creation date and jev.openchamber.dev, read 24 Sep 2026; analysis by Matthew O'Riordan` };
-const NEW = [[chartGateways, 'gateways'], [chartMoney, 'prices'], [chartGroups, 'corpus'], [chartClaims, 'h2h'], [chartH2H, 'h2h'], [chartRivals, 'rivals']];
+const NEW = [[chartGateways, 'gateways'], [chartMoney, 'prices'], [chartGroups, 'corpus'], [chartClaims, 'h2h'], [chartH2H, 'h2h'], [chartRivals, 'rivals'], [chartHotspot, 'corpus']];
 const pageSVG = {};
 for (const [c, src] of NEW) {
   pageSVG[c.key] = { wide: withFooter(FILE_SOURCE[src], PAGE_SOURCE[src], () => frame(THEMES.vars, c, WIDE, 'wauto', 'page')), narrow: withFooter(FILE_SOURCE[src], PAGE_SOURCE[src], () => frame(THEMES.vars, c, NARROW, 'nauto', 'page')) };
@@ -591,7 +716,11 @@ ${section('s5', '5 · Announced, claimed, measured', `TypeSafe's 40 to 400x is a
 
 ${section('s6', '6 · Who needs it fast', 'Outside games, speed is a handful of demos, and they share one shape', `
   <div class="prose">
-    <p>A tenth of posts need a decision in under 300 ms, and nine in ten of those are games. Voice, live chat and collaboration, where a person is waiting, are ${aud('rt_families')} of posts, and none is measured in production. The few live builds that exist mostly sit in one repo, ${a(L.dabit, "Nader Dabit's jev-experiments")}, and they share a shape: several of your own questions on every event, inside the turn, from a model you didn't train. That's the one pattern nothing served before for anyone without an ML team.</p>
+    <p>Put what people built against how soon the decision has to land and there is one hot spot. Games. Everything else that needs an answer in under 300 ms fits in two small cells: typing and voice turn-taking. The volume sits with data decisions that can wait seconds, and with posts that never say what the decision is.</p>
+  </div>
+  ${figure({ svg: pageSVG['19'], table: hotspotTable })}
+  <div class="prose" style="margin-top:22px">
+    <p>The audit confirms the shape: a tenth of posts need a decision in under 300 ms, and nine in ten of those are games. Voice, live chat and collaboration, where a person is waiting, are ${aud('rt_families')} of posts, and none is measured in production. The few live builds that exist mostly sit in one repo, ${a(L.dabit, "Nader Dabit's jev-experiments")}, and they share a shape: several of your own questions on every event, inside the turn, from a model you didn't train. That's the one pattern nothing served before for anyone without an ML team.</p>
   </div>
   ${figure(keptFigure('figure-6'))}
   ${figure({ ...keptFigure('figure-7'), table: keptFigure('figure-7').table + '<h3>The live builds, by name</h3>' + speedTable })}
@@ -631,7 +760,7 @@ ${section('s8', '8 · Where it is', 'What the week adds up to', `
   <p class="eyebrow">Method</p>
   <h2>How this was measured</h2>
   <p>The posts come from ${a(L.feed, "OpenChamber's Jev feed")}, snapshot 23 September 18:47 UTC: ${fmt(S.posts)} posts from ${fmt(S.authors)} authors between 16 and 23 September, as OpenChamber selected them. Without ${S.duplicates_merged} duplicates, the ${S.not_a_jev_build} posts that don't use Jev and one post the labeling model refused, ${fmt(BASE)} remain. The feed is what people chose to show, not a sample of usage: it starts six hours after launch, the top 1% of posts held half of all views, and the median post got ${num(stats.median_views)} views.</p>
-  <p>I used AI models to do the sorting, and I want to be plain about that. Claude Opus 5.5 labeled every post against a written rubric: what Jev decides, whether the author measured anything, what they compared it with, whether the decision sits in a live loop, and whether it's in production. Then a second model, Grok, labeled ${fmt(AE.labelled.value)} of those posts blind: every post in the rare groups the headlines rest on, and random samples of the rest. It produced its own estimates with 95% intervals, and wherever it checked a number this page uses its range, not the first model's count. It corrected several; the production count went from ${AE.production_model.value} to ${prodRows.length}. I hand-checked 13 posts myself, enough to catch problems, not enough to call it a human audit. A proper human sample is the check still missing. At Vercel AI Gateway list prices the labeling cost about $48.</p>
+  <p>I used AI models to do the sorting, and I want to be plain about that. Claude Opus 5.5 labeled every post against a written rubric: what Jev decides, whether the author measured anything, what they compared it with, whether the decision sits in a live loop, and whether it's in production. Then a second model, Grok, labeled ${fmt(AE.labelled.value)} of those posts blind: every post in the rare groups the headlines rest on, and random samples of the rest. It produced its own estimates with 95% intervals, and wherever it checked a number this page uses its range, not the first model's count. It corrected several; the production count went from ${AE.production_model.value} to ${prodRows.length}. How soon a decision is needed is the field it agrees with least, so the grid in section 6 shows the labels in three coarse bands with the audited 300 ms split as its headline, and its cells are the labels, not audited estimates. I hand-checked 13 posts myself, enough to catch problems, not enough to call it a human audit. A proper human sample is the check still missing. At Vercel AI Gateway list prices the labeling cost about $48.</p>
   <p>The gateway numbers were read at source on 24 September: ${a(L.or, "OpenRouter's model page")} and ${a(L.orRank, 'rankings')}, ${a(L.vcExport, "Vercel's open leaderboard export")} (CC BY 4.0), ${a(L.npm, 'npm')}, ${a(L.pypi, 'pypistats')} and ${a(L.discord, 'Discord')}. 24 September was a partial day and is left out everywhere. The head-to-heads are every comparison I could find where someone put Jev against another model on the same task and published cost, latency or accuracy; each is the author's own figure, unreproduced. The rivals were found from the feed, Hugging Face, GitHub and ${a(L.jevbench, 'JevBench')}; ranks move daily and are dated. Gateway requests are requests, not decisions, and can't separate production from testing. Vercel publishes shares, never counts.</p>
   <p>The labels, the tables behind every chart, the rubric and the code are at ${a(L.repo, 'github.com/mattheworiordan/jev-landscape')}, without the text of any post: code under MIT, data and method under CC BY 4.0. The posts belong to their authors. The ${a(L.technical, 'full technical page')} has every chart from the first edition, including the ones this page leaves out.</p>
   <p class="disclosure"><b>Disclosure.</b> I'm CEO of ${a(L.ably, 'Ably')}, a realtime infrastructure company. I looked at Jev because it sits in the low-latency part of the stack I work on. Read the numbers with that in mind. I'm ${a(L.linkedin, 'on LinkedIn')} if you want to argue with any of it.</p>

@@ -130,4 +130,4 @@ If you think a label or a figure is wrong, open an issue with the post id or the
 - **The pages and the charts** (`index.html`, `charts/`, `technical/`): © 2026 Matthew O'Riordan. They are not under either license.
 - **The posts** belong to their authors, and the feed belongs to OpenChamber. Neither is in this repository.
 
-Staged 2026-09-25 07:00 UTC from the 2026-09-23 18:47 UTC feed snapshot.
+Staged 2026-09-25 07:13 UTC from the 2026-09-23 18:47 UTC feed snapshot.
