@@ -42,6 +42,7 @@ Anyone can get the text again from the feed (README.md, step 1), or open a post 
 | `scripts/record-page.mjs`, `report/site/v3/video/` | A tool that records the page as a short video, and its output. Not part of the pipeline. |
 | `data/withdrawn-tables/charts/` | The chart of a withdrawn table. Its tables are in the repository; a picture of a withdrawn claim is not, so that nobody shares it as a finding. |
 | `publish/publish.sh`, `publish/SUBSTACK.md` | The author's release tools. |
+| `publish/linkedin-2026-09-25/*`, `publish/substack-2026-09-25/*` | The author's share kits: white-background PNGs for LinkedIn and the Substack paste sheet. The charts they use are already in the repository. |
 | `node_modules/`, `__pycache__/`, `.ruff_cache/`, `.DS_Store` | Local tools and caches. |
 
 `.gitignore` in the repository lists the same files, so that a run of the pipeline in a clone does not add them.

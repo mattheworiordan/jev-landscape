@@ -74,7 +74,7 @@ EXCLUDED=(                    # never shipped (publish/PUBLISHING.md gives the r
 )
 PUBLISH_FILES=("publish/PUBLISHING.md" "publish/stage.sh" "publish/strip_text.py" "publish/check_leaks.py"
                "publish/check_repro.sh" "publish/templates/*")
-LOCAL_ONLY=("publish/publish.sh" "publish/SUBSTACK.md" "publish/review-confidentiality-2026-09-24.md" "publish/critique-report-2026-09-25.md")   # the author's release tools, not part of the repository
+LOCAL_ONLY=("publish/publish.sh" "publish/SUBSTACK.md" "publish/review-confidentiality-2026-09-24.md" "publish/critique-report-2026-09-25.md" "publish/linkedin-2026-09-25/*" "publish/substack-2026-09-25/*")   # the author's release tools, not part of the repository
 # Files that may quote feed titles, with the most titles each file may quote. Data files (JSON,
 # JSONL, CSV) and the charts may quote none. The page quotes the most-viewed post of each noise
 # sub-type, each with a link. Documents and code use a few titles as worked examples (the rubric
